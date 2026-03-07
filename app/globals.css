@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --nbg-primary: #c58411;
+  --nbg-green: #76a348;
+  --nbg-lighter-green: #ecf5e4;
+  --nbg-pink: #7c3aed;
+  --nbg-blue: #1B3156;
+  --nbg-dark-blue: #01244A;
+  --nbg-light-gray: #E8EAEE;
+}
+
+body {
+  @apply antialiased bg-white;
+  color: var(--nbg-blue);
+  font-weight: 300;
+  line-height: 1.4;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+/* Smooth scroll for anchor links */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Bank logos carousel – infinite scroll */
+@keyframes bank-carousel {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-bank-carousel {
+  animation: bank-carousel 45s linear infinite;
+}
+
+/* Range slider styling for hypotheek calculator */
+input[type="range"].hypo-slider {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 8px;
+  background: var(--nbg-light-gray);
+  border-radius: 4px;
+}
+
+input[type="range"].hypo-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: var(--nbg-green);
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(118, 163, 72, 0.4);
+}
+
+input[type="range"].hypo-slider::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: var(--nbg-green);
+  cursor: pointer;
+  border: none;
+}
+
+/* Prevent iOS zoom on input focus: use 16px on mobile */
+@media (max-width: 1023px) {
+  input:not([type="range"]),
+  textarea,
+  select {
+    font-size: 16px !important;
+  }
+}
