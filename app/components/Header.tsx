@@ -18,11 +18,11 @@ export default function Header() {
 
   return (
     <>
-      {/* Main nav – NBG: logo left, menu, then two buttons (filled green + outline) */}
-      <header className="sticky top-0 z-50 bg-white border-b border-nbg-light-gray">
+      {/* Main nav – fixed at top; spacer below reserves space so content isn’t hidden */}
+      <header className="fixed left-0 right-0 top-0 z-50 bg-white border-b border-nbg-light-gray">
         <div className="max-w-[1140px] mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center h-16 lg:h-[84px]">
-            <Link href="/" className="flex items-center">
+          <div className="flex justify-between items-center max-lg:pt-3 max-lg:pb-3.5 max-lg:items-start lg:h-[84px]">
+            <Link href="/" className="flex items-center shrink-0 h-16 lg:h-auto">
               <Image
                 src="https://soaacpusdhyxwucjhhpy.supabase.co/storage/v1/object/public/haruna/haruna%20hypotheek%20advies%20nederland.png"
                 alt="Haruna"
@@ -92,6 +92,8 @@ export default function Header() {
           )}
         </div>
       </header>
+      {/* Spacer so content is not hidden under fixed header (mobile: pt-4 + logo + pb-5; desktop: 84px) */}
+      <div className="h-[5.75rem] lg:h-[84px]" aria-hidden />
     </>
   );
 }

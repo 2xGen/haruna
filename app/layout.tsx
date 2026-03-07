@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { DM_Sans } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 import JsonLd from "./components/JsonLd";
 import StickyCtaBar from "./components/StickyCtaBar";
@@ -29,6 +30,20 @@ export const metadata: Metadata = {
       "Persoonlijk hypotheek- en pensioenadvies online. Via videobellen – makkelijk en snel. Financiering, verzekeringen en pensioen op maat.",
     type: "website",
     locale: "nl_NL",
+    images: [
+      {
+        url: "https://soaacpusdhyxwucjhhpy.supabase.co/storage/v1/object/public/haruna/haruna%20hypotheek%20advies%20nederland.png",
+        width: 192,
+        height: 64,
+        alt: "Haruna",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary",
+    images: [
+      "https://soaacpusdhyxwucjhhpy.supabase.co/storage/v1/object/public/haruna/haruna%20hypotheek%20advies%20nederland.png",
+    ],
   },
   robots: {
     index: true,
@@ -46,11 +61,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="nl" className={dmSans.variable}>
-      <body className="min-h-screen flex flex-col font-sans max-lg:overflow-x-hidden">
+    <html lang="nl" className={`${dmSans.variable} overflow-x-hidden`}>
+      <body className="min-h-screen flex flex-col font-sans overflow-x-hidden w-full max-w-full">
         <JsonLd />
         {children}
         <StickyCtaBar />
+        <Analytics />
       </body>
     </html>
   );

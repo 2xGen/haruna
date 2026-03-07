@@ -23,7 +23,7 @@ export default function BankLogosCarousel() {
           Wij werken met alle Nederlandse banken
         </h2>
       </div>
-      <div className="overflow-hidden">
+      <div className="w-full max-w-full overflow-x-hidden">
         <div className="flex gap-12 lg:gap-16 items-center w-max animate-bank-carousel">
           {items.map((bank, i) => (
             <div

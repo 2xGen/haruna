@@ -25,9 +25,13 @@ body {
   }
 }
 
-/* Smooth scroll for anchor links */
+/* Smooth scroll + prevent horizontal overflow on mobile */
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 /* Bank logos carousel – infinite scroll */
