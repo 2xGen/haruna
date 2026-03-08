@@ -167,7 +167,7 @@ export default function HypotheekBerekenenForm() {
               </p>
             </div>
             <p className="text-nbg-blue/60 text-sm">
-              Dit is een globale indicatie. De werkelijke maximale hypotheek en maandlasten kunnen afwijken door NHG, studieschuld en andere factoren.
+              Deze berekening is een indicatie. Aan deze berekening kunnen geen rechten worden ontleend. De werkelijke maximale hypotheek en maandlasten kunnen afwijken door NHG, studieschuld en andere factoren.
             </p>
             <Link
               href="/contact"

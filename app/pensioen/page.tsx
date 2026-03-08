@@ -46,7 +46,7 @@ export default function PensioenPage() {
                   Pensioen – advies voor uw inkomen later
                 </h1>
                 <p className="mt-5 text-nbg-blue/80 text-[17px] lg:text-lg leading-relaxed max-w-xl">
-                  Past uw pensioen nog bij uw plannen? Is uw voorziening voldoende? Wij helpen u graag in de complexiteit van pensioen – voor werkgevers, werknemers en ondernemers. Erkend door AFM voor pensioenadvisering.
+                  Past uw pensioen nog bij uw plannen? Is uw voorziening voldoende? Wij helpen u graag in de complexiteit van pensioen – voor werkgevers, werknemers en ondernemers. Vergunninghouder AFM voor pensioenadvisering.
                 </p>
                 <div className="mt-8 flex flex-wrap gap-4">
                   <Link
@@ -100,13 +100,13 @@ export default function PensioenPage() {
         <section className="bg-nbg-green text-white py-4 px-4">
           <div className="max-w-[1140px] mx-auto">
             <div className="flex flex-wrap justify-evenly items-center gap-y-3 gap-x-2">
-              <p className="text-[17px] m-0">Onafhankelijk advies</p>
+              <p className="text-[17px] m-0">Onafhankelijk hypotheekadvies</p>
               <span className="w-1.5 h-1.5 rounded-full bg-white/70 shrink-0 hidden sm:block" aria-hidden />
               <p className="text-[17px] m-0">WFT pensioen – erkend door AFM</p>
               <span className="w-1.5 h-1.5 rounded-full bg-white/70 shrink-0 hidden sm:block" aria-hidden />
               <p className="text-[17px] m-0">Online & videobellen</p>
               <span className="w-1.5 h-1.5 rounded-full bg-white/70 shrink-0 hidden sm:block" aria-hidden />
-              <p className="text-[17px] m-0">Geen verborgen kosten</p>
+              <p className="text-[17px] m-0">Volledige transparantie over kosten.</p>
             </div>
           </div>
         </section>
@@ -257,7 +257,7 @@ export default function PensioenPage() {
             <div className="flex flex-wrap justify-center items-center gap-3">
               <span className="inline-flex items-center gap-2 py-2 px-4 rounded-full bg-nbg-lighter-green/80 text-nbg-blue text-[14px] font-medium">
                 <svg className="w-4 h-4 text-nbg-green" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" /></svg>
-                Erkend door AFM
+                Vergunninghouder AFM
               </span>
               <span className="inline-flex items-center gap-2 py-2 px-4 rounded-full bg-nbg-lighter-green/80 text-nbg-blue text-[14px] font-medium">
                 <svg className="w-4 h-4 text-nbg-green" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" /></svg>

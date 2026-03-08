@@ -20,7 +20,7 @@ export default function BankLogosCarousel() {
     <section className="bg-white py-14 lg:py-16 border-t border-nbg-light-gray" aria-label="Banken waarmee wij samenwerken">
       <div className="max-w-[1140px] mx-auto px-4 sm:px-6 lg:px-8 mb-10">
         <h2 className="text-center text-base font-semibold tracking-wide text-nbg-blue/90 m-0">
-          Wij werken met alle Nederlandse banken
+          Wij vergelijken hypotheken van vrijwel alle geldverstrekkers in Nederland.
         </h2>
       </div>
       <div className="w-full max-w-full overflow-x-hidden">

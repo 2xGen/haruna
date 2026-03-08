@@ -15,7 +15,7 @@ const snelNaar = [
 
 const footerDocumenten = [
   { label: "Dienstverleningsdocument", href: "/dienstverleningsdocument" },
-  { label: "Vergelijkingskaart hypotheek", href: "/vergelijkingskaart-hypotheek" },
+  { label: "Vergelijkingskaart hypotheek", href: "https://soaacpusdhyxwucjhhpy.supabase.co/storage/v1/object/public/haruna/Vergelijkingskaart%202026%20Hypotheek.pdf" },
 ];
 
 const footerLegal = [
@@ -99,13 +99,25 @@ export default function Footer() {
           <ul className="flex flex-wrap gap-x-8 gap-y-2 list-none p-0 m-0">
             {footerDocumenten.map((link) => (
               <li key={link.label}>
-                <Link
-                  href={link.href}
-                  className="inline-flex items-center gap-2 text-white/90 text-[17px] hover:text-nbg-primary transition-colors py-1"
-                >
-                  <span className="w-1.5 h-1.5 rounded-full bg-nbg-green shrink-0" aria-hidden />
-                  {link.label}
-                </Link>
+                {link.href.endsWith(".pdf") ? (
+                  <a
+                    href={link.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 text-white/90 text-[17px] hover:text-nbg-primary transition-colors py-1"
+                  >
+                    <span className="w-1.5 h-1.5 rounded-full bg-nbg-green shrink-0" aria-hidden />
+                    {link.label}
+                  </a>
+                ) : (
+                  <Link
+                    href={link.href}
+                    className="inline-flex items-center gap-2 text-white/90 text-[17px] hover:text-nbg-primary transition-colors py-1"
+                  >
+                    <span className="w-1.5 h-1.5 rounded-full bg-nbg-green shrink-0" aria-hidden />
+                    {link.label}
+                  </Link>
+                )}
               </li>
             ))}
           </ul>

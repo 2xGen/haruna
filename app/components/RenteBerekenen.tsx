@@ -80,6 +80,9 @@ export default function RenteBerekenen() {
       <div className="mt-auto pt-6 border-t border-nbg-light-gray/80">
         <p className="text-nbg-blue/70 text-sm mb-1.5">Maandlast (annuïtair)</p>
         <p className="text-nbg-blue text-[1.75rem] font-bold tracking-tight">{formatEuro(maandlast)}/maand</p>
+        <p className="text-nbg-blue/60 text-xs mt-2 mb-4">
+          Deze berekening is een indicatie. Aan deze berekening kunnen geen rechten worden ontleend.
+        </p>
         <Link
           href="/hypotheken/hypotheek-berekenen"
           className="mt-4 block w-full text-center rounded-xl bg-nbg-green text-white font-semibold text-[15px] py-3.5 hover:bg-nbg-green/90 transition-colors active:scale-[0.99]"

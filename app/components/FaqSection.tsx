@@ -1,23 +1,37 @@
+const VERGELIJKINGSKAART_PDF =
+  "https://soaacpusdhyxwucjhhpy.supabase.co/storage/v1/object/public/haruna/Vergelijkingskaart%202026%20Hypotheek.pdf";
+
 const FAQ_ITEMS = [
   {
     question: "Wat kost hypotheekadvies bij Haruna?",
-    answer: "Ons advies is vaak (deels) vergoed door de geldverstrekker. Tijdens een vrijblijvend kennismakingsgesprek bespreken we de mogelijkheden en eventuele kosten.",
+    answer:
+      "De gemiddelde prijzen staan op onze vergelijkingskaart en hangen af van uw situatie en het type dienst (advies, contract regelen of beide). In een vrijblijvend kennismakingsgesprek bespreken we uw situatie en de kosten die daarbij passen.",
+    linkLabel: "Bekijk de vergelijkingskaart hypotheek",
+    linkUrl: VERGELIJKINGSKAART_PDF,
   },
   {
     question: "Kan ik ook buiten kantoortijden een afspraak maken?",
     answer: "Ja. Wij zijn ook bereikbaar buiten kantoortijden voor het plannen van een afspraak of voor dringende vragen. Bel ons gerust.",
+    linkLabel: undefined,
+    linkUrl: undefined,
   },
   {
     question: "Waar vindt het adviesgesprek plaats?",
     answer: "Online via videobellen. Snel, makkelijk en persoonlijk – waar u ook bent. Plan een afspraak en wij bellen u op het afgesproken tijdstip.",
+    linkLabel: undefined,
+    linkUrl: undefined,
   },
   {
-    question: "Met welke banken werkt Haruna samen?",
-    answer: "Wij werken onafhankelijk en kunnen hypotheken bij alle Nederlandse banken en geldverstrekkers voor u vergelijken en afsluiten.",
+    question: "Met welke geldverstrekkers werkt Haruna?",
+    answer: "Wij vergelijken hypotheken van vrijwel alle geldverstrekkers in Nederland. In een vrijblijvend gesprek bespreken we welke opties bij uw situatie passen.",
+    linkLabel: undefined,
+    linkUrl: undefined,
   },
   {
     question: "Is het eerste gesprek vrijblijvend?",
     answer: "Ja. Het kennismakingsgesprek is geheel vrijblijvend. Daarna kunt u beslissen of u verder wilt met ons als adviseur.",
+    linkLabel: undefined,
+    linkUrl: undefined,
   },
 ];
 
@@ -29,7 +43,9 @@ const faqSchema = {
     name: item.question,
     acceptedAnswer: {
       "@type": "Answer",
-      text: item.answer,
+      text: item.linkUrl
+        ? `${item.answer} Zie ook: ${item.linkLabel} (${item.linkUrl}).`
+        : item.answer,
     },
   })),
 };
@@ -49,6 +65,18 @@ export default function FaqSection() {
               </dt>
               <dd className="text-nbg-blue/85 text-[17px] leading-relaxed m-0">
                 {item.answer}
+                {item.linkUrl && item.linkLabel && (
+                  <span className="block mt-3">
+                    <a
+                      href={item.linkUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-nbg-green font-medium hover:underline"
+                    >
+                      {item.linkLabel} →
+                    </a>
+                  </span>
+                )}
               </dd>
             </div>
           ))}

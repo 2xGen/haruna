@@ -32,9 +32,9 @@ export const metadata: Metadata = {
     locale: "nl_NL",
     images: [
       {
-        url: "https://soaacpusdhyxwucjhhpy.supabase.co/storage/v1/object/public/haruna/haruna%20hypotheek%20advies%20nederland.png",
-        width: 192,
-        height: 64,
+        url: "https://soaacpusdhyxwucjhhpy.supabase.co/storage/v1/object/public/haruna/Social%20media%20logo.png",
+        width: 1200,
+        height: 630,
         alt: "Haruna",
       },
     ],
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary",
     images: [
-      "https://soaacpusdhyxwucjhhpy.supabase.co/storage/v1/object/public/haruna/haruna%20hypotheek%20advies%20nederland.png",
+      "https://soaacpusdhyxwucjhhpy.supabase.co/storage/v1/object/public/haruna/Social%20media%20logo.png",
     ],
   },
   robots: {

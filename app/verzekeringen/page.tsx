@@ -108,13 +108,13 @@ export default function VerzekeringenPage() {
         <section className="bg-nbg-green text-white py-4 px-4">
           <div className="max-w-[1140px] mx-auto">
             <div className="flex flex-wrap justify-evenly items-center gap-y-3 gap-x-2">
-              <p className="text-[17px] m-0">Onafhankelijk advies</p>
+              <p className="text-[17px] m-0">Onafhankelijk hypotheekadvies</p>
               <span className="w-1.5 h-1.5 rounded-full bg-white/70 shrink-0 hidden sm:block" aria-hidden />
               <p className="text-[17px] m-0">Zakelijk & particulier</p>
               <span className="w-1.5 h-1.5 rounded-full bg-white/70 shrink-0 hidden sm:block" aria-hidden />
               <p className="text-[17px] m-0">Online & videobellen</p>
               <span className="w-1.5 h-1.5 rounded-full bg-white/70 shrink-0 hidden sm:block" aria-hidden />
-              <p className="text-[17px] m-0">Geen verborgen kosten</p>
+              <p className="text-[17px] m-0">Volledige transparantie over kosten.</p>
             </div>
           </div>
         </section>

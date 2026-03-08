@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useActionState } from "react";
 import { submitNewsletterForm } from "@/app/contact/actions";
 
@@ -46,6 +47,13 @@ export default function NewsletterForm({ source = "footer", variant = "footer", 
           {isPending ? "Bezig…" : "Inschrijven"}
         </button>
       </form>
+      <p className={`mt-2 text-white/70 text-xs m-0 ${isFooter ? "max-w-sm" : ""}`}>
+        Door u in te schrijven gaat u akkoord met onze{" "}
+        <Link href="/privacy" className="text-white/90 hover:text-white underline">
+          privacyverklaring
+        </Link>
+        .
+      </p>
       {state.message && (
         <p
           className={`mt-2 text-[15px] m-0 ${state.success ? "text-white/90" : "text-white/80"}`}

@@ -6,6 +6,7 @@ import RenteBerekenen from "../components/RenteBerekenen";
 import BankLogosCarousel from "../components/BankLogosCarousel";
 import AfspraakMakenForm from "../components/AfspraakMakenForm";
 import HypotheekChecklistForm from "../components/HypotheekChecklistForm";
+import FaqSection from "../components/FaqSection";
 
 export const metadata = {
   title: "Hypotheken | Haruna Hypotheek- en pensioenadvies",
@@ -50,7 +51,7 @@ export default function HypothekenPage() {
                   Hypotheken – persoonlijk advies op maat
                 </h1>
                 <p className="mt-5 text-nbg-blue/80 text-[17px] lg:text-lg leading-relaxed max-w-xl">
-                  Bereken uw maximale hypotheek, vergelijk rentestanden en plan een vrijblijvend videogesprek. Onafhankelijk adviseur, erkend door AFM – online geregeld, makkelijk en snel.
+                  Bereken uw maximale hypotheek, vergelijk rentestanden en plan een vrijblijvend videogesprek. Onafhankelijk adviseur, vergunninghouder AFM – online via videobellen – persoonlijk, makkelijk en snel.
                 </p>
                 <div className="mt-8 flex flex-wrap gap-4">
                   <Link
@@ -94,6 +95,10 @@ export default function HypothekenPage() {
                 </ul>
                 <HypotheekChecklistForm />
                 <p className="text-nbg-blue/60 text-xs m-0 mt-3">Gratis, direct in uw mailbox. Geen spam.</p>
+                <p className="text-nbg-blue/60 text-xs m-0 mt-2">
+                  Door uw e-mail in te vullen gaat u akkoord met onze{" "}
+                  <Link href="/privacy" className="text-nbg-green hover:underline">privacyverklaring</Link>.
+                </p>
               </div>
             </div>
           </div>
@@ -103,15 +108,15 @@ export default function HypothekenPage() {
         <section className="bg-nbg-green text-white py-4 px-4">
           <div className="max-w-[1140px] mx-auto">
             <div className="flex flex-wrap justify-evenly items-center gap-y-3 gap-x-2">
-              <p className="text-[17px] m-0">Onafhankelijk advies</p>
+              <p className="text-[17px] m-0">Onafhankelijk hypotheekadvies</p>
               <span className="w-1.5 h-1.5 rounded-full bg-white/70 shrink-0 hidden sm:block" aria-hidden />
-              <p className="text-[17px] m-0">Alle banken</p>
+              <p className="text-[17px] m-0">Groot aantal geldverstrekkers</p>
               <span className="w-1.5 h-1.5 rounded-full bg-white/70 shrink-0 hidden sm:block" aria-hidden />
-              <p className="text-[17px] m-0">Erkend door AFM</p>
+              <p className="text-[17px] m-0">Vergunninghouder AFM</p>
               <span className="w-1.5 h-1.5 rounded-full bg-white/70 shrink-0 hidden sm:block" aria-hidden />
               <p className="text-[17px] m-0">Online videobellen</p>
               <span className="w-1.5 h-1.5 rounded-full bg-white/70 shrink-0 hidden sm:block" aria-hidden />
-              <p className="text-[17px] m-0">Geen verborgen kosten</p>
+              <p className="text-[17px] m-0">Volledige transparantie over kosten.</p>
             </div>
           </div>
         </section>
@@ -158,7 +163,7 @@ export default function HypothekenPage() {
               </span>
               <span className="inline-flex items-center gap-2 py-2 px-4 rounded-full bg-nbg-lighter-green/80 text-nbg-blue text-[14px] font-medium">
                 <svg className="w-4 h-4 text-nbg-green" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" /></svg>
-                Erkend door AFM
+                Vergunninghouder AFM
               </span>
               <span className="inline-flex items-center gap-2 py-2 px-4 rounded-full bg-nbg-lighter-green/80 text-nbg-blue text-[14px] font-medium">
                 <svg className="w-4 h-4 text-nbg-green" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" /></svg>
@@ -212,6 +217,8 @@ export default function HypothekenPage() {
             </ul>
           </div>
         </section>
+
+        <FaqSection />
 
         {/* Contact – Harm Jan Schouwstra */}
         <section className="pt-12 pb-6 lg:pt-14 lg:pb-8 bg-white">

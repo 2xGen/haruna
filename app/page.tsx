@@ -58,17 +58,17 @@ export default function HomePage() {
         <section className="bg-nbg-green text-white py-4 px-4">
           <div className="max-w-[1140px] mx-auto">
             <div className="flex flex-wrap justify-evenly items-center gap-y-3 gap-x-2">
-              <p className="text-[17px] m-0">Onafhankelijk advies</p>
-              <span className="w-1.5 h-1.5 rounded-full bg-nbg-primary shrink-0 hidden sm:block" aria-hidden />
+              <p className="text-[17px] m-0">Onafhankelijk hypotheekadvies</p>
+              <span className="w-1.5 h-1.5 rounded-full bg-white/70 shrink-0 hidden sm:block" aria-hidden />
               <p className="text-[17px] m-0">100% transparant</p>
-              <span className="w-1.5 h-1.5 rounded-full bg-nbg-primary shrink-0 hidden sm:block" aria-hidden />
+              <span className="w-1.5 h-1.5 rounded-full bg-white/70 shrink-0 hidden sm:block" aria-hidden />
               <p className="text-[17px] m-0">Meer dan 30 jaar ervaring</p>
-              <span className="w-1.5 h-1.5 rounded-full bg-nbg-primary shrink-0 hidden sm:block" aria-hidden />
+              <span className="w-1.5 h-1.5 rounded-full bg-white/70 shrink-0 hidden sm:block" aria-hidden />
               <p className="text-[17px] m-0">Online &amp; videobellen</p>
-              <span className="w-1.5 h-1.5 rounded-full bg-nbg-primary shrink-0 hidden sm:block" aria-hidden />
+              <span className="w-1.5 h-1.5 rounded-full bg-white/70 shrink-0 hidden sm:block" aria-hidden />
               <p className="text-[17px] m-0">Gecertificeerd adviseur</p>
-              <span className="w-1.5 h-1.5 rounded-full bg-nbg-primary shrink-0 hidden sm:block" aria-hidden />
-              <p className="text-[17px] m-0">Geen verborgen kosten</p>
+              <span className="w-1.5 h-1.5 rounded-full bg-white/70 shrink-0 hidden sm:block" aria-hidden />
+              <p className="text-[17px] m-0">Volledige transparantie over kosten.</p>
             </div>
           </div>
         </section>
@@ -120,7 +120,7 @@ export default function HomePage() {
                   </h2>
                 </div>
                 <p className="text-nbg-blue/85 text-[17px] leading-relaxed mb-4 flex-1">
-                  Ontdek wat u kunt lenen en plan een vrijblijvend videogesprek. Onafhankelijk en transparant advies – online geregeld, makkelijk en snel.
+                  Ontdek wat u kunt lenen en plan een vrijblijvend videogesprek. Onafhankelijk en transparant advies – online via videobellen – persoonlijk, makkelijk en snel.
                 </p>
                 <div className="mt-auto pt-6 flex flex-col sm:flex-row gap-3">
                   <Link
@@ -160,7 +160,7 @@ export default function HomePage() {
                 <svg className="w-4 h-4 shrink-0 text-nbg-green" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden>
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" />
                 </svg>
-                Erkend door AFM
+                Vergunninghouder AFM
               </div>
               <div className="inline-flex items-center gap-2 py-2 px-4 rounded-full bg-nbg-lighter-green/80 text-nbg-blue text-[14px] font-medium">
                 <svg className="w-4 h-4 shrink-0 text-nbg-green" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden>
@@ -183,7 +183,7 @@ export default function HomePage() {
           <div className="max-w-[1140px] mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8 lg:gap-12 text-center">
               <div>
-                <p className="text-white text-3xl lg:text-4xl font-bold m-0 tracking-tight">500+</p>
+                <p className="text-white text-3xl lg:text-4xl font-bold m-0 tracking-tight">800+</p>
                 <p className="text-white/80 text-[15px] m-0 mt-2">Klanten geholpen</p>
               </div>
               <div>
@@ -195,8 +195,8 @@ export default function HomePage() {
                 <p className="text-white/80 text-[15px] m-0 mt-2">Sterren beoordeling</p>
               </div>
               <div>
-                <p className="text-white text-3xl lg:text-4xl font-bold m-0 tracking-tight">100%</p>
-                <p className="text-white/80 text-[15px] m-0 mt-2">Onafhankelijk advies</p>
+                <p className="text-white text-3xl lg:text-4xl font-bold m-0 tracking-tight">Onafhankelijk</p>
+                <p className="text-white/80 text-[15px] m-0 mt-2">hypotheekadvies</p>
               </div>
             </div>
           </div>

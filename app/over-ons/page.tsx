@@ -70,17 +70,17 @@ export default function OverOnsPage() {
         <section className="bg-nbg-green text-white py-4 px-4">
           <div className="max-w-[1140px] mx-auto">
             <div className="flex flex-wrap justify-evenly items-center gap-y-3 gap-x-2">
-              <p className="text-[17px] m-0">Onafhankelijk advies</p>
+              <p className="text-[17px] m-0">Onafhankelijk hypotheekadvies</p>
               <span className="w-1.5 h-1.5 rounded-full bg-white/70 shrink-0 hidden sm:block" aria-hidden />
               <p className="text-[17px] m-0">SEH Erkend Financieel Adviseur</p>
               <span className="w-1.5 h-1.5 rounded-full bg-white/70 shrink-0 hidden sm:block" aria-hidden />
-              <p className="text-[17px] m-0">Erkend door AFM</p>
+              <p className="text-[17px] m-0">Vergunninghouder AFM</p>
               <span className="w-1.5 h-1.5 rounded-full bg-white/70 shrink-0 hidden sm:block" aria-hidden />
               <p className="text-[17px] m-0">Meer dan 30 jaar ervaring</p>
               <span className="w-1.5 h-1.5 rounded-full bg-white/70 shrink-0 hidden sm:block" aria-hidden />
               <p className="text-[17px] m-0">Online & videobellen</p>
               <span className="w-1.5 h-1.5 rounded-full bg-white/70 shrink-0 hidden sm:block" aria-hidden />
-              <p className="text-[17px] m-0">Geen verborgen kosten</p>
+              <p className="text-[17px] m-0">Volledige transparantie over kosten.</p>
             </div>
           </div>
         </section>
@@ -210,7 +210,7 @@ export default function OverOnsPage() {
                     <svg className="w-4 h-4 shrink-0 text-nbg-green" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden>
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" />
                     </svg>
-                    Erkend door AFM
+                    Vergunninghouder AFM
                   </span>
                   <span className="inline-flex items-center gap-2 py-2 px-4 rounded-full bg-nbg-lighter-green/80 text-nbg-blue text-[14px] font-medium">
                     <svg className="w-4 h-4 shrink-0 text-nbg-green" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden>

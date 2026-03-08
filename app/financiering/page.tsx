@@ -18,7 +18,7 @@ const FINANCIERING_GUIDES = [
   },
   {
     title: "Particuliere financiering",
-    description: "Extra financiële ruimte voor een auto, studie, verbouwing of iets anders? Wij kijken mee wat past bij uw situatie.",
+    description: "Extra financiële ruimte – bijvoorbeeld voor een verbouwing, studie of andere grote uitgaven. Wij kijken mee wat past bij uw situatie.",
     href: "#particulier",
     image: null,
   },
@@ -45,7 +45,8 @@ export default function FinancieringPage() {
                 <h1 className="text-nbg-blue text-3xl sm:text-4xl lg:text-5xl xl:text-[3rem] font-bold tracking-tight max-w-2xl">
                   Financiering – particulier en zakelijk
                 </h1>
-                <p className="mt-5 text-nbg-blue/80 text-[17px] lg:text-lg leading-relaxed max-w-xl">
+                <p className="mt-4 text-nbg-primary font-semibold text-[15px] m-0">Let op! Geld lenen kost geld.</p>
+                <p className="mt-4 text-nbg-blue/80 text-[17px] lg:text-lg leading-relaxed max-w-xl">
                   Kunt u wel wat extra hulp gebruiken bij uw financiën? Wij adviseren u graag – voor een woning, auto, studie, of voor uw onderneming. Helder, op maat en zonder gedoe.
                 </p>
                 <div className="mt-8 flex flex-wrap gap-4">
@@ -100,13 +101,13 @@ export default function FinancieringPage() {
         <section className="bg-nbg-green text-white py-4 px-4">
           <div className="max-w-[1140px] mx-auto">
             <div className="flex flex-wrap justify-evenly items-center gap-y-3 gap-x-2">
-              <p className="text-[17px] m-0">Onafhankelijk advies</p>
+              <p className="text-[17px] m-0">Onafhankelijk financieel advies</p>
               <span className="w-1.5 h-1.5 rounded-full bg-white/70 shrink-0 hidden sm:block" aria-hidden />
               <p className="text-[17px] m-0">Particulier & zakelijk</p>
               <span className="w-1.5 h-1.5 rounded-full bg-white/70 shrink-0 hidden sm:block" aria-hidden />
               <p className="text-[17px] m-0">Online & videobellen</p>
               <span className="w-1.5 h-1.5 rounded-full bg-white/70 shrink-0 hidden sm:block" aria-hidden />
-              <p className="text-[17px] m-0">Geen verborgen kosten</p>
+              <p className="text-[17px] m-0">Volledige transparantie in kosten.</p>
             </div>
           </div>
         </section>
@@ -139,7 +140,7 @@ export default function FinancieringPage() {
                   <li className="flex items-start gap-3">
                     <span className="w-1.5 h-1.5 rounded-full bg-nbg-green shrink-0 mt-2" aria-hidden />
                     <span>
-                      <strong className="text-nbg-blue">Extra financiële behoefte</strong> – Studie van uw kind, een boot, een reis of iets anders? Wij kijken met u mee naar de mogelijkheden, zodat u met een gerust hart kunt genieten.
+                      <strong className="text-nbg-blue">Extra financiële ruimte</strong> – Bijvoorbeeld voor een verbouwing, studie of andere grote uitgaven. Wij kijken met u mee naar de mogelijkheden die bij uw situatie passen.
                     </span>
                   </li>
                 </ul>
