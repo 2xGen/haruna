@@ -153,7 +153,7 @@ export default function PensioenPage() {
         </section>
 
         {/* Voor werkgevers en werknemers */}
-        <section id="werkgevers" className="py-14 lg:py-20 bg-white scroll-mt-20">
+        <section id="werkgevers" className="py-14 lg:py-20 bg-nbg-lighter-green scroll-mt-20">
           <div className="max-w-[1140px] mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14">
               <div className="lg:col-span-7">
@@ -201,7 +201,7 @@ export default function PensioenPage() {
         </section>
 
         {/* Voor ondernemers (DGA) */}
-        <section id="dga" className="py-14 lg:py-20 bg-nbg-lighter-green scroll-mt-20">
+        <section id="dga" className="py-14 lg:py-20 bg-white scroll-mt-20">
           <div className="max-w-[1140px] mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14">
               <div className="lg:col-span-7">
@@ -249,7 +249,7 @@ export default function PensioenPage() {
         </section>
 
         {/* Rond pensionering */}
-        <section id="pensionering" className="py-14 lg:py-20 bg-white scroll-mt-20">
+        <section id="pensionering" className="py-14 lg:py-20 bg-nbg-lighter-green scroll-mt-20">
           <div className="max-w-[1140px] mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14">
               <div className="lg:col-span-7">
@@ -303,6 +303,10 @@ export default function PensioenPage() {
               <span className="inline-flex items-center gap-2 py-2 px-4 rounded-full bg-nbg-lighter-green/80 text-nbg-blue text-[14px] font-medium">
                 <svg className="w-4 h-4 text-nbg-green" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" /></svg>
                 WFT pensioenadvisering
+              </span>
+              <span className="inline-flex items-center gap-2 py-2 px-4 rounded-full bg-nbg-lighter-green/80 text-nbg-blue text-[14px] font-medium">
+                <svg className="w-4 h-4 text-nbg-green" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" /></svg>
+                Groot-aanbieders pensioenadvies
               </span>
             </div>
           </div>
