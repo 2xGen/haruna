@@ -31,10 +31,10 @@ export default function PensioenPage() {
               <div>
                 <p className="text-nbg-primary font-semibold text-sm uppercase tracking-wider mb-3">Pensioen</p>
                 <h1 className="text-nbg-blue text-3xl sm:text-4xl lg:text-5xl xl:text-[3rem] font-bold tracking-tight max-w-2xl">
-                  Pensioen – advies voor uw inkomen later
+                  Aanvullend pensioen – advies voor uw inkomen later
                 </h1>
                 <p className="mt-5 text-nbg-blue/80 text-[17px] lg:text-lg leading-relaxed max-w-xl">
-                  Past uw pensioen nog bij uw plannen? Is uw voorziening voldoende? Wij helpen u graag in de complexiteit van pensioen – voor werkgevers, werknemers en ondernemers. Vergunninghouder AFM voor pensioenadvisering.
+                  Past uw wettelijk en aanvullend pensioen nog bij uw plannen? Is uw voorziening voldoende? Wij helpen u graag in de complexiteit van pensioen – voor werkgevers, werknemers en ondernemers. Vergunninghouder AFM voor pensioenadvisering.
                 </p>
                 <div className="mt-8 flex flex-wrap gap-4">
                   <Link
@@ -47,6 +47,8 @@ export default function PensioenPage() {
                 </div>
                 <p className="mt-8 text-nbg-blue/70 text-sm">
                   Snel naar:{" "}
+                  <Link href="#extra-opbouwen" className="text-nbg-green font-medium hover:underline">Extra opbouwen</Link>
+                  {" · "}
                   <Link href="#werkgevers" className="text-nbg-green font-medium hover:underline">Werkgevers & werknemers</Link>
                   {" · "}
                   <Link href="#dga" className="text-nbg-green font-medium hover:underline">Ondernemers (DGA)</Link>
@@ -60,6 +62,10 @@ export default function PensioenPage() {
                   Vragen over uw pensioen? Plan een gesprek – we kijken samen of uw voorziening nog past bij uw wensen en plannen.
                 </p>
                 <ul className="space-y-1.5 mb-5 text-nbg-blue/85 text-sm">
+                  <li className="flex items-center gap-2">
+                    <span className="w-1.5 h-1.5 rounded-full bg-nbg-green shrink-0" aria-hidden />
+                    Extra opbouwen – banksparen, nieuwe lijfrente
+                  </li>
                   <li className="flex items-center gap-2">
                     <span className="w-1.5 h-1.5 rounded-full bg-nbg-green shrink-0" aria-hidden />
                     Werkgevers & werknemers – collectieve regelingen
@@ -95,6 +101,53 @@ export default function PensioenPage() {
               <p className="text-[17px] m-0">Online & videobellen</p>
               <span className="w-1.5 h-1.5 rounded-full bg-white/70 shrink-0 hidden sm:block" aria-hidden />
               <p className="text-[17px] m-0">Volledige transparantie over kosten.</p>
+            </div>
+          </div>
+        </section>
+
+        {/* Extra pensioen opbouwen – banksparen, nieuwe lijfrente */}
+        <section id="extra-opbouwen" className="py-14 lg:py-20 bg-white scroll-mt-20">
+          <div className="max-w-[1140px] mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14">
+              <div className="lg:col-span-7">
+                <div className="border-l-4 border-nbg-green pl-5 mb-6">
+                  <h2 className="text-nbg-blue text-2xl lg:text-3xl font-bold m-0">Extra pensioen opbouwen</h2>
+                </div>
+                <p className="text-nbg-blue/85 text-[17px] leading-relaxed mb-6">
+                  Wilt u naast uw werk- en AOW-pensioen extra opbouwen voor later? Wij richten ons graag op iedereen die bewust wil sparen voor aanvullend pensioen. Dat kan via <strong className="text-nbg-blue">banksparen</strong> of de <strong className="text-nbg-blue">nieuwe lijfrente</strong>: uw inleg is binnen de fiscale kaders aftrekbaar, zodat u belastingvoordeel hebt terwijl u opbouwt.
+                </p>
+                <p className="text-nbg-blue/85 text-[17px] leading-relaxed mb-6">
+                  Haruna is adviseur voor de grote spelers op de markt. Wij adviseren over producten van onder meer <strong className="text-nbg-blue">Brand New Day</strong>, <strong className="text-nbg-blue">Nationale Nederlanden</strong> en <strong className="text-nbg-blue">ASR</strong>. We kijken met u mee welk aanbod het beste past bij uw situatie en uw wensen voor later.
+                </p>
+                <ul className="space-y-2 text-nbg-blue/85 text-[17px]">
+                  <li className="flex items-start gap-2">
+                    <span className="w-1.5 h-1.5 rounded-full bg-nbg-green shrink-0 mt-2" aria-hidden />
+                    Banksparen en nieuwe lijfrente – fiscaal aftrekbare inleg
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="w-1.5 h-1.5 rounded-full bg-nbg-green shrink-0 mt-2" aria-hidden />
+                    Advies bij aanbieders zoals Brand New Day, Nationale Nederlanden, ASR
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="w-1.5 h-1.5 rounded-full bg-nbg-green shrink-0 mt-2" aria-hidden />
+                    Keuze en inrichting van een regeling op maat
+                  </li>
+                </ul>
+              </div>
+              <div className="lg:col-span-5 flex items-start">
+                <div className="bg-nbg-lighter-green/60 rounded-2xl p-6 border border-nbg-light-gray/50 w-full">
+                  <p className="text-nbg-blue font-semibold text-[15px] m-0 mb-2">Advies op maat</p>
+                  <p className="text-nbg-blue/80 text-[15px] m-0 mb-4">
+                    Wilt u weten hoe u fiscaal voordelig extra kunt opbouwen? Plan een gesprek – we rekenen het graag met u door. Een berekening is zo gemaakt via een afspraak, of vraag informatie aan via mail of de app.
+                  </p>
+                  <Link
+                    href="/contact"
+                    className="inline-flex items-center justify-center gap-2 rounded-lg border-2 border-nbg-primary text-nbg-primary font-semibold text-[15px] px-5 py-3 w-full hover:bg-nbg-primary hover:text-white transition-colors"
+                  >
+                    Afspraak maken
+                  </Link>
+                </div>
+              </div>
             </div>
           </div>
         </section>

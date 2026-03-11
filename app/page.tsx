@@ -5,8 +5,11 @@ import Footer from "./components/Footer";
 import BankLogosCarousel from "./components/BankLogosCarousel";
 import FaqSection from "./components/FaqSection";
 import TestimonialsSection from "./components/TestimonialsSection";
+import ArticleCard from "./nieuws/ArticleCard";
+import { getFeaturedArticles } from "./nieuws/articles-data";
 
 export default function HomePage() {
+  const featured = getFeaturedArticles();
   return (
     <>
       <Header />
@@ -204,85 +207,29 @@ export default function HomePage() {
 
         <div id="sticky-cta-sentinel" className="h-0 w-full" aria-hidden />
 
-        {/* Uitgelichte artikelen – light green bg, 3-column posts */}
-        <section className="bg-nbg-lighter-green py-12 lg:py-16">
-          <div className="max-w-[1140px] mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="flex flex-wrap justify-between items-end gap-4 mb-8">
-              <h2 className="text-nbg-blue text-2xl font-bold m-0">
-                Uitgelichte artikelen
-              </h2>
-              <Link href="/nieuws" className="text-nbg-primary font-medium text-[17px] hover:underline inline-flex items-center gap-1">
-                Bekijk meer artikelen
-                <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 320 512"><path d="M305 239c9.4 9.4 9.4 24.6 0 33.9L113 465c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l175-175L79 81c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L305 239z" /></svg>
-              </Link>
+        {/* Uitgelichte artikelen – same data as /nieuws (articles-data.ts) */}
+        {featured.length > 0 && (
+          <section className="bg-nbg-lighter-green py-12 lg:py-16">
+            <div className="max-w-[1140px] mx-auto px-4 sm:px-6 lg:px-8">
+              <div className="flex flex-wrap justify-between items-end gap-4 mb-8">
+                <h2 className="text-nbg-blue text-2xl font-bold m-0">
+                  Uitgelichte artikelen
+                </h2>
+                <Link href="/nieuws" className="text-nbg-primary font-medium text-[17px] hover:underline inline-flex items-center gap-1">
+                  Bekijk meer artikelen
+                  <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 320 512"><path d="M305 239c9.4 9.4 9.4 24.6 0 33.9L113 465c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l175-175L79 81c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L305 239z" /></svg>
+                </Link>
+              </div>
+              <ul className="grid grid-cols-1 md:grid-cols-3 gap-6 list-none p-0 m-0 items-stretch">
+                {featured.map((article) => (
+                  <li key={article.slug} className="flex">
+                    <ArticleCard article={article} />
+                  </li>
+                ))}
+              </ul>
             </div>
-            <ul className="grid grid-cols-1 md:grid-cols-3 gap-6 list-none p-0 m-0">
-              <li>
-                <article className="bg-white rounded-2xl overflow-hidden shadow-rounded border border-nbg-light-gray/50">
-                  <div className="aspect-[2/1] bg-nbg-light-gray overflow-hidden">
-                    <img src="https://soaacpusdhyxwucjhhpy.supabase.co/storage/v1/object/public/haruna/samen%20wonen.jpg" alt="Samenwonen: wat moet u regelen?" className="w-full h-full object-cover" />
-                  </div>
-                  <div className="p-6">
-                    <time className="text-nbg-blue/50 text-[15px]">26-02-26</time>
-                    <h3 className="mt-2 text-nbg-blue text-lg font-bold leading-snug">
-                      <Link href="/nieuws/samenwonen-wat-moet-u-regelen" className="text-nbg-blue hover:text-nbg-green">
-                        Samenwonen: wat moet u regelen?
-                      </Link>
-                    </h3>
-                    <p className="mt-2 text-nbg-blue/80 text-[17px] line-clamp-2">
-                      Woont u al samen of gaat dit binnenkort gebeuren? Dan is het verstandig om een aantal zaken te regelen…
-                    </p>
-                    <Link href="/nieuws/samenwonen-wat-moet-u-regelen" className="inline-block mt-3 text-nbg-green font-medium text-[17px] hover:underline">
-                      Lees meer
-                    </Link>
-                  </div>
-                </article>
-              </li>
-              <li>
-                <article className="bg-white rounded-2xl overflow-hidden shadow-rounded border border-nbg-light-gray/50">
-                  <div className="aspect-[2/1] bg-nbg-light-gray overflow-hidden">
-                    <img src="https://soaacpusdhyxwucjhhpy.supabase.co/storage/v1/object/public/haruna/huis%20kopen.jpg" alt="Een huis kopen als 56-plusser wordt een stuk makkelijker!" className="w-full h-full object-cover" />
-                  </div>
-                  <div className="p-6">
-                    <time className="text-nbg-blue/50 text-[15px]">18-12-25</time>
-                    <h3 className="mt-2 text-nbg-blue text-lg font-bold leading-snug">
-                      <Link href="/nieuws/huis-kopen-56-plusser" className="text-nbg-blue hover:text-nbg-green">
-                        Een huis kopen als 56-plusser wordt een stuk makkelijker!
-                      </Link>
-                    </h3>
-                    <p className="mt-2 text-nbg-blue/80 text-[17px] line-clamp-2">
-                      ABN Amro past de hypotheekvoorwaarden aan, waardoor senioren weer makkelijker een huis kunnen kopen…
-                    </p>
-                    <Link href="/nieuws/huis-kopen-56-plusser" className="inline-block mt-3 text-nbg-green font-medium text-[17px] hover:underline">
-                      Lees meer
-                    </Link>
-                  </div>
-                </article>
-              </li>
-              <li>
-                <article className="bg-white rounded-2xl overflow-hidden shadow-rounded border border-nbg-light-gray/50">
-                  <div className="aspect-[2/1] bg-nbg-light-gray overflow-hidden">
-                    <img src="https://soaacpusdhyxwucjhhpy.supabase.co/storage/v1/object/public/haruna/pensioen.jpg" alt="Pensioen uitstellen: wat zijn de gevolgen?" className="w-full h-full object-cover" />
-                  </div>
-                  <div className="p-6">
-                    <time className="text-nbg-blue/50 text-[15px]">27-11-25</time>
-                    <h3 className="mt-2 text-nbg-blue text-lg font-bold leading-snug">
-                      <Link href="/nieuws/pensioen-uitstellen" className="text-nbg-blue hover:text-nbg-green">
-                        Pensioen uitstellen: wat zijn de gevolgen?
-                      </Link>
-                    </h3>
-                    <p className="mt-2 text-nbg-blue/80 text-[17px] line-clamp-2">
-                      Overweegt u om later met pensioen te gaan? Wij zetten de voor- en nadelen op een rij…
-                    </p>
-                    <Link href="/nieuws/pensioen-uitstellen" className="inline-block mt-3 text-nbg-green font-medium text-[17px] hover:underline">
-                      Lees meer
-                    </Link>
-                  </div>
-                </article>
-              </li>
-            </ul>
-          </div>
-        </section>
+          </section>
+        )}
 
         <TestimonialsSection />
 
