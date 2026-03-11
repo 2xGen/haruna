@@ -28,10 +28,11 @@ const HYPOTHEEK_GUIDES = [
     image: "https://soaacpusdhyxwucjhhpy.supabase.co/storage/v1/object/public/haruna/huis%20kopen.jpg",
   },
   {
-    title: "Hypotheek types: annuïtair vs. lineair",
-    description: "Het verschil tussen annuïtair en lineair aflossen. Welke past bij uw situatie?",
-    href: "/hypotheken/hypotheek-berekenen",
-    image: null,
+    title: "Annuïtair vs. lineair aflossen",
+    description: "Het verschil tussen annuïtair en lineair aflossen. Welke hypotheekvorm past bij uw situatie? Voor- en nadelen op een rij.",
+    href: "/nieuws/annuitair-vs-lineair-aflossen",
+    image:
+      "https://soaacpusdhyxwucjhhpy.supabase.co/storage/v1/object/public/haruna/Het%20verschil%20tussen%20annuitair%20en%20lineair%20aflossen..png",
   },
 ];
 

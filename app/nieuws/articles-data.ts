@@ -23,63 +23,89 @@ export const ARTICLES: Article[] = [
   },
   {
     slug: "huis-kopen-56-plusser",
-    title: "Een huis kopen als 56-plusser wordt een stuk makkelijker!",
+    title: "Een huis kopen als 56-plusser",
     description:
-      "ABN Amro past de hypotheekvoorwaarden aan, waardoor senioren weer makkelijker een huis kunnen kopen.",
-    date: "18-12-25",
+      "Hypotheekmogelijkheden voor 56-plussers. Lees over pensioeninkomen, overwaarde en verhuizen op latere leeftijd.",
+    date: "06-03-26",
     image: "https://soaacpusdhyxwucjhhpy.supabase.co/storage/v1/object/public/haruna/huis%20kopen.jpg",
     pillar: "hypotheken",
     href: "/nieuws/huis-kopen-56-plusser",
   },
   {
-    slug: "hypotheek-berekenen",
-    title: "Hypotheek types: annuïtair vs. lineair",
+    slug: "annuitair-vs-lineair-aflossen",
+    title: "Annuïtair vs. lineair aflossen",
     description:
-      "Het verschil tussen annuïtair en lineair aflossen. Welke past bij uw situatie? Bereken uw maandlasten.",
-    date: "",
-    image: null,
+      "Het verschil tussen annuïtair en lineair aflossen. Welke hypotheekvorm past bij uw situatie? Voor- en nadelen op een rij.",
+    date: "08-03-26",
+    image:
+      "https://soaacpusdhyxwucjhhpy.supabase.co/storage/v1/object/public/haruna/Het%20verschil%20tussen%20annuitair%20en%20lineair%20aflossen..png",
     pillar: "hypotheken",
-    href: "/hypotheken/hypotheek-berekenen",
+    href: "/nieuws/annuitair-vs-lineair-aflossen",
   },
   {
-    slug: "verzekeringen-zakelijk",
+    slug: "welke-verzekeringen-heeft-uw-onderneming-nodig",
     title: "Welke verzekeringen heeft uw onderneming nodig?",
     description:
       "Als ondernemer wilt u uw bedrijf goed beschermen. Lees welke risico's er spelen en welke verzekeringen daarbij passen.",
-    date: "",
-    image: null,
+    date: "10-03-26",
+    image:
+      "https://soaacpusdhyxwucjhhpy.supabase.co/storage/v1/object/public/haruna/Welke%20verzekeringen%20heeft%20uw%20onderneming%20nodig.png",
     pillar: "verzekeringen",
-    href: "/verzekeringen#zakelijk",
+    href: "/nieuws/welke-verzekeringen-heeft-uw-onderneming-nodig",
   },
   {
-    slug: "verzekeringen-hypotheek",
+    slug: "verzekeringen-bij-uw-hypotheek",
     title: "Verzekeringen bij uw hypotheek",
     description:
       "Spaar-, risico- en overlijdensverzekering. Welke verzekeringen horen bij een hypotheek en wat past bij u?",
-    date: "",
-    image: null,
+    date: "26-02-26",
+    image:
+      "https://soaacpusdhyxwucjhhpy.supabase.co/storage/v1/object/public/haruna/Verzekeringen%20bij%20uw%20hypotheek.png",
     pillar: "verzekeringen",
-    href: "/verzekeringen#hypotheek",
+    href: "/nieuws/verzekeringen-bij-uw-hypotheek",
   },
   {
-    slug: "verzekeringen-particulier",
-    title: "Woonhuis, inboedel en meer",
+    slug: "wat-kunt-u-als-particulier-verzekeren",
+    title: "Wat kunt u als particulier verzekeren?",
     description:
-      "Wat kunt u als particulier verzekeren? Van opstal en inboedel tot aansprakelijkheid, auto en reizen.",
-    date: "",
-    image: null,
+      "Van opstal en inboedel tot aansprakelijkheid, auto en reizen.",
+    date: "24-02-26",
+    image:
+      "https://soaacpusdhyxwucjhhpy.supabase.co/storage/v1/object/public/haruna/Wat%20kunt%20u%20als%20particulier%20verzekeren.png",
     pillar: "verzekeringen",
-    href: "/verzekeringen#particulier",
+    href: "/nieuws/wat-kunt-u-als-particulier-verzekeren",
   },
   {
     slug: "pensioen-uitstellen",
     title: "Pensioen uitstellen: wat zijn de gevolgen?",
     description:
-      "Overweegt u om later met pensioen te gaan? Wij zetten de voor- en nadelen op een rij.",
-    date: "27-11-25",
+      "Overweegt u om later met pensioen te gaan? Dit kan financieel en persoonlijk voordelen bieden, maar er zijn ook aandachtspunten.",
+    date: "04-03-26",
     image: "https://soaacpusdhyxwucjhhpy.supabase.co/storage/v1/object/public/haruna/pensioen.jpg",
     pillar: "pensioen",
     href: "/nieuws/pensioen-uitstellen",
+  },
+  {
+    slug: "pensioen-voor-werkgevers-en-werknemers",
+    title: "Pensioen voor werkgevers en werknemers",
+    description:
+      "Collectieve regelingen, communicatie en beheer. Wij helpen u de pensioenvoorziening goed in te richten.",
+    date: "10-02-26",
+    image:
+      "https://soaacpusdhyxwucjhhpy.supabase.co/storage/v1/object/public/haruna/Pensioen%20voor%20werkgevers%20en%20werknemers.png",
+    pillar: "pensioen",
+    href: "/nieuws/pensioen-voor-werkgevers-en-werknemers",
+  },
+  {
+    slug: "pensioen-als-ondernemer-dga",
+    title: "Pensioen als ondernemer (DGA)",
+    description:
+      "Eigen beheer, verzekerde regelingen of fiscaal-juridische vraagstukken. Advies op maat voor directeuren-grootaandeelhouders.",
+    date: "14-02-26",
+    image:
+      "https://soaacpusdhyxwucjhhpy.supabase.co/storage/v1/object/public/haruna/Pensioen%20als%20ondernemer%20DGA.png",
+    pillar: "pensioen",
+    href: "/nieuws/pensioen-als-ondernemer-dga",
   },
 ];
 

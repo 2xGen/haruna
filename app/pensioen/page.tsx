@@ -2,6 +2,7 @@ import Link from "next/link";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import AfspraakMakenForm from "../components/AfspraakMakenForm";
+import { getArticlesByPillar } from "../nieuws/articles-data";
 
 export const metadata = {
   title: "Pensioen | Haruna Hypotheek- en pensioenadvies",
@@ -9,26 +10,13 @@ export const metadata = {
     "Pensioenadvies voor werkgevers, werknemers en ondernemers. Is uw pensioen nog op maat? Wij helpen met helder advies – erkend door AFM.",
 };
 
-const PENSIOEN_GUIDES = [
-  {
-    title: "Pensioen voor werkgevers en werknemers",
-    description: "Collectieve regelingen, communicatie en beheer. Wij helpen u de pensioenvoorziening goed in te richten.",
-    href: "#werkgevers",
-    image: null,
-  },
-  {
-    title: "Pensioen als ondernemer (DGA)",
-    description: "Eigen beheer, verzekerde regelingen of fiscaal-juridische vraagstukken. Advies op maat voor directeuren-grootaandeelhouders.",
-    href: "#dga",
-    image: null,
-  },
-  {
-    title: "Rond uw pensionering",
-    description: "Pensioen rond de ingangsdatum, inkomensplanning of een second opinion. We denken graag met u mee.",
-    href: "#pensionering",
-    image: null,
-  },
-];
+/** Pensioen guides from articles data (pillar: pensioen) */
+const PENSIOEN_GUIDES = getArticlesByPillar("pensioen").map((a) => ({
+  title: a.title,
+  description: a.description,
+  href: a.href,
+  image: a.image,
+}));
 
 export default function PensioenPage() {
   return (
@@ -282,9 +270,13 @@ export default function PensioenPage() {
                 <li key={guide.title} className="flex">
                   <article className="bg-white rounded-2xl overflow-hidden shadow-[0_4px_20px_rgba(0,0,0,0.06)] border border-nbg-light-gray/50 hover:shadow-[0_6px_24px_rgba(0,0,0,0.08)] transition-shadow flex flex-col w-full">
                     <div className="aspect-[2/1] shrink-0 overflow-hidden bg-nbg-lighter-green/80">
-                      <div className="w-full h-full flex items-center justify-center">
-                        <svg className="w-12 h-12 text-nbg-green/50" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" /></svg>
-                      </div>
+                      {guide.image ? (
+                        <img src={guide.image} alt="" className="w-full h-full object-cover" />
+                      ) : (
+                        <div className="w-full h-full flex items-center justify-center">
+                          <svg className="w-12 h-12 text-nbg-green/50" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" /></svg>
+                        </div>
+                      )}
                     </div>
                     <div className="p-6 flex flex-col flex-1">
                       <h3 className="text-nbg-blue text-lg font-bold leading-snug">

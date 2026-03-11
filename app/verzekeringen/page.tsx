@@ -2,6 +2,7 @@ import Link from "next/link";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import AfspraakMakenForm from "../components/AfspraakMakenForm";
+import { getArticlesByPillar } from "../nieuws/articles-data";
 
 export const metadata = {
   title: "Verzekeringen | Haruna Hypotheek- en pensioenadvies",
@@ -9,26 +10,13 @@ export const metadata = {
     "Verzekeringen op maat voor ondernemers en particulieren. Zakelijk, hypotheek of privé – wij adviseren u graag. Ook schade melden kan eenvoudig.",
 };
 
-const VERZEKERING_GUIDES = [
-  {
-    title: "Welke verzekeringen heeft uw onderneming nodig?",
-    description: "Als ondernemer wilt u uw bedrijf goed beschermen. Lees welke risico's er spelen en welke verzekeringen daarbij passen.",
-    href: "#zakelijk",
-    image: null,
-  },
-  {
-    title: "Verzekeringen bij uw hypotheek",
-    description: "Spaar-, risico- en overlijdensverzekering. Wij leggen uit welke verzekeringen bij een hypotheek horen en wat bij u past.",
-    href: "#hypotheek",
-    image: null,
-  },
-  {
-    title: "Woonhuis, inboedel en meer",
-    description: "Wat kunt u als particulier verzekeren? Van opstal en inboedel tot aansprakelijkheid, auto en reizen – een kort overzicht.",
-    href: "#particulier",
-    image: null,
-  },
-];
+/** Verzekering guides from articles data (pillar: verzekeringen) */
+const VERZEKERING_GUIDES = getArticlesByPillar("verzekeringen").map((a) => ({
+  title: a.title,
+  description: a.description,
+  href: a.href,
+  image: a.image,
+}));
 
 export default function VerzekeringenPage() {
   return (
