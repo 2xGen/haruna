@@ -1,4 +1,4 @@
-export type Pillar = "hypotheken" | "verzekeringen" | "pensioen";
+export type Pillar = "hypotheken" | "verzekeringen" | "pensioen" | "financiering";
 
 export type Article = {
   slug: string;
@@ -107,6 +107,39 @@ export const ARTICLES: Article[] = [
     pillar: "pensioen",
     href: "/nieuws/pensioen-als-ondernemer-dga",
   },
+  {
+    slug: "zakelijke-financiering",
+    title: "Zakelijke financiering: welke mogelijkheden heeft u als ondernemer?",
+    description:
+      "Starten, investeren of tijdelijk extra ruimte: welke vormen van zakelijke financiering zijn er en waar letten financiers op?",
+    date: "12-03-26",
+    image:
+      "https://soaacpusdhyxwucjhhpy.supabase.co/storage/v1/object/public/haruna/zakelijke%20financiering.png",
+    pillar: "financiering",
+    href: "/nieuws/zakelijke-financiering",
+  },
+  {
+    slug: "particuliere-lening",
+    title: "Particuliere lening: waar moet u op letten voordat u geld leent?",
+    description:
+      "Rente, looptijd, totale kosten en betaalbaarheid. Waar u op moet letten voordat u een particuliere lening afsluit.",
+    date: "14-03-26",
+    image:
+      "https://soaacpusdhyxwucjhhpy.supabase.co/storage/v1/object/public/haruna/Particuliere%20lening.png",
+    pillar: "financiering",
+    href: "/nieuws/particuliere-lening",
+  },
+  {
+    slug: "bedrijfsauto-financieren-leasen",
+    title: "Bedrijfsauto financieren of leasen: wat zijn de verschillen?",
+    description:
+      "Kopen, financieren of leasen? Kosten, fiscale gevolgen en cashflow. Welke optie past bij uw onderneming?",
+    date: "16-03-26",
+    image:
+      "https://soaacpusdhyxwucjhhpy.supabase.co/storage/v1/object/public/haruna/Bedrijfsauto%20financieren%20of%20leasen.png",
+    pillar: "financiering",
+    href: "/nieuws/bedrijfsauto-financieren-leasen",
+  },
 ];
 
 export const PILLAR_CONFIG: Record<
@@ -128,6 +161,11 @@ export const PILLAR_CONFIG: Record<
     href: "/pensioen",
     description: "Pensioenadvies, werkgevers, ondernemers en pensionering.",
   },
+  financiering: {
+    label: "Financiering",
+    href: "/nieuws/financiering",
+    description: "Zakelijke financiering, krediet en financieringsmogelijkheden voor ondernemers.",
+  },
 };
 
 /** Number of featured articles on the main nieuws index */
@@ -139,7 +177,8 @@ export const LIST_PER_PAGE = 12;
 /** Articles per page on pillar archive */
 export const ARCHIVE_PER_PAGE = 12;
 
-const PILLARS: Pillar[] = ["hypotheken", "verzekeringen", "pensioen"];
+/** All pillar slugs in display order; tabs show only pillars that have at least one article */
+const PILLAR_ORDER: Pillar[] = ["hypotheken", "verzekeringen", "pensioen", "financiering"];
 
 /** Parse DD-MM-YY to sortable value; empty string sorts last */
 function parseDate(dateStr: string): number {
@@ -163,13 +202,18 @@ export function getAllSortedByDate(pillar?: Pillar): Article[] {
   });
 }
 
+/** Pillars that have at least one article, in display order (for tabs on /nieuws) */
 export function getPillars(): Pillar[] {
-  return PILLARS;
+  return PILLAR_ORDER.filter((p) => ARTICLES.some((a) => a.pillar === p));
 }
 
-/** Featured (most recent) articles for the hero block */
-export function getFeaturedArticles(count: number = FEATURED_COUNT): Article[] {
-  return getAllSortedByDate().slice(0, count);
+/** Pillars used for featured articles (hypotheek, pensioen, financiering only) */
+const FEATURED_PILLARS: Pillar[] = ["hypotheken", "pensioen", "financiering"];
+
+/** Featured articles for the hero block: one most-recent per featured pillar (3 total), sorted by date (newest first) */
+export function getFeaturedArticles(_count?: number): Article[] {
+  const onePerPillar: Article[] = FEATURED_PILLARS.map((pillar) => getAllSortedByDate(pillar)[0]).filter(Boolean);
+  return onePerPillar.sort((a, b) => parseDate(b.date) - parseDate(a.date));
 }
 
 export function getArticlesByPillar(pillar: Pillar): Article[] {
@@ -206,5 +250,5 @@ export function getArticlesForPillarPaginated(
 }
 
 export function isValidPillar(slug: string): slug is Pillar {
-  return PILLARS.includes(slug as Pillar);
+  return PILLAR_ORDER.includes(slug as Pillar);
 }

@@ -2,6 +2,7 @@ import Link from "next/link";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import AfspraakMakenForm from "../components/AfspraakMakenForm";
+import { getArticlesByPillar } from "../nieuws/articles-data";
 
 export const metadata = {
   title: "Financiering | Haruna Hypotheek- en pensioenadvies",
@@ -9,26 +10,14 @@ export const metadata = {
     "Financieringsadvies voor particulieren en ondernemers. Woning, auto, studie of zakelijk – wij denken met u mee. Helder en op maat.",
 };
 
-const FINANCIERING_GUIDES = [
-  {
-    title: "Een huis kopen of hypotheek",
-    description: "Wat kunt u lenen? Welke kosten komen erbij? Wij adviseren over hypotheken en begeleiden u in het hele proces.",
-    href: "/hypotheken",
-    image: null,
-  },
-  {
-    title: "Particuliere financiering",
-    description: "Extra financiële ruimte – bijvoorbeeld voor een verbouwing, studie of andere grote uitgaven. Wij kijken mee wat past bij uw situatie.",
-    href: "#particulier",
-    image: null,
-  },
-  {
-    title: "Zakelijke financiering",
-    description: "Onderneming starten, pand kopen, bedrijfsauto of rekening-courant. Wij helpen u met helder advies.",
-    href: "#zakelijk",
-    image: null,
-  },
-];
+/** Financiering guides from articles data (pillar: financiering) */
+const FINANCIERING_GUIDES = getArticlesByPillar("financiering").map((a) => ({
+  title: a.title,
+  description: a.description,
+  href: a.href,
+  image: a.image,
+  date: a.date,
+}));
 
 export default function FinancieringPage() {
   return (
@@ -228,14 +217,21 @@ export default function FinancieringPage() {
             <ul className="grid grid-cols-1 md:grid-cols-3 gap-6 list-none p-0 m-0 items-stretch">
               {FINANCIERING_GUIDES.map((guide) => (
                 <li key={guide.title} className="flex">
-                  <article className="bg-nbg-lighter-green/50 rounded-2xl overflow-hidden border border-nbg-light-gray/50 hover:shadow-[0_6px_24px_rgba(0,0,0,0.08)] transition-shadow flex flex-col w-full">
+                  <article className="bg-white rounded-2xl overflow-hidden shadow-[0_4px_20px_rgba(0,0,0,0.06)] border border-nbg-light-gray/50 hover:shadow-[0_6px_24px_rgba(0,0,0,0.08)] transition-shadow flex flex-col w-full">
                     <div className="aspect-[2/1] shrink-0 overflow-hidden bg-nbg-lighter-green/80">
-                      <div className="w-full h-full flex items-center justify-center">
-                        <svg className="w-12 h-12 text-nbg-green/50" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" /></svg>
-                      </div>
+                      {guide.image ? (
+                        <img src={guide.image} alt="" className="w-full h-full object-cover" />
+                      ) : (
+                        <div className="w-full h-full flex items-center justify-center">
+                          <svg className="w-12 h-12 text-nbg-green/50" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" /></svg>
+                        </div>
+                      )}
                     </div>
                     <div className="p-6 flex flex-col flex-1">
-                      <h3 className="text-nbg-blue text-lg font-bold leading-snug">
+                      {guide.date && (
+                        <time className="text-nbg-blue/60 text-[13px]">{guide.date}</time>
+                      )}
+                      <h3 className="text-nbg-blue text-lg font-bold leading-snug mt-1">
                         <Link href={guide.href} className="text-nbg-blue hover:text-nbg-green">
                           {guide.title}
                         </Link>

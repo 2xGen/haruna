@@ -266,6 +266,100 @@ const PENSIOEN_ALS_ONDERNEMER_DGA_FAQS = [
   },
 ];
 
+const ZAKELIJKE_FINANCIERING_FAQS = [
+  {
+    question: "Wanneer heeft een ondernemer zakelijke financiering nodig?",
+    answer:
+      "Zakelijke financiering kan nodig zijn bij investeringen zoals bedrijfsmiddelen, een bedrijfspand, uitbreiding van activiteiten of tijdelijke liquiditeitsbehoefte.",
+  },
+  {
+    question: "Wat is het verschil tussen een zakelijke lening en een rekening-courant krediet?",
+    answer:
+      "Bij een zakelijke lening ontvangt u een vast bedrag dat u in termijnen terugbetaalt. Een rekening-courant krediet geeft flexibiliteit: u kunt binnen een afgesproken limiet geld opnemen wanneer dat nodig is.",
+  },
+  {
+    question: "Wat is leasing voor ondernemers?",
+    answer:
+      "Leasing is een vorm van financiering waarbij u bijvoorbeeld een bedrijfsauto of machine gebruikt terwijl u deze in termijnen betaalt. Afhankelijk van de leasevorm wordt u uiteindelijk eigenaar of blijft de leasemaatschappij eigenaar.",
+  },
+  {
+    question: "Waar kijken banken naar bij een kredietaanvraag?",
+    answer:
+      "Banken beoordelen onder andere de financiële cijfers van uw onderneming, uw ondernemingsplan, cashflow, zekerheden en de ervaring van de ondernemer.",
+  },
+  {
+    question: "Kan een adviseur helpen bij zakelijke financiering?",
+    answer:
+      "Bij Haruna kijken we graag met u mee. We helpen bij het inzichtelijk maken van financieringsmogelijkheden, het vergelijken van opties en het voorbereiden van een financieringsaanvraag.",
+  },
+];
+
+const PARTICULIERE_LENING_FAQS = [
+  {
+    question: "Waarom zijn rente en looptijd belangrijk bij een lening?",
+    answer:
+      "De rente bepaalt hoeveel u extra betaalt bovenop het geleende bedrag. Een langere looptijd betekent vaak lagere maandlasten, maar over de hele periode meestal meer totale kosten. Kijk daarom altijd naar de combinatie van rente en looptijd.",
+  },
+  {
+    question: "Wat zijn de totale kosten van een lening?",
+    answer:
+      "Naast de rente kunnen er andere kosten zijn, zoals afsluitkosten of verzekeringen. Het wettelijke percentage voor de totale kosten (zoals het effectieve jaarpercentage) geeft een beter beeld dan alleen het rentepercentage. Vergelijk daarom altijd op totale kosten.",
+  },
+  {
+    question: "Hoe weet ik of ik de maandlasten kan betalen?",
+    answer:
+      "Maak een realistisch overzicht van uw vaste lasten en inkomen. Houd rekening met onvoorziene uitgaven. Een vuistregel is dat uw totale maandlasten voor leningen en vaste lasten niet te veel van uw inkomen mogen vragen. Bij Haruna kijken we graag met u mee naar wat betaalbaar is.",
+  },
+  {
+    question: "Wat is het verschil tussen een persoonlijke lening en een doorlopend krediet?",
+    answer:
+      "Bij een persoonlijke lening leent u een vast bedrag voor een vaste looptijd met vaste maandlasten. Bij een doorlopend krediet heeft u een kredietlimiet waarbinnen u geld kunt opnemen; u betaalt rente over het opgenomen bedrag. De eerste vorm biedt meer zekerheid, de tweede meer flexibiliteit.",
+  },
+  {
+    question: "Wat zijn de risico's van te veel lenen?",
+    answer:
+      "Te veel lenen kan leiden tot betalingsproblemen, oplopende schulden en negatieve gevolgen voor uw kredietwaardigheid. Het is belangrijk om alleen te lenen wat u nodig heeft en wat u redelijkerwijs kunt terugbetalen.",
+  },
+  {
+    question: "Kan een adviseur helpen bij een particuliere lening?",
+    answer:
+      "Bij Haruna kijken we graag met u mee. We helpen u inzicht te krijgen in uw opties, de totale kosten en wat past bij uw situatie, zodat u een weloverwogen keuze kunt maken voordat u een lening afsluit.",
+  },
+];
+
+const BEDRIJFSAUTO_FINANCIERING_FAQS = [
+  {
+    question: "Wat is het verschil tussen kopen en financieren van een bedrijfsauto?",
+    answer:
+      "Bij kopen betaalt u de auto in één keer of uit eigen middelen; u bent direct eigenaar. Bij financieren leent u het bedrag en betaalt u in termijnen terug; u wordt eigenaar na aflossing. Financieren spreidt de uitgave maar brengt rente en vaste lasten met zich mee.",
+  },
+  {
+    question: "Wat is het verschil tussen financial lease en operational lease?",
+    answer:
+      "Bij financial lease betaalt u de auto in termijnen af en wordt u doorgaans eigenaar (of koopt u de auto aan het einde). Bij operational lease blijft de leasemaatschappij eigenaar; u rijdt de auto voor een afgesproken periode en levert hem in. Operational lease omvat vaak onderhoud en verzekering.",
+  },
+  {
+    question: "Welke fiscale aspecten gelden voor een bedrijfsauto als ondernemer?",
+    answer:
+      "Voor ondernemers gelden onder meer bijtelling bij privégebruik, aftrek van kosten (afhankelijk van de regeling) en btw. De keuze voor kopen, financial of operational lease heeft invloed op wat u kunt aftrekken en op uw bijtelling. De regels kunnen wijzigen; voor uw situatie adviseren we u graag.",
+  },
+  {
+    question: "Hoe beïnvloedt een bedrijfsauto mijn cashflow?",
+    answer:
+      "Kopen vraagt een grotere eenmalige uitgave; leasen of financieren geeft maandelijkse lasten. Operational lease houdt de investering laag maar geeft vaste maandlasten. Financial lease of lening spreidt de kosten maar verhoogt uw vaste lasten. Welke optie het beste past, hangt af van uw liquiditeit en plannen.",
+  },
+  {
+    question: "Wanneer is welke optie (kopen, leasen, financieren) passend?",
+    answer:
+      "Kopen uit eigen middelen past bij voldoende liquiditeit en geen behoefte aan spreiding. Financieren of financial lease past wanneer u de uitgave wilt spreiden en eigenaar wilt worden. Operational lease past wanneer u geen eigenaar wilt zijn, weinig onderhoud wilt en voorspelbare lasten prefereert. Bij Haruna kijken we graag met u mee wat bij uw situatie past.",
+  },
+  {
+    question: "Kan een adviseur helpen bij de keuze voor een bedrijfsauto?",
+    answer:
+      "Bij Haruna kijken we graag met u mee. We helpen u de opties, kosten en fiscale gevolgen in beeld te brengen, zodat u een weloverwogen keuze kunt maken voor uw bedrijfsauto.",
+  },
+];
+
 const CHEVRON = (
   <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 320 512">
     <path d="M305 239c9.4 9.4 9.4 24.6 0 33.9L113 465c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l175-175L79 81c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L305 239z" />
@@ -425,6 +519,33 @@ export async function generateMetadata({
       description:
         article?.description ??
         "Eigen beheer, verzekerde regelingen of fiscaal-juridische vraagstukken. Advies op maat voor directeuren-grootaandeelhouders.",
+    };
+  }
+  if (slug === "zakelijke-financiering") {
+    const article = ARTICLES.find((a) => a.slug === slug);
+    return {
+      title: `${article?.title ?? "Zakelijke financiering"} | Haruna Hypotheek- en pensioenadvies`,
+      description:
+        article?.description ??
+        "Welke mogelijkheden heeft u als ondernemer? Banklening, rekening-courant, leasing en waar financiers naar kijken.",
+    };
+  }
+  if (slug === "particuliere-lening") {
+    const article = ARTICLES.find((a) => a.slug === slug);
+    return {
+      title: `${article?.title ?? "Particuliere lening"} | Haruna Hypotheek- en pensioenadvies`,
+      description:
+        article?.description ??
+        "Rente, looptijd, totale kosten en betaalbaarheid. Waar u op moet letten voordat u een particuliere lening afsluit.",
+    };
+  }
+  if (slug === "bedrijfsauto-financieren-leasen") {
+    const article = ARTICLES.find((a) => a.slug === slug);
+    return {
+      title: `${article?.title ?? "Bedrijfsauto financieren of leasen"} | Haruna Hypotheek- en pensioenadvies`,
+      description:
+        article?.description ??
+        "Kopen, financieren of leasen? Kosten, fiscale gevolgen en cashflow. Welke optie past bij uw onderneming?",
     };
   }
   return { title: "Nieuws | Haruna Hypotheek- en pensioenadvies" };
@@ -2915,6 +3036,763 @@ export default async function NieuwsSlugPage({
               </p>
               <Link href="/pensioen" className="inline-flex items-center gap-2 text-nbg-green font-semibold text-[15px] hover:underline">
                 Naar pensioen
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>
+              </Link>
+            </div>
+
+            <p className="mt-8 text-nbg-blue/60 text-[13px]">
+              Dit artikel is bedoeld als algemene informatie en vervangt geen persoonlijk advies. Voor uw situatie kunnen andere voorwaarden gelden. Bij Haruna kijken we graag met u mee naar uw situatie.
+            </p>
+            <Link
+              href="/contact"
+              className="mt-4 inline-flex items-center gap-2 rounded-lg border-2 border-nbg-primary text-nbg-primary font-semibold text-[15px] px-5 py-2.5 hover:bg-nbg-primary hover:text-white transition-colors"
+            >
+              Afspraak maken
+            </Link>
+
+            <div className="mt-10 pt-6 border-t border-nbg-light-gray">
+              <Link href="/nieuws" className="inline-flex items-center gap-2 text-nbg-green font-semibold text-[15px] hover:underline">
+                <span className="rotate-180 inline-block">
+                  <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 320 512"><path d="M305 239c9.4 9.4 9.4 24.6 0 33.9L113 465c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l175-175L79 81c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L305 239z" /></svg>
+                </span>
+                Terug naar nieuws
+              </Link>
+            </div>
+          </article>
+        </main>
+        <Footer />
+      </>
+    );
+  }
+
+  // Article: Zakelijke financiering
+  if (slug === "zakelijke-financiering") {
+    const article = ARTICLES.find((a) => a.slug === slug);
+    const listItemFin = (children: ReactNode) => (
+      <li className="flex items-start gap-3">
+        <span className="w-1.5 h-1.5 rounded-full bg-nbg-green shrink-0 mt-2" aria-hidden />
+        <span className="text-nbg-blue/85 text-[17px] leading-relaxed">{children}</span>
+      </li>
+    );
+
+    const zakelijkeFinancieringFaqSchema = {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      mainEntity: ZAKELIJKE_FINANCIERING_FAQS.map((item) => ({
+        "@type": "Question",
+        name: item.question,
+        acceptedAnswer: { "@type": "Answer", text: item.answer },
+      })),
+    };
+
+    return (
+      <>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(zakelijkeFinancieringFaqSchema) }}
+        />
+        <Header />
+        <main className="pb-24 md:pb-20">
+          <section className="bg-nbg-lighter-green pt-10 lg:pt-14 pb-8 lg:pb-10 border-b border-nbg-light-gray/40">
+            <div className="max-w-[720px] mx-auto px-4 sm:px-6 lg:px-8">
+              <nav className="text-[15px] text-nbg-blue/70 mb-4" aria-label="Breadcrumb">
+                <Link href="/nieuws" className="hover:text-nbg-green">Nieuws</Link>
+                <span className="mx-2">/</span>
+                <span className="text-nbg-blue font-medium">Zakelijke financiering</span>
+              </nav>
+              <p className="text-nbg-primary font-semibold text-sm uppercase tracking-wider mb-2">Financiering</p>
+              <h1 className="text-nbg-blue text-3xl sm:text-4xl lg:text-[2.25rem] font-bold tracking-tight leading-tight mb-3">
+                Zakelijke financiering: welke mogelijkheden heeft u als ondernemer?
+              </h1>
+              {article?.date && (
+                <div className="text-[15px] text-nbg-blue/70">
+                  <time>{article.date}</time>
+                </div>
+              )}
+            </div>
+          </section>
+
+          <article className="max-w-[720px] mx-auto px-4 sm:px-6 lg:px-8 py-10 lg:py-14">
+            <div className="mb-6 rounded-2xl bg-nbg-lighter-green/60 border border-nbg-light-gray/50 p-5 sm:p-6 shadow-[0_2px_12px_rgba(0,0,0,0.04)]">
+              <p className="text-nbg-blue text-[17px] leading-relaxed font-medium m-0">
+                Een onderneming starten, investeren in groei of tijdelijk extra financiële ruimte: veel ondernemers krijgen te maken met een financieringsvraag. We leggen uit welke mogelijkheden er zijn en waar financiers naar kijken.
+              </p>
+            </div>
+
+            {article?.image && (
+              <div className="mb-10 rounded-2xl overflow-hidden bg-nbg-light-gray shadow-[0_4px_20px_rgba(0,0,0,0.06)] border border-nbg-light-gray/50">
+                <img
+                  src={article.image}
+                  alt="Zakelijke financiering voor ondernemers"
+                  className="w-full h-full max-h-[380px] object-cover"
+                />
+              </div>
+            )}
+
+            <div className="rounded-xl border-l-4 border-amber-500 bg-amber-50/80 py-4 px-5 mb-6">
+              <p className="text-nbg-blue text-[17px] font-semibold m-0">
+                Let op: geld lenen kost geld.
+              </p>
+            </div>
+
+            <div className="space-y-6 text-nbg-blue/85 text-[17px] leading-relaxed">
+              <p>
+                De informatie in dit artikel is gebaseerd op de regelgeving en marktpraktijk zoals die geldt in maart 2026. Voor uw persoonlijke of zakelijke situatie kunnen andere voorwaarden gelden. Bij Haruna adviseren wij u graag onafhankelijk en deskundig over zakelijke financiering, zodat u een weloverwogen keuze kunt maken voordat u een financiële verplichting aangaat.
+              </p>
+              <Link
+                href="/contact"
+                className="mt-2 inline-flex items-center gap-1.5 rounded-lg border border-nbg-primary text-nbg-primary font-medium text-[14px] px-4 py-2 hover:bg-nbg-primary hover:text-white transition-colors"
+              >
+                Afspraak maken
+              </Link>
+            </div>
+
+            <div className="mt-10 rounded-2xl bg-white border border-nbg-light-gray/60 shadow-[0_4px_20px_rgba(0,0,0,0.06)] p-6 sm:p-7">
+              <h3 className="text-nbg-blue font-bold text-lg m-0 mb-4">Wat komt in dit artikel?</h3>
+              <ul className="space-y-2.5 list-none p-0 m-0 text-nbg-blue/85 text-[15px]">
+                <li className="flex items-start gap-2">
+                  <span className="w-1.5 h-1.5 rounded-full bg-nbg-green shrink-0 mt-1.5" aria-hidden />
+                  Waarom ondernemers zakelijke financiering gebruiken
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="w-1.5 h-1.5 rounded-full bg-nbg-green shrink-0 mt-1.5" aria-hidden />
+                  Banklening voor ondernemers
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="w-1.5 h-1.5 rounded-full bg-nbg-green shrink-0 mt-1.5" aria-hidden />
+                  Rekening-courant krediet
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="w-1.5 h-1.5 rounded-full bg-nbg-green shrink-0 mt-1.5" aria-hidden />
+                  Leasing van bedrijfsmiddelen
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="w-1.5 h-1.5 rounded-full bg-nbg-green shrink-0 mt-1.5" aria-hidden />
+                  Financiering bij groei of uitbreiding
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="w-1.5 h-1.5 rounded-full bg-nbg-green shrink-0 mt-1.5" aria-hidden />
+                  Waar financiers naar kijken bij een kredietaanvraag
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="w-1.5 h-1.5 rounded-full bg-nbg-green shrink-0 mt-1.5" aria-hidden />
+                  Zakelijke financiering: laat u goed informeren
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="w-1.5 h-1.5 rounded-full bg-nbg-green shrink-0 mt-1.5" aria-hidden />
+                  Advies over zakelijke financiering
+                </li>
+              </ul>
+            </div>
+
+            <section className="mt-8 rounded-2xl bg-nbg-lighter-green/40 border border-nbg-light-gray/50 p-6 sm:p-8 shadow-[0_2px_12px_rgba(0,0,0,0.04)]">
+              <h2 className="text-nbg-blue text-xl lg:text-2xl font-bold mb-4">Waarom ondernemers zakelijke financiering gebruiken</h2>
+              <p className="text-nbg-blue/85 text-[17px] leading-relaxed mb-4">
+                Zakelijke financiering kan een rol spelen in verschillende fases van een onderneming. Bijvoorbeeld bij:
+              </p>
+              <ul className="space-y-2 list-none p-0 m-0">
+                {listItemFin("het opstarten van een bedrijf")}
+                {listItemFin("het investeren in machines of apparatuur")}
+                {listItemFin("het aanschaffen van een bedrijfsauto")}
+                {listItemFin("het kopen of verbouwen van een bedrijfspand")}
+                {listItemFin("het overbruggen van tijdelijke liquiditeitstekorten")}
+              </ul>
+              <p className="text-nbg-blue/85 text-[17px] leading-relaxed mt-4 m-0">
+                Welke vorm van financiering passend is, hangt onder andere af van de investering, de looptijd en de financiële positie van uw onderneming.
+              </p>
+            </section>
+
+            <section className="mt-8 rounded-2xl bg-white border border-nbg-light-gray/50 p-6 sm:p-8 shadow-[0_4px_20px_rgba(0,0,0,0.06)]">
+              <h2 className="text-nbg-blue text-xl lg:text-2xl font-bold mb-4">Banklening voor ondernemers</h2>
+              <p className="text-nbg-blue/85 text-[17px] leading-relaxed mb-4">
+                Een van de bekendste vormen van zakelijke financiering is een bedrijfskrediet via een bank. Hierbij leent uw onderneming een bepaald bedrag dat u in termijnen terugbetaalt.
+              </p>
+              <p className="text-nbg-blue/85 text-[17px] leading-relaxed mb-4">Kenmerken van een zakelijke lening kunnen zijn:</p>
+              <ul className="space-y-2 list-none p-0 m-0 mb-4">
+                {listItemFin("een vooraf afgesproken leningbedrag")}
+                {listItemFin("een vaste of variabele rente")}
+                {listItemFin("een looptijd met maandelijkse aflossing")}
+                {listItemFin("soms aanvullende zekerheden, zoals pandrechten of borgstellingen")}
+              </ul>
+              <p className="text-nbg-blue/85 text-[17px] leading-relaxed m-0">
+                Banken beoordelen bij een aanvraag onder meer de financiële situatie van uw bedrijf, de verwachte inkomsten en het doel van de financiering.
+              </p>
+            </section>
+
+            <section className="mt-8 rounded-2xl bg-nbg-lighter-green/40 border border-nbg-light-gray/50 p-6 sm:p-8 shadow-[0_2px_12px_rgba(0,0,0,0.04)]">
+              <h2 className="text-nbg-blue text-xl lg:text-2xl font-bold mb-4">Rekening-courant krediet</h2>
+              <p className="text-nbg-blue/85 text-[17px] leading-relaxed mb-4">
+                Een rekening-courant krediet geeft ondernemers financiële flexibiliteit. U spreekt met de bank een kredietlimiet af waarbinnen u tijdelijk rood mag staan op uw zakelijke rekening.
+              </p>
+              <p className="text-nbg-blue/85 text-[17px] leading-relaxed mb-4">Deze vorm wordt vaak gebruikt voor:</p>
+              <ul className="space-y-2 list-none p-0 m-0 mb-4">
+                {listItemFin("tijdelijke tekorten in de cashflow")}
+                {listItemFin("het voorfinancieren van voorraad")}
+                {listItemFin("het overbruggen van seizoensschommelingen")}
+              </ul>
+              <p className="text-nbg-blue/85 text-[17px] leading-relaxed m-0">
+                U betaalt meestal alleen rente over het bedrag dat daadwerkelijk wordt gebruikt. Tegelijk kan een rekening-courant krediet duurder zijn dan een reguliere lening wanneer het langdurig wordt gebruikt.
+              </p>
+            </section>
+
+            <section className="mt-8 rounded-2xl bg-white border border-nbg-light-gray/50 p-6 sm:p-8 shadow-[0_4px_20px_rgba(0,0,0,0.06)]">
+              <h2 className="text-nbg-blue text-xl lg:text-2xl font-bold mb-4">Leasing van bedrijfsmiddelen</h2>
+              <p className="text-nbg-blue/85 text-[17px] leading-relaxed mb-4">
+                Voor bedrijfsmiddelen zoals auto&apos;s, machines of apparatuur kiezen ondernemers regelmatig voor leasing.
+              </p>
+              <p className="text-nbg-blue/85 text-[17px] leading-relaxed mb-4">Veel voorkomende vormen zijn:</p>
+              <p className="text-nbg-blue/85 text-[17px] leading-relaxed mb-2"><strong className="text-nbg-blue">Financial lease</strong> – U betaalt het object in termijnen af en wordt uiteindelijk eigenaar.</p>
+              <p className="text-nbg-blue/85 text-[17px] leading-relaxed mb-4"><strong className="text-nbg-blue">Operational lease</strong> – De leasemaatschappij blijft eigenaar en verzorgt vaak ook onderhoud en verzekering.</p>
+              <p className="text-nbg-blue/85 text-[17px] leading-relaxed m-0">
+                Leasing kan aantrekkelijk zijn wanneer u wilt investeren zonder direct een groot bedrag uit eigen middelen te gebruiken.
+              </p>
+            </section>
+
+            <section className="mt-8 rounded-2xl bg-nbg-lighter-green/40 border border-nbg-light-gray/50 p-6 sm:p-8 shadow-[0_2px_12px_rgba(0,0,0,0.04)]">
+              <h2 className="text-nbg-blue text-xl lg:text-2xl font-bold mb-4">Financiering bij groei of uitbreiding</h2>
+              <p className="text-nbg-blue/85 text-[17px] leading-relaxed mb-4">
+                Wanneer een onderneming groeit, kan extra financiering nodig zijn voor bijvoorbeeld:
+              </p>
+              <ul className="space-y-2 list-none p-0 m-0 mb-4">
+                {listItemFin("uitbreiding van personeel")}
+                {listItemFin("nieuwe vestigingen")}
+                {listItemFin("investeringen in technologie")}
+                {listItemFin("aankoop van vastgoed")}
+              </ul>
+              <p className="text-nbg-blue/85 text-[17px] leading-relaxed m-0">
+                Financiers kijken in deze situaties vaak naar de toekomstverwachtingen van de onderneming. Een duidelijk ondernemingsplan en realistische financiële prognoses spelen hierbij een belangrijke rol.
+              </p>
+            </section>
+
+            <section className="mt-8 rounded-2xl bg-white border border-nbg-light-gray/50 p-6 sm:p-8 shadow-[0_4px_20px_rgba(0,0,0,0.06)]">
+              <h2 className="text-nbg-blue text-xl lg:text-2xl font-bold mb-4">Waar financiers naar kijken bij een kredietaanvraag</h2>
+              <p className="text-nbg-blue/85 text-[17px] leading-relaxed mb-4">
+                Bij het beoordelen van een zakelijke financiering letten banken en andere kredietverstrekkers doorgaans op meerdere factoren. Enkele belangrijke onderdelen zijn:
+              </p>
+              <ul className="space-y-2 list-none p-0 m-0 mb-4">
+                {listItemFin("Financiële cijfers – bijvoorbeeld omzet, winst en bestaande schulden.")}
+                {listItemFin("Ondernemingsplan – een duidelijke beschrijving van uw activiteiten en groeiplannen.")}
+                {listItemFin("Liquiditeit en cashflow – of uw onderneming voldoende inkomsten heeft om rente en aflossing te betalen.")}
+                {listItemFin("Zekerheden – soms vraagt een financier om onderpand of garanties.")}
+                {listItemFin("Ervaring van de ondernemer – de achtergrond en ervaring kunnen ook een rol spelen.")}
+              </ul>
+              <p className="text-nbg-blue/85 text-[17px] leading-relaxed m-0">
+                Elke financier hanteert daarbij zijn eigen acceptatiecriteria.
+              </p>
+            </section>
+
+            <section className="mt-8 rounded-2xl bg-nbg-lighter-green/40 border border-nbg-light-gray/50 p-6 sm:p-8 shadow-[0_2px_12px_rgba(0,0,0,0.04)]">
+              <h2 className="text-nbg-blue text-xl lg:text-2xl font-bold mb-4">Zakelijke financiering: laat u goed informeren</h2>
+              <p className="text-nbg-blue/85 text-[17px] leading-relaxed mb-4">
+                Een zakelijke lening of krediet kan helpen bij het realiseren van plannen voor uw onderneming. Tegelijk brengt elke financiering verplichtingen en kosten met zich mee. Het is daarom belangrijk om goed te kijken naar:
+              </p>
+              <ul className="space-y-2 list-none p-0 m-0">
+                {listItemFin("de totale kosten van de financiering")}
+                {listItemFin("de looptijd en maandlasten")}
+                {listItemFin("de risico&apos;s voor uw onderneming")}
+                {listItemFin("de flexibiliteit van de financieringsvorm")}
+              </ul>
+              <p className="text-nbg-blue/85 text-[17px] leading-relaxed mt-4 m-0">
+                Een zorgvuldige afweging helpt om te voorkomen dat de financiering een te zware financiële last wordt.
+              </p>
+            </section>
+
+            <section className="mt-12 rounded-2xl bg-nbg-blue text-white p-6 sm:p-8 lg:p-10 shadow-[0_8px_30px_rgba(27,49,86,0.2)]">
+              <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-6">
+                <div>
+                  <h2 className="text-white text-xl lg:text-2xl font-bold mb-2">Advies over zakelijke financiering</h2>
+                  <p className="text-white/90 text-[17px] m-0">
+                    Bij Haruna helpen wij ondernemers hun financieringsmogelijkheden in beeld te brengen. We kijken samen naar uw plannen en situatie, leggen opties uit en helpen bij het voorbereiden van een aanvraag.
+                  </p>
+                </div>
+                <Link
+                  href="/contact"
+                  className="inline-flex items-center justify-center gap-2 rounded-lg bg-nbg-green text-white font-semibold text-[15px] px-6 py-3.5 hover:bg-nbg-green/90 transition-colors shadow-[0_4px_14px_rgba(118,163,72,0.4)] shrink-0"
+                >
+                  Afspraak maken
+                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>
+                </Link>
+              </div>
+            </section>
+
+            <section className="mt-12" aria-labelledby="zakelijke-financiering-faq-heading">
+              <h2 id="zakelijke-financiering-faq-heading" className="text-nbg-blue text-xl lg:text-2xl font-bold mb-6">
+                Veelgestelde vragen over zakelijke financiering
+              </h2>
+              <ArticleFaqAccordion items={ZAKELIJKE_FINANCIERING_FAQS} />
+            </section>
+
+            <div className="mt-10 rounded-2xl bg-nbg-lighter-green/60 border border-nbg-light-gray/50 p-5 sm:p-6">
+              <p className="text-nbg-blue font-semibold text-[15px] m-0 mb-2">Meer over financiering</p>
+              <p className="text-nbg-blue/80 text-[15px] m-0 mb-3">
+                Zakelijke financiering, krediet en financieringsmogelijkheden voor ondernemers.
+              </p>
+              <Link href="/nieuws/financiering" className="inline-flex items-center gap-2 text-nbg-green font-semibold text-[15px] hover:underline">
+                Naar alle artikelen Financiering
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>
+              </Link>
+            </div>
+
+            <p className="mt-8 text-nbg-blue/60 text-[13px]">
+              Dit artikel is bedoeld als algemene informatie en vervangt geen persoonlijk advies. Voor uw situatie kunnen andere voorwaarden gelden. Bij Haruna kijken we graag met u mee naar uw situatie.
+            </p>
+            <Link
+              href="/contact"
+              className="mt-4 inline-flex items-center gap-2 rounded-lg border-2 border-nbg-primary text-nbg-primary font-semibold text-[15px] px-5 py-2.5 hover:bg-nbg-primary hover:text-white transition-colors"
+            >
+              Afspraak maken
+            </Link>
+
+            <div className="mt-10 pt-6 border-t border-nbg-light-gray">
+              <Link href="/nieuws" className="inline-flex items-center gap-2 text-nbg-green font-semibold text-[15px] hover:underline">
+                <span className="rotate-180 inline-block">
+                  <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 320 512"><path d="M305 239c9.4 9.4 9.4 24.6 0 33.9L113 465c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l175-175L79 81c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L305 239z" /></svg>
+                </span>
+                Terug naar nieuws
+              </Link>
+            </div>
+          </article>
+        </main>
+        <Footer />
+      </>
+    );
+  }
+
+  // Article: Particuliere lening
+  if (slug === "particuliere-lening") {
+    const article = ARTICLES.find((a) => a.slug === slug);
+    const listItemFin = (children: ReactNode) => (
+      <li className="flex items-start gap-3">
+        <span className="w-1.5 h-1.5 rounded-full bg-nbg-green shrink-0 mt-2" aria-hidden />
+        <span className="text-nbg-blue/85 text-[17px] leading-relaxed">{children}</span>
+      </li>
+    );
+
+    const particuliereLeningFaqSchema = {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      mainEntity: PARTICULIERE_LENING_FAQS.map((item) => ({
+        "@type": "Question",
+        name: item.question,
+        acceptedAnswer: { "@type": "Answer", text: item.answer },
+      })),
+    };
+
+    return (
+      <>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(particuliereLeningFaqSchema) }}
+        />
+        <Header />
+        <main className="pb-24 md:pb-20">
+          <section className="bg-nbg-lighter-green pt-10 lg:pt-14 pb-8 lg:pb-10 border-b border-nbg-light-gray/40">
+            <div className="max-w-[720px] mx-auto px-4 sm:px-6 lg:px-8">
+              <nav className="text-[15px] text-nbg-blue/70 mb-4" aria-label="Breadcrumb">
+                <Link href="/nieuws" className="hover:text-nbg-green">Nieuws</Link>
+                <span className="mx-2">/</span>
+                <span className="text-nbg-blue font-medium">Particuliere lening</span>
+              </nav>
+              <p className="text-nbg-primary font-semibold text-sm uppercase tracking-wider mb-2">Financiering</p>
+              <h1 className="text-nbg-blue text-3xl sm:text-4xl lg:text-[2.25rem] font-bold tracking-tight leading-tight mb-3">
+                Particuliere lening: waar moet u op letten voordat u geld leent?
+              </h1>
+              {article?.date && (
+                <div className="text-[15px] text-nbg-blue/70">
+                  <time>{article.date}</time>
+                </div>
+              )}
+            </div>
+          </section>
+
+          <article className="max-w-[720px] mx-auto px-4 sm:px-6 lg:px-8 py-10 lg:py-14">
+            <div className="mb-6 rounded-2xl bg-nbg-lighter-green/60 border border-nbg-light-gray/50 p-5 sm:p-6 shadow-[0_2px_12px_rgba(0,0,0,0.04)]">
+              <p className="text-nbg-blue text-[17px] leading-relaxed font-medium m-0">
+                Soms kan een lening helpen bij een grote uitgave, zoals een verbouwing, auto of studie. Tegelijk brengt lenen altijd verplichtingen en kosten met zich mee. In dit artikel leggen we uit waar u op moet letten voordat u een lening afsluit.
+              </p>
+            </div>
+
+            {article?.image && (
+              <div className="mb-10 rounded-2xl overflow-hidden bg-nbg-light-gray shadow-[0_4px_20px_rgba(0,0,0,0.06)] border border-nbg-light-gray/50">
+                <img
+                  src={article.image}
+                  alt="Particuliere lening: waar op letten"
+                  className="w-full h-full max-h-[380px] object-cover"
+                />
+              </div>
+            )}
+
+            <div className="rounded-xl border-l-4 border-amber-500 bg-amber-50/80 py-4 px-5 mb-6">
+              <p className="text-nbg-blue text-[17px] font-semibold m-0">
+                Let op: geld lenen kost geld.
+              </p>
+            </div>
+
+            <div className="space-y-6 text-nbg-blue/85 text-[17px] leading-relaxed">
+              <p>
+                De informatie in dit artikel is gebaseerd op de regelgeving en marktpraktijk zoals die geldt in 2026. Voor uw persoonlijke situatie kunnen andere voorwaarden gelden. Bij Haruna adviseren wij u graag onafhankelijk en deskundig over particuliere financiering, zodat u een weloverwogen keuze kunt maken voordat u een lening afsluit.
+              </p>
+              <Link
+                href="/contact"
+                className="mt-2 inline-flex items-center gap-1.5 rounded-lg border border-nbg-primary text-nbg-primary font-medium text-[14px] px-4 py-2 hover:bg-nbg-primary hover:text-white transition-colors"
+              >
+                Afspraak maken
+              </Link>
+            </div>
+
+            <div className="mt-10 rounded-2xl bg-white border border-nbg-light-gray/60 shadow-[0_4px_20px_rgba(0,0,0,0.06)] p-6 sm:p-7">
+              <h3 className="text-nbg-blue font-bold text-lg m-0 mb-4">Wat komt in dit artikel?</h3>
+              <ul className="space-y-2.5 list-none p-0 m-0 text-nbg-blue/85 text-[15px]">
+                <li className="flex items-start gap-2">
+                  <span className="w-1.5 h-1.5 rounded-full bg-nbg-green shrink-0 mt-1.5" aria-hidden />
+                  Rente en looptijd
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="w-1.5 h-1.5 rounded-full bg-nbg-green shrink-0 mt-1.5" aria-hidden />
+                  Totale kosten van een lening
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="w-1.5 h-1.5 rounded-full bg-nbg-green shrink-0 mt-1.5" aria-hidden />
+                  Maandlasten en betaalbaarheid
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="w-1.5 h-1.5 rounded-full bg-nbg-green shrink-0 mt-1.5" aria-hidden />
+                  Verschil tussen kredietvormen
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="w-1.5 h-1.5 rounded-full bg-nbg-green shrink-0 mt-1.5" aria-hidden />
+                  Risico&apos;s van te veel lenen
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="w-1.5 h-1.5 rounded-full bg-nbg-green shrink-0 mt-1.5" aria-hidden />
+                  Advies over particuliere financiering
+                </li>
+              </ul>
+            </div>
+
+            <section className="mt-8 rounded-2xl bg-nbg-lighter-green/40 border border-nbg-light-gray/50 p-6 sm:p-8 shadow-[0_2px_12px_rgba(0,0,0,0.04)]">
+              <h2 className="text-nbg-blue text-xl lg:text-2xl font-bold mb-4">Rente en looptijd</h2>
+              <p className="text-nbg-blue/85 text-[17px] leading-relaxed mb-4">
+                De rente die u betaalt, bepaalt hoeveel de lening u uiteindelijk kost. Hoe hoger de rente, hoe meer u terugbetaalt bovenop het geleende bedrag. De looptijd speelt ook een rol: een langere looptijd betekent vaak lagere maandlasten, maar over de hele periode meestal meer totale rente.
+              </p>
+              <p className="text-nbg-blue/85 text-[17px] leading-relaxed m-0">
+                Vergelijk daarom altijd het rentepercentage én de looptijd. Soms is een iets hogere maandlast met een kortere looptijd op de lange termijn goedkoper.
+              </p>
+            </section>
+
+            <section className="mt-8 rounded-2xl bg-white border border-nbg-light-gray/50 p-6 sm:p-8 shadow-[0_4px_20px_rgba(0,0,0,0.06)]">
+              <h2 className="text-nbg-blue text-xl lg:text-2xl font-bold mb-4">Totale kosten van een lening</h2>
+              <p className="text-nbg-blue/85 text-[17px] leading-relaxed mb-4">
+                Naast de rente kunnen er andere kosten zijn, zoals afsluitkosten of verzekeringen. Het wettelijke effectieve jaarpercentage (APR) geeft een beter beeld van de totale kosten dan alleen het rentepercentage. Kredietverstrekkers zijn verplicht dit percentage te vermelden.
+              </p>
+              <p className="text-nbg-blue/85 text-[17px] leading-relaxed m-0">
+                Vergelijk aanbiedingen altijd op basis van de totale kosten, niet alleen op de maandlast of de nominale rente.
+              </p>
+            </section>
+
+            <section className="mt-8 rounded-2xl bg-nbg-lighter-green/40 border border-nbg-light-gray/50 p-6 sm:p-8 shadow-[0_2px_12px_rgba(0,0,0,0.04)]">
+              <h2 className="text-nbg-blue text-xl lg:text-2xl font-bold mb-4">Maandlasten en betaalbaarheid</h2>
+              <p className="text-nbg-blue/85 text-[17px] leading-relaxed mb-4">
+                Voordat u een lening afsluit, is het belangrijk om realistisch in te schatten of u de maandlasten kunt blijven betalen. Maak een overzicht van uw vaste lasten en inkomen, en houd rekening met onvoorziene uitgaven of veranderingen in uw situatie.
+              </p>
+              <p className="text-nbg-blue/85 text-[17px] leading-relaxed m-0">
+                Leen alleen wat u nodig heeft en wat u redelijkerwijs kunt terugbetalen. Betaalproblemen kunnen leiden tot extra kosten en schade aan uw kredietwaardigheid.
+              </p>
+            </section>
+
+            <section className="mt-8 rounded-2xl bg-white border border-nbg-light-gray/50 p-6 sm:p-8 shadow-[0_4px_20px_rgba(0,0,0,0.06)]">
+              <h2 className="text-nbg-blue text-xl lg:text-2xl font-bold mb-4">Verschil tussen kredietvormen</h2>
+              <p className="text-nbg-blue/85 text-[17px] leading-relaxed mb-4">
+                Er bestaan verschillende vormen van particuliere krediet:
+              </p>
+              <ul className="space-y-2 list-none p-0 m-0 mb-4">
+                {listItemFin("Persoonlijke lening – een vast bedrag, vaste looptijd en vaste maandlasten. Geschikt wanneer u een concreet bedrag nodig heeft, bijvoorbeeld voor een auto of verbouwing.")}
+                {listItemFin("Doorlopend krediet – een kredietlimiet waarbinnen u geld kunt opnemen. U betaalt rente over het opgenomen bedrag. Meer flexibiliteit, maar de kosten kunnen oplopen als u lang rood staat.")}
+                {listItemFin("Verkoop op afbetaling – krediet gekoppeld aan een aankoop, bijvoorbeeld bij een winkel. Soms duurder dan een gewone lening; vergelijk altijd de voorwaarden.")}
+              </ul>
+              <p className="text-nbg-blue/85 text-[17px] leading-relaxed m-0">
+                Welke vorm past, hangt af van uw doel, uw inkomen en hoe zeker u bent over het bedrag dat u nodig heeft.
+              </p>
+            </section>
+
+            <section className="mt-8 rounded-2xl bg-nbg-lighter-green/40 border border-nbg-light-gray/50 p-6 sm:p-8 shadow-[0_2px_12px_rgba(0,0,0,0.04)]">
+              <h2 className="text-nbg-blue text-xl lg:text-2xl font-bold mb-4">Risico&apos;s van te veel lenen</h2>
+              <p className="text-nbg-blue/85 text-[17px] leading-relaxed mb-4">
+                Te veel lenen kan leiden tot:
+              </p>
+              <ul className="space-y-2 list-none p-0 m-0 mb-4">
+                {listItemFin("betalingsproblemen en oplopende schulden")}
+                {listItemFin("extra kosten door boetes of verhoging van de rente")}
+                {listItemFin("negatieve gevolgen voor uw kredietwaardigheid, wat later leningen duurder of moeilijker kan maken")}
+              </ul>
+              <p className="text-nbg-blue/85 text-[17px] leading-relaxed m-0">
+                Het is daarom belangrijk om bewust te lenen: alleen wat nodig is en wat past bij uw financiële situatie.
+              </p>
+            </section>
+
+            <section className="mt-12 rounded-2xl bg-nbg-blue text-white p-6 sm:p-8 lg:p-10 shadow-[0_8px_30px_rgba(27,49,86,0.2)]">
+              <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-6">
+                <div>
+                  <h2 className="text-white text-xl lg:text-2xl font-bold mb-2">Advies over particuliere financiering</h2>
+                  <p className="text-white/90 text-[17px] m-0">
+                    Bij Haruna kijken we graag met u mee naar uw situatie. We helpen u inzicht te krijgen in uw opties, de totale kosten van een lening en wat betaalbaar is, zodat u een weloverwogen keuze kunt maken voordat u geld leent.
+                  </p>
+                </div>
+                <Link
+                  href="/contact"
+                  className="inline-flex items-center justify-center gap-2 rounded-lg bg-nbg-green text-white font-semibold text-[15px] px-6 py-3.5 hover:bg-nbg-green/90 transition-colors shadow-[0_4px_14px_rgba(118,163,72,0.4)] shrink-0"
+                >
+                  Afspraak maken
+                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>
+                </Link>
+              </div>
+            </section>
+
+            <section className="mt-12" aria-labelledby="particuliere-lening-faq-heading">
+              <h2 id="particuliere-lening-faq-heading" className="text-nbg-blue text-xl lg:text-2xl font-bold mb-6">
+                Veelgestelde vragen over particuliere leningen
+              </h2>
+              <ArticleFaqAccordion items={PARTICULIERE_LENING_FAQS} />
+            </section>
+
+            <div className="mt-10 rounded-2xl bg-nbg-lighter-green/60 border border-nbg-light-gray/50 p-5 sm:p-6">
+              <p className="text-nbg-blue font-semibold text-[15px] m-0 mb-2">Meer over financiering</p>
+              <p className="text-nbg-blue/80 text-[15px] m-0 mb-3">
+                Zakelijke en particuliere financiering, krediet en waar u op moet letten.
+              </p>
+              <Link href="/nieuws/financiering" className="inline-flex items-center gap-2 text-nbg-green font-semibold text-[15px] hover:underline">
+                Naar alle artikelen Financiering
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>
+              </Link>
+            </div>
+
+            <p className="mt-8 text-nbg-blue/60 text-[13px]">
+              Dit artikel is bedoeld als algemene informatie en vervangt geen persoonlijk advies. Voor uw situatie kunnen andere voorwaarden gelden. Bij Haruna kijken we graag met u mee naar uw situatie.
+            </p>
+            <Link
+              href="/contact"
+              className="mt-4 inline-flex items-center gap-2 rounded-lg border-2 border-nbg-primary text-nbg-primary font-semibold text-[15px] px-5 py-2.5 hover:bg-nbg-primary hover:text-white transition-colors"
+            >
+              Afspraak maken
+            </Link>
+
+            <div className="mt-10 pt-6 border-t border-nbg-light-gray">
+              <Link href="/nieuws" className="inline-flex items-center gap-2 text-nbg-green font-semibold text-[15px] hover:underline">
+                <span className="rotate-180 inline-block">
+                  <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 320 512"><path d="M305 239c9.4 9.4 9.4 24.6 0 33.9L113 465c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l175-175L79 81c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L305 239z" /></svg>
+                </span>
+                Terug naar nieuws
+              </Link>
+            </div>
+          </article>
+        </main>
+        <Footer />
+      </>
+    );
+  }
+
+  // Article: Bedrijfsauto financieren of leasen
+  if (slug === "bedrijfsauto-financieren-leasen") {
+    const article = ARTICLES.find((a) => a.slug === slug);
+    const listItemFin = (children: ReactNode) => (
+      <li className="flex items-start gap-3">
+        <span className="w-1.5 h-1.5 rounded-full bg-nbg-green shrink-0 mt-2" aria-hidden />
+        <span className="text-nbg-blue/85 text-[17px] leading-relaxed">{children}</span>
+      </li>
+    );
+
+    const bedrijfsautoFaqSchema = {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      mainEntity: BEDRIJFSAUTO_FINANCIERING_FAQS.map((item) => ({
+        "@type": "Question",
+        name: item.question,
+        acceptedAnswer: { "@type": "Answer", text: item.answer },
+      })),
+    };
+
+    return (
+      <>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(bedrijfsautoFaqSchema) }}
+        />
+        <Header />
+        <main className="pb-24 md:pb-20">
+          <section className="bg-nbg-lighter-green pt-10 lg:pt-14 pb-8 lg:pb-10 border-b border-nbg-light-gray/40">
+            <div className="max-w-[720px] mx-auto px-4 sm:px-6 lg:px-8">
+              <nav className="text-[15px] text-nbg-blue/70 mb-4" aria-label="Breadcrumb">
+                <Link href="/nieuws" className="hover:text-nbg-green">Nieuws</Link>
+                <span className="mx-2">/</span>
+                <span className="text-nbg-blue font-medium">Bedrijfsauto financieren of leasen</span>
+              </nav>
+              <p className="text-nbg-primary font-semibold text-sm uppercase tracking-wider mb-2">Financiering</p>
+              <h1 className="text-nbg-blue text-3xl sm:text-4xl lg:text-[2.25rem] font-bold tracking-tight leading-tight mb-3">
+                Bedrijfsauto financieren of leasen: wat zijn de verschillen?
+              </h1>
+              {article?.date && (
+                <div className="text-[15px] text-nbg-blue/70">
+                  <time>{article.date}</time>
+                </div>
+              )}
+            </div>
+          </section>
+
+          <article className="max-w-[720px] mx-auto px-4 sm:px-6 lg:px-8 py-10 lg:py-14">
+            <div className="mb-6 rounded-2xl bg-nbg-lighter-green/60 border border-nbg-light-gray/50 p-5 sm:p-6 shadow-[0_2px_12px_rgba(0,0,0,0.04)]">
+              <p className="text-nbg-blue text-[17px] leading-relaxed font-medium m-0">
+                Veel ondernemers hebben een bedrijfsauto nodig. Maar is het beter om een auto te financieren, te leasen of uit eigen middelen te betalen? Elke optie heeft andere kosten, fiscale gevolgen en risico&apos;s.
+              </p>
+            </div>
+
+            {article?.image && (
+              <div className="mb-10 rounded-2xl overflow-hidden bg-nbg-light-gray shadow-[0_4px_20px_rgba(0,0,0,0.06)] border border-nbg-light-gray/50">
+                <img
+                  src={article.image}
+                  alt="Bedrijfsauto financieren of leasen"
+                  className="w-full h-full max-h-[380px] object-cover"
+                />
+              </div>
+            )}
+
+            <div className="rounded-xl border-l-4 border-amber-500 bg-amber-50/80 py-4 px-5 mb-6">
+              <p className="text-nbg-blue text-[17px] font-semibold m-0">
+                Let op: geld lenen kost geld.
+              </p>
+            </div>
+
+            <div className="space-y-6 text-nbg-blue/85 text-[17px] leading-relaxed">
+              <p>
+                De informatie in dit artikel is gebaseerd op de regelgeving en marktpraktijk zoals die geldt in 2026. Voor uw persoonlijke situatie kunnen andere voorwaarden gelden. Bij Haruna adviseren wij u graag onafhankelijk en deskundig over zakelijke financiering en bedrijfsauto&apos;s, zodat u een weloverwogen keuze kunt maken.
+              </p>
+              <Link
+                href="/contact"
+                className="mt-2 inline-flex items-center gap-1.5 rounded-lg border border-nbg-primary text-nbg-primary font-medium text-[14px] px-4 py-2 hover:bg-nbg-primary hover:text-white transition-colors"
+              >
+                Afspraak maken
+              </Link>
+            </div>
+
+            <div className="mt-10 rounded-2xl bg-white border border-nbg-light-gray/60 shadow-[0_4px_20px_rgba(0,0,0,0.06)] p-6 sm:p-7">
+              <h3 className="text-nbg-blue font-bold text-lg m-0 mb-4">Wat komt in dit artikel?</h3>
+              <ul className="space-y-2.5 list-none p-0 m-0 text-nbg-blue/85 text-[15px]">
+                <li className="flex items-start gap-2">
+                  <span className="w-1.5 h-1.5 rounded-full bg-nbg-green shrink-0 mt-1.5" aria-hidden />
+                  Kopen vs. financieren
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="w-1.5 h-1.5 rounded-full bg-nbg-green shrink-0 mt-1.5" aria-hidden />
+                  Financial lease vs. operational lease
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="w-1.5 h-1.5 rounded-full bg-nbg-green shrink-0 mt-1.5" aria-hidden />
+                  Fiscale aspecten voor ondernemers
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="w-1.5 h-1.5 rounded-full bg-nbg-green shrink-0 mt-1.5" aria-hidden />
+                  Impact op cashflow
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="w-1.5 h-1.5 rounded-full bg-nbg-green shrink-0 mt-1.5" aria-hidden />
+                  Wanneer welke optie passend kan zijn
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="w-1.5 h-1.5 rounded-full bg-nbg-green shrink-0 mt-1.5" aria-hidden />
+                  Advies over bedrijfsauto
+                </li>
+              </ul>
+            </div>
+
+            <section className="mt-8 rounded-2xl bg-nbg-lighter-green/40 border border-nbg-light-gray/50 p-6 sm:p-8 shadow-[0_2px_12px_rgba(0,0,0,0.04)]">
+              <h2 className="text-nbg-blue text-xl lg:text-2xl font-bold mb-4">Kopen vs. financieren</h2>
+              <p className="text-nbg-blue/85 text-[17px] leading-relaxed mb-4">
+                Een bedrijfsauto uit eigen middelen kopen betekent een grotere eenmalige uitgave; u bent direct eigenaar en heeft geen maandelijkse financieringslasten. Financieren betekent dat u een lening afsluit en de auto in termijnen terugbetaalt; u wordt eigenaar na aflossing. Financieren spreidt de kosten maar brengt rente en vaste lasten met zich mee. De keuze hangt af van uw liquiditeit, belastingpositie en hoe lang u de auto wilt gebruiken.
+              </p>
+              <p className="text-nbg-blue/85 text-[17px] leading-relaxed m-0">
+                Bij kopen houdt u meer controle en geen financieringsverplichting; bij financieren behoudt u meer cashflow voor andere investeringen.
+              </p>
+            </section>
+
+            <section className="mt-8 rounded-2xl bg-white border border-nbg-light-gray/50 p-6 sm:p-8 shadow-[0_4px_20px_rgba(0,0,0,0.06)]">
+              <h2 className="text-nbg-blue text-xl lg:text-2xl font-bold mb-4">Financial lease vs. operational lease</h2>
+              <p className="text-nbg-blue/85 text-[17px] leading-relaxed mb-4">
+                Bij <strong>financial lease</strong> betaalt u de auto in termijnen af. Doorgaans wordt u aan het einde van de looptijd eigenaar (of koopt u de auto tegen een restwaarde). U draagt het economisch risico en bent verantwoordelijk voor onderhoud en verzekering. De auto staat op uw balans.
+              </p>
+              <p className="text-nbg-blue/85 text-[17px] leading-relaxed mb-4">
+                Bij <strong>operational lease</strong> (of gebruikerslease) blijft de leasemaatschappij eigenaar. U rijdt de auto voor een afgesproken periode en levert hem daarna in. Onderhoud, reparaties en vaak ook verzekering zitten in het leasebedrag. Voordelen zijn voorspelbare maandlasten en geen zorgen over verkoop of restwaarde; nadelen zijn dat u geen eigenaar wordt en vaak kilometer- of gebruiksvoorwaarden hebt.
+              </p>
+              <p className="text-nbg-blue/85 text-[17px] leading-relaxed m-0">
+                Welke vorm past, hangt af van uw wens om eigenaar te zijn, uw cashflow en hoe u wilt omgaan met onderhoud en risico.
+              </p>
+            </section>
+
+            <section className="mt-8 rounded-2xl bg-nbg-lighter-green/40 border border-nbg-light-gray/50 p-6 sm:p-8 shadow-[0_2px_12px_rgba(0,0,0,0.04)]">
+              <h2 className="text-nbg-blue text-xl lg:text-2xl font-bold mb-4">Fiscale aspecten voor ondernemers</h2>
+              <p className="text-nbg-blue/85 text-[17px] leading-relaxed mb-4">
+                Voor ondernemers spelen verschillende fiscale regels een rol. Bij privégebruik van een bedrijfsauto geldt een bijtelling op uw inkomen. De hoogte hangt af van de cataloguswaarde en de CO₂-uitstoot (elektrisch en zuinige auto&apos;s hebben vaak een lagere bijtelling). De kosten van de auto (afschrijving, rente, onderhoud) kunnen onder voorwaarden zakelijk worden afgetrokken; de precieze regels zijn afhankelijk van de gekozen constructie (eigenaar, financial lease of operational lease).
+              </p>
+              <p className="text-nbg-blue/85 text-[17px] leading-relaxed m-0">
+                Omdat de fiscale regels kunnen wijzigen en uw situatie bepalend is, is het verstandig om de keuze voor kopen, leasen of financieren te laten meewegen met uw belastingpositie. Een adviseur kan met u meedenken.
+              </p>
+            </section>
+
+            <section className="mt-8 rounded-2xl bg-white border border-nbg-light-gray/50 p-6 sm:p-8 shadow-[0_4px_20px_rgba(0,0,0,0.06)]">
+              <h2 className="text-nbg-blue text-xl lg:text-2xl font-bold mb-4">Impact op cashflow</h2>
+              <p className="text-nbg-blue/85 text-[17px] leading-relaxed mb-4">
+                Een bedrijfsauto heeft direct invloed op uw cashflow. Kopen vraagt een grotere eenmalige uitgave (of een aanbetaling); dat vermindert uw liquide middelen. Financieren of financial lease geeft maandelijkse lasten: u moet elke periode rente en aflossing (of lease) betalen. Operational lease geeft eveneens vaste maandlasten, maar meestal geen grote initiële investering.
+              </p>
+              <p className="text-nbg-blue/85 text-[17px] leading-relaxed m-0">
+                Voor een gezonde cashflow is het belangrijk dat de maandlasten passen bij uw omzet en overige verplichtingen. Houd ook rekening met onderhoud, verzekering en brandstof; bij operational lease zitten sommige kosten al in het bedrag, bij kopen of financial lease niet altijd.
+              </p>
+            </section>
+
+            <section className="mt-8 rounded-2xl bg-nbg-lighter-green/40 border border-nbg-light-gray/50 p-6 sm:p-8 shadow-[0_2px_12px_rgba(0,0,0,0.04)]">
+              <h2 className="text-nbg-blue text-xl lg:text-2xl font-bold mb-4">Wanneer welke optie passend kan zijn</h2>
+              <p className="text-nbg-blue/85 text-[17px] leading-relaxed mb-4">
+                Geen enkele optie is voor iedereen de beste; het hangt af van uw situatie:
+              </p>
+              <ul className="space-y-2 list-none p-0 m-0 mb-4">
+                {listItemFin("Kopen uit eigen middelen: passend wanneer u voldoende liquiditeit hebt, geen financieringslasten wilt en de auto lang wilt gebruiken.")}
+                {listItemFin("Financieren of financial lease: passend wanneer u de investering wilt spreiden, eigenaar wilt worden en de maandlasten kunt dragen.")}
+                {listItemFin("Operational lease: passend wanneer u geen eigenaar wilt zijn, voorspelbare lasten en weinig gedoe met onderhoud en inruil wilt.")}
+              </ul>
+              <p className="text-nbg-blue/85 text-[17px] leading-relaxed m-0">
+                Een afweging van kosten, fiscale gevolgen, cashflow en gebruiksduur helpt om de juiste keuze te maken. Bij Haruna kijken we graag met u mee wat bij uw onderneming past.
+              </p>
+            </section>
+
+            <section className="mt-12 rounded-2xl bg-nbg-blue text-white p-6 sm:p-8 lg:p-10 shadow-[0_8px_30px_rgba(27,49,86,0.2)]">
+              <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-6">
+                <div>
+                  <h2 className="text-white text-xl lg:text-2xl font-bold mb-2">Advies over bedrijfsauto financieren of leasen</h2>
+                  <p className="text-white/90 text-[17px] m-0">
+                    Bij Haruna kijken we graag met u mee naar uw plannen voor een bedrijfsauto. We helpen u de opties, kosten en fiscale gevolgen in beeld te brengen, zodat u een weloverwogen keuze kunt maken tussen kopen, financieren of leasen.
+                  </p>
+                </div>
+                <Link
+                  href="/contact"
+                  className="inline-flex items-center justify-center gap-2 rounded-lg bg-nbg-green text-white font-semibold text-[15px] px-6 py-3.5 hover:bg-nbg-green/90 transition-colors shadow-[0_4px_14px_rgba(118,163,72,0.4)] shrink-0"
+                >
+                  Afspraak maken
+                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>
+                </Link>
+              </div>
+            </section>
+
+            <section className="mt-12" aria-labelledby="bedrijfsauto-faq-heading">
+              <h2 id="bedrijfsauto-faq-heading" className="text-nbg-blue text-xl lg:text-2xl font-bold mb-6">
+                Veelgestelde vragen over bedrijfsauto financieren of leasen
+              </h2>
+              <ArticleFaqAccordion items={BEDRIJFSAUTO_FINANCIERING_FAQS} />
+            </section>
+
+            <div className="mt-10 rounded-2xl bg-nbg-lighter-green/60 border border-nbg-light-gray/50 p-5 sm:p-6">
+              <p className="text-nbg-blue font-semibold text-[15px] m-0 mb-2">Meer over financiering</p>
+              <p className="text-nbg-blue/80 text-[15px] m-0 mb-3">
+                Zakelijke en particuliere financiering, krediet en waar u op moet letten.
+              </p>
+              <Link href="/nieuws/financiering" className="inline-flex items-center gap-2 text-nbg-green font-semibold text-[15px] hover:underline">
+                Naar alle artikelen Financiering
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>
               </Link>
             </div>

@@ -34,7 +34,7 @@ export default function PensioenPage() {
                   Aanvullend pensioen – advies voor uw inkomen later
                 </h1>
                 <p className="mt-5 text-nbg-blue/80 text-[17px] lg:text-lg leading-relaxed max-w-xl">
-                  Past uw wettelijk en aanvullend pensioen nog bij uw plannen? Is uw voorziening voldoende? Wij helpen u graag in de complexiteit van pensioen – voor werkgevers, werknemers en ondernemers. Vergunninghouder AFM voor pensioenadvisering.
+                  Past uw wettelijk en aanvullend pensioen nog bij uw plannen? Is uw voorziening voldoende? Goede verzorging voor de oude dag begint bij een passende pensioenvoorziening. Wij helpen u graag in de complexiteit van pensioen – voor werkgevers, werknemers en ondernemers. Vergunninghouder AFM voor pensioenadvisering.
                 </p>
                 <div className="mt-8 flex flex-wrap gap-4">
                   <Link
