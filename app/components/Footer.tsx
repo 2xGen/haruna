@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import NewsletterForm from "./NewsletterForm";
+import CookiePreferenceLink from "./CookiePreferenceLink";
 
 const snelNaar = [
   { label: "Contact", href: "/contact" },
@@ -21,8 +22,10 @@ const footerDocumenten = [
 const footerLegal = [
   { label: "Algemene voorwaarden", href: "/algemene-voorwaarden" },
   { label: "Privacy", href: "/privacy" },
+  { label: "Cookiebeleid", href: "/cookiebeleid" },
   { label: "Contact", href: "/contact" },
 ];
+// Cookievoorkeuren is a button that reopens the cookie banner (no href)
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -132,6 +135,9 @@ export default function Footer() {
                 {link.label}
               </Link>
             ))}
+            <CookiePreferenceLink className="hover:text-nbg-primary transition-colors bg-transparent border-0 p-0 cursor-pointer font-inherit text-inherit">
+              Cookievoorkeuren
+            </CookiePreferenceLink>
           </nav>
           <div className="mt-6 pt-6 border-t border-white/10 text-center space-y-1">
             <p className="text-sm text-white/70 m-0">

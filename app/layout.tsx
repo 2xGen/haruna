@@ -1,9 +1,11 @@
 import type { Metadata } from "next";
 import { DM_Sans } from "next/font/google";
-import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 import JsonLd from "./components/JsonLd";
 import StickyCtaBar from "./components/StickyCtaBar";
+import { CookieConsentProvider } from "./context/CookieConsentContext";
+import CookieBanner from "./components/CookieBanner";
+import ConsentAwareAnalytics from "./components/ConsentAwareAnalytics";
 
 const dmSans = DM_Sans({
   subsets: ["latin"],
@@ -63,10 +65,13 @@ export default function RootLayout({
   return (
     <html lang="nl" className={`${dmSans.variable} overflow-x-hidden`}>
       <body className="min-h-screen flex flex-col font-sans overflow-x-hidden w-full max-w-full">
-        <JsonLd />
-        {children}
-        <StickyCtaBar />
-        <Analytics />
+        <CookieConsentProvider>
+          <JsonLd />
+          {children}
+          <StickyCtaBar />
+          <CookieBanner />
+          <ConsentAwareAnalytics />
+        </CookieConsentProvider>
       </body>
     </html>
   );
