@@ -16,7 +16,19 @@ const snelNaar = [
 
 const footerDocumenten = [
   { label: "Dienstverleningsdocument", href: "/dienstverleningsdocument" },
-  { label: "Vergelijkingskaart hypotheek", href: "https://soaacpusdhyxwucjhhpy.supabase.co/storage/v1/object/public/haruna/Vergelijkingskaart%202026%20Hypotheek.pdf" },
+  { label: "Vergelijkingskaart Hypotheek", href: "https://soaacpusdhyxwucjhhpy.supabase.co/storage/v1/object/public/haruna/Vergelijkingskaart%202026%20Hypotheek.pdf" },
+  {
+    label: "Vergelijkingskaart Risico's Afdekken",
+    href: "https://soaacpusdhyxwucjhhpy.supabase.co/storage/v1/object/public/haruna/Vergelijkingskaart%202026%20Risicos%20afdekken.pdf",
+  },
+  {
+    label: "Vergelijkingskaart Vermogen Opbouwen",
+    href: "https://soaacpusdhyxwucjhhpy.supabase.co/storage/v1/object/public/haruna/Vergelijkingskaart%202026%20Vermogen%20opbouwen.pdf",
+  },
+  {
+    label: "Vergelijkingskaart Pensioenvraag Werkgever",
+    href: "https://soaacpusdhyxwucjhhpy.supabase.co/storage/v1/object/public/haruna/Vergelijkingskaart%20Pensioenvraag%202026%20werkgever.pdf",
+  },
 ];
 
 const footerLegal = [

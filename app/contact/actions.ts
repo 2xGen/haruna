@@ -18,7 +18,7 @@ export async function submitAfspraakForm(
 
   try {
     const supabase = getSupabaseServer();
-    const { error } = await supabase.from("afspraken").insert({
+    const { error } = await supabase.from("haruna_afspraken").insert({
       naam,
       email,
       telefoon: telefoon || null,
@@ -62,7 +62,7 @@ export async function submitNewsletterForm(
 
   try {
     const supabase = getSupabaseServer();
-    const { error } = await supabase.from("newsletter_subscribers").insert({
+    const { error } = await supabase.from("haruna_newsletter_subscribers").insert({
       email,
       source: source === "nieuws" ? "nieuws" : "footer",
     });
