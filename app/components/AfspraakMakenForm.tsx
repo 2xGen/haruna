@@ -4,7 +4,7 @@ import { useActionState } from "react";
 
 import { submitAfspraakForm } from "../contact/actions";
 
-const initialState = { success: false };
+const initialState = { success: false as boolean, error: undefined as string | undefined };
 
 export default function AfspraakMakenForm() {
   const [state, formAction, isPending] = useActionState(
@@ -34,6 +34,14 @@ export default function AfspraakMakenForm() {
 
   return (
     <form action={formAction} className="space-y-5">
+      {state.error ? (
+        <p
+          className="rounded-lg border border-red-200 bg-red-50 px-4 py-3 text-[15px] text-red-800 m-0"
+          role="alert"
+        >
+          {state.error}
+        </p>
+      ) : null}
       <div>
         <label htmlFor="naam" className={labelClass}>
           Naam <span className="text-nbg-green">*</span>

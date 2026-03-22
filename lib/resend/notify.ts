@@ -16,7 +16,7 @@ export type AdminMailPayload =
     };
 
 function getEnv(name: string): string {
-  const v = process.env[name];
+  const v = process.env[name]?.trim();
   if (!v) throw new Error(`Missing env var: ${name}`);
   return v;
 }
@@ -52,12 +52,30 @@ export async function sendAdminNotificationEmail(payload: AdminMailPayload) {
   const html = `<p>${text.replace(/\n/g, "<br />")}</p>`;
 
   const resend = new Resend(apiKey);
-  await resend.emails.send({
+  const result = await resend.emails.send({
     from,
     to: [to],
     subject,
     text,
     html,
   });
+
+  if (result.error) {
+    console.error("[resend] emails.send failed:", {
+      name: result.error.name,
+      message: result.error.message,
+      statusCode: result.error.statusCode,
+    });
+    if (
+      result.error.name === "validation_error" &&
+      result.error.message?.includes("only send testing emails")
+    ) {
+      console.warn(
+        "[resend] Met FROM=onboarding@resend.dev mag TO alleen het e-mailadres van je Resend-account zijn (niet zomaar contact@…). " +
+          "Wil je naar contact@haruna.nl? Verifieer het domein haruna.nl in Resend en gebruik FROM zoals noreply@haruna.nl."
+      );
+    }
+    throw new Error(result.error.message || "Resend API error");
+  }
 }
 

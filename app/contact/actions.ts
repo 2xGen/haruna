@@ -4,9 +4,9 @@ import { getSupabaseServer } from "@/lib/supabase/server";
 import { sendAdminNotificationEmail } from "@/lib/resend/notify";
 
 export async function submitAfspraakForm(
-  _prev: { success: boolean },
+  _prev: { success: boolean; error?: string },
   formData: FormData
-): Promise<{ success: boolean }> {
+): Promise<{ success: boolean; error?: string }> {
   const naam = (formData.get("naam") as string)?.trim() || "";
   const email = (formData.get("email") as string)?.trim() || "";
   const telefoon = (formData.get("telefoon") as string)?.trim() || null;
@@ -14,7 +14,7 @@ export async function submitAfspraakForm(
   const bericht = (formData.get("bericht") as string)?.trim() || null;
 
   if (!naam || !email) {
-    return { success: false };
+    return { success: false, error: "Vul uw naam en e-mailadres in." };
   }
 
   try {
@@ -28,8 +28,16 @@ export async function submitAfspraakForm(
     });
 
     if (error) {
-      console.error("Supabase afspraak insert error:", error);
-      return { success: false };
+      console.error("Supabase afspraak insert error:", {
+        code: error.code,
+        message: error.message,
+        details: error.details,
+        hint: error.hint,
+      });
+      return {
+        success: false,
+        error: "Versturen is mislukt. Probeer het later opnieuw of neem telefonisch contact op.",
+      };
     }
 
     // Notify admin by email (non-blocking for the end-user).
@@ -50,8 +58,11 @@ export async function submitAfspraakForm(
 
     return { success: true };
   } catch (e) {
-    console.error("submitAfspraakForm error:", e);
-    return { success: false };
+    console.error("submitAfspraakForm error (check Vercel env: NEXT_PUBLIC_SUPABASE_URL, SUPABASE_SERVICE_ROLE_KEY):", e);
+    return {
+      success: false,
+      error: "Versturen is mislukt. Probeer het later opnieuw of bel ons even.",
+    };
   }
 }
 
@@ -90,7 +101,12 @@ export async function submitNewsletterForm(
         // Already subscribed; avoid spamming admin inbox.
         return { success: true, message: "Dit e-mailadres staat al ingeschreven." };
       }
-      console.error("Supabase newsletter insert error:", error);
+      console.error("Supabase newsletter insert error:", {
+        code: error.code,
+        message: error.message,
+        details: error.details,
+        hint: error.hint,
+      });
       return { success: false, message: "Inschrijven mislukt. Probeer het later opnieuw." };
     }
 
@@ -110,6 +126,7 @@ export async function submitNewsletterForm(
     return { success: true, message: "Bedankt! U bent ingeschreven voor de nieuwsbrief." };
   } catch (e) {
     console.error("submitNewsletterForm error:", e);
+    // Often: missing SUPABASE_SERVICE_ROLE_KEY on Vercel, or wrong URL/key.
     return { success: false, message: "Inschrijven mislukt. Probeer het later opnieuw." };
   }
 }
