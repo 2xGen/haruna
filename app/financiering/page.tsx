@@ -7,7 +7,7 @@ import { getArticlesByPillar } from "../nieuws/articles-data";
 export const metadata = {
   title: "Financiering | Haruna Hypotheek- en pensioenadvies",
   description:
-    "Financieringsadvies voor particulieren en ondernemers. Woning, auto, studie of zakelijk – wij denken met u mee. Helder en op maat.",
+    "Financieringsadvies voor particulieren en ondernemers. Verbouwing, auto (financiering of lease), onderneming – helder advies, afgestemd op uw situatie.",
 };
 
 /** Financiering guides from articles data (pillar: financiering) */
@@ -32,12 +32,17 @@ export default function FinancieringPage() {
               <div>
                 <p className="text-nbg-primary font-semibold text-sm uppercase tracking-wider mb-3">Financiering</p>
                 <h1 className="text-nbg-blue text-3xl sm:text-4xl lg:text-5xl xl:text-[3rem] font-bold tracking-tight max-w-2xl">
-                  Financiering – particulier en zakelijk
+                  Heeft u extra financiële ruimte nodig?
                 </h1>
                 <p className="mt-4 text-nbg-primary font-semibold text-[15px] m-0">Let op! Geld lenen kost geld.</p>
-                <p className="mt-4 text-nbg-blue/80 text-[17px] lg:text-lg leading-relaxed max-w-xl">
-                  Kunt u wel wat extra hulp gebruiken bij uw financiën? Wij adviseren u graag – voor een woning, auto, studie, of voor uw onderneming. Helder, op maat en zonder gedoe.
-                </p>
+                <div className="mt-4 text-nbg-blue/80 text-[17px] lg:text-lg leading-relaxed max-w-xl space-y-3">
+                  <p className="m-0">
+                    Wij adviseren u graag over passende financiering voor de verbouwing van uw woning, een auto (financiering of lease) of uw onderneming.
+                  </p>
+                  <p className="m-0 text-nbg-blue/90">
+                    Altijd helder advies, afgestemd op uw situatie – zonder gedoe.
+                  </p>
+                </div>
                 <div className="mt-8 flex flex-wrap gap-4">
                   <Link
                     href="/contact"
@@ -59,20 +64,23 @@ export default function FinancieringPage() {
               <div className="p-6 sm:p-7 rounded-2xl bg-white border border-nbg-light-gray/60 shadow-[0_4px_20px_rgba(0,0,0,0.08)]">
                 <h3 className="text-nbg-blue font-bold text-lg m-0 mb-2">Vrijblijvend advies over financiering</h3>
                 <p className="text-nbg-blue/80 text-[15px] m-0 mb-4">
-                  Heeft u een financieringsvraag? Plan een gesprek – we kijken samen wat bij u past.
+                  Heeft u een financieringsvraag? Plan een gesprek – wij adviseren u graag en kijken samen wat bij uw situatie past.
                 </p>
                 <ul className="space-y-1.5 mb-5 text-nbg-blue/85 text-sm">
                   <li className="flex items-center gap-2">
                     <span className="w-1.5 h-1.5 rounded-full bg-nbg-green shrink-0" aria-hidden />
-                    Particulier – woning, auto, extra behoefte
+                    Particulier – verbouwing, auto (financiering of private lease), extra middelen
                   </li>
                   <li className="flex items-center gap-2">
                     <span className="w-1.5 h-1.5 rounded-full bg-nbg-green shrink-0" aria-hidden />
-                    Zakelijk – starten, pand, auto, rekening-courant
+                    Zakelijk – starten, bedrijfspand, auto, rekening-courant
                   </li>
                   <li className="flex items-center gap-2">
                     <span className="w-1.5 h-1.5 rounded-full bg-nbg-green shrink-0" aria-hidden />
-                    Hypotheek – uitgebreid op onze hypothekenpagina
+                    Hypotheek – uitgebreid op onze{" "}
+                    <Link href="/hypotheken" className="text-nbg-green font-medium hover:underline">
+                      hypothekenpagina
+                    </Link>
                   </li>
                 </ul>
                 <Link
@@ -109,27 +117,27 @@ export default function FinancieringPage() {
                 <div className="border-l-4 border-nbg-green pl-5 mb-6">
                   <h2 className="text-nbg-blue text-2xl lg:text-3xl font-bold m-0">Particuliere financiering</h2>
                 </div>
-                <p className="text-nbg-blue/85 text-[17px] leading-relaxed mb-6">
-                  Kunt u wel wat extra hulp gebruiken bij uw financiën? Wij adviseren u graag op het gebied van:
+                <p className="text-nbg-blue/85 text-[17px] leading-relaxed mb-6 m-0">
+                  Kunt u extra financiële ruimte gebruiken? Wij adviseren u graag op het gebied van:
                 </p>
                 <ul className="space-y-4 text-nbg-blue/85 text-[17px]">
                   <li className="flex items-start gap-3">
                     <span className="w-1.5 h-1.5 rounded-full bg-nbg-green shrink-0 mt-2" aria-hidden />
                     <span>
-                      <strong className="text-nbg-blue">Een nieuwe woning</strong> – De aanschaf van een woning is een grote stap. Wij houden rekening met alle kosten, zodat u weet wat u zich kunt veroorloven en ook op langere termijn goed zit. Voor hypotheekadvies en het hele traject verwijzen we u graag door naar onze{" "}
+                      <strong className="text-nbg-blue">Verbouwing van uw woning</strong> – Bijvoorbeeld voor een nieuwe keuken, badkamer of verduurzaming. Wij adviseren over een passende financiering die aansluit bij uw plannen en financiële mogelijkheden. Voor de aankoop van een woning en volledig hypotheekadvies verwijzen we u naar onze{" "}
                       <Link href="/hypotheken" className="text-nbg-green font-medium hover:underline">hypothekenpagina</Link>.
                     </span>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="w-1.5 h-1.5 rounded-full bg-nbg-green shrink-0 mt-2" aria-hidden />
                     <span>
-                      <strong className="text-nbg-blue">Auto</strong> – Een eigen vervoermiddel is fijn, maar er komen meer kosten bij kijken dan alleen de aanschaf. Wij leggen uit welke kosten er zijn en of die nieuwe auto in uw budget past.
+                      <strong className="text-nbg-blue">Auto</strong> – Of het nu gaat om de aanschaf van een auto of lease, wij adviseren over de mogelijkheden die passen bij uw budget en maandlasten.
                     </span>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="w-1.5 h-1.5 rounded-full bg-nbg-green shrink-0 mt-2" aria-hidden />
                     <span>
-                      <strong className="text-nbg-blue">Extra financiële ruimte</strong> – Bijvoorbeeld voor een verbouwing, studie of andere grote uitgaven. Wij kijken met u mee naar de mogelijkheden die bij uw situatie passen.
+                      <strong className="text-nbg-blue">Extra financiële middelen</strong> – Heeft u tijdelijk extra ruimte nodig voor andere uitgaven? Wij adviseren u over passende oplossingen en wat verantwoord is binnen uw financiële situatie.
                     </span>
                   </li>
                 </ul>
@@ -160,29 +168,39 @@ export default function FinancieringPage() {
                 <div className="border-l-4 border-nbg-green pl-5 mb-6">
                   <h2 className="text-nbg-blue text-2xl lg:text-3xl font-bold m-0">Zakelijke financiering</h2>
                 </div>
-                <p className="text-nbg-blue/85 text-[17px] leading-relaxed mb-6">
-                  Ook als ondernemer kunt u wel eens een steuntje in de rug gebruiken. Wij helpen u met:
+                <p className="text-nbg-blue/85 text-[17px] leading-relaxed mb-6 m-0">
+                  Ook als ondernemer kunt u wel eens een steuntje in de rug gebruiken. Wij adviseren u graag en kijken samen naar de mogelijkheden, onder andere voor:
                 </p>
-                <ul className="space-y-3 text-nbg-blue/85 text-[17px]">
-                  <li className="flex items-start gap-2">
+                <ul className="space-y-4 text-nbg-blue/85 text-[17px]">
+                  <li className="flex items-start gap-3">
                     <span className="w-1.5 h-1.5 rounded-full bg-nbg-green shrink-0 mt-2" aria-hidden />
-                    <span><strong className="text-nbg-blue">Opstarten van een eigen bedrijf</strong> – Hoe financiert u uw onderneming en waar moet u op letten? Wij denken met u mee.</span>
+                    <span>
+                      <strong className="text-nbg-blue">Opstarten van een eigen bedrijf</strong> – Hoe financiert u uw onderneming en waar moet u op letten? Wij denken met u mee.
+                    </span>
                   </li>
-                  <li className="flex items-start gap-2">
+                  <li className="flex items-start gap-3">
                     <span className="w-1.5 h-1.5 rounded-full bg-nbg-green shrink-0 mt-2" aria-hidden />
-                    <span><strong className="text-nbg-blue">Aanschaf onroerend goed</strong> – Is uw bedrijf toe aan een (groter) pand of uitbreiding? Wij kijken mee naar de mogelijkheden.</span>
+                    <span>
+                      <strong className="text-nbg-blue">Aanschaf onroerend goed</strong> – Is uw bedrijf toe aan een (groter) pand of uitbreiding? Wij kijken mee naar de mogelijkheden.
+                    </span>
                   </li>
-                  <li className="flex items-start gap-2">
+                  <li className="flex items-start gap-3">
                     <span className="w-1.5 h-1.5 rounded-full bg-nbg-green shrink-0 mt-2" aria-hidden />
-                    <span><strong className="text-nbg-blue">Bedrijfsauto</strong> – Zelf aanschaffen of leasen? Wij leggen de opties uit zodat u de keuze maakt die bij u past.</span>
+                    <span>
+                      <strong className="text-nbg-blue">Bedrijfsauto en zakelijke lease</strong> – Zelf aanschaffen, leasen of kiezen voor financiële/operationele lease? Wij adviseren over de opties, zodat u een keuze maakt die bij uw situatie past.
+                    </span>
                   </li>
-                  <li className="flex items-start gap-2">
+                  <li className="flex items-start gap-3">
                     <span className="w-1.5 h-1.5 rounded-full bg-nbg-green shrink-0 mt-2" aria-hidden />
-                    <span><strong className="text-nbg-blue">Rekening-courantbehoefte</strong> – Is uw zakelijke financiële huishouding op orde of komt u regelmatig krap te zitten? Wij denken mee.</span>
+                    <span>
+                      <strong className="text-nbg-blue">Rekening-courantbehoefte</strong> – Is uw zakelijke financiële huishouding op orde of komt u regelmatig krap te zitten? Wij denken mee over passende oplossingen.
+                    </span>
                   </li>
-                  <li className="flex items-start gap-2">
+                  <li className="flex items-start gap-3">
                     <span className="w-1.5 h-1.5 rounded-full bg-nbg-green shrink-0 mt-2" aria-hidden />
-                    <span><strong className="text-nbg-blue">Hoge financieringslasten</strong> – Mag de bank de opslag zomaar verhogen? Wij helpen u de situatie te doorzien en zoeken naar passende oplossingen.</span>
+                    <span>
+                      <strong className="text-nbg-blue">Hoge financieringslasten</strong> – Mag de bank de opslag zomaar verhogen? Wij helpen u de situatie te doorzien en zoeken naar passende oplossingen.
+                    </span>
                   </li>
                 </ul>
               </div>
@@ -352,11 +370,11 @@ export default function FinancieringPage() {
                       </a>
                     </li>
                     <li>
-                      <a href="mailto:info@haruna.nl" className="flex items-center gap-3 text-white/95 hover:text-white transition-colors">
+                      <a href="mailto:contact@haruna.nl" className="flex items-center gap-3 text-white/95 hover:text-white transition-colors">
                         <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-white/15 text-nbg-green">
                           <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
                         </span>
-                        <span className="font-medium">info@haruna.nl</span>
+                        <span className="font-medium">contact@haruna.nl</span>
                       </a>
                     </li>
                   </ul>

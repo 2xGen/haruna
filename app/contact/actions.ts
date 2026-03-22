@@ -1,6 +1,7 @@
 "use server";
 
 import { getSupabaseServer } from "@/lib/supabase/server";
+import { sendAdminNotificationEmail } from "@/lib/resend/notify";
 
 export async function submitAfspraakForm(
   _prev: { success: boolean },
@@ -30,6 +31,23 @@ export async function submitAfspraakForm(
       console.error("Supabase afspraak insert error:", error);
       return { success: false };
     }
+
+    // Notify admin by email (non-blocking for the end-user).
+    try {
+      console.log("[resend] sending afspraak mail", { naam, email });
+      await sendAdminNotificationEmail({
+        kind: "afspraak",
+        naam,
+        email,
+        telefoon,
+        onderwerp,
+        bericht,
+      });
+      console.log("[resend] afspraak mail sent");
+    } catch (mailErr) {
+      console.error("Resend afspraak email failed:", mailErr);
+    }
+
     return { success: true };
   } catch (e) {
     console.error("submitAfspraakForm error:", e);
@@ -69,11 +87,26 @@ export async function submitNewsletterForm(
 
     if (error) {
       if (error.code === "23505") {
+        // Already subscribed; avoid spamming admin inbox.
         return { success: true, message: "Dit e-mailadres staat al ingeschreven." };
       }
       console.error("Supabase newsletter insert error:", error);
       return { success: false, message: "Inschrijven mislukt. Probeer het later opnieuw." };
     }
+
+    // Notify admin by email (non-blocking for the end-user).
+    try {
+      console.log("[resend] sending newsletter mail", { email, source });
+      await sendAdminNotificationEmail({
+        kind: "newsletter",
+        email,
+        source: source === "nieuws" ? "nieuws" : "footer",
+      });
+      console.log("[resend] newsletter mail sent");
+    } catch (mailErr) {
+      console.error("Resend newsletter email failed:", mailErr);
+    }
+
     return { success: true, message: "Bedankt! U bent ingeschreven voor de nieuwsbrief." };
   } catch (e) {
     console.error("submitNewsletterForm error:", e);

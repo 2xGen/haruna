@@ -233,7 +233,7 @@ export default function VerzekeringenPage() {
                   </li>
                 </ul>
                 <p className="text-nbg-blue/85 text-[17px] leading-relaxed">
-                  U kunt verzekeringen in een pakket afnemen of los. Wij regelen het beheer – u heeft er geen omkijken naar. Vaak tegen een vast maandbedrag. Vraag vrijblijvend een berekening aan.
+                  U kunt verzekeringen in een pakket afnemen of los. Wij regelen het beheer – u heeft er geen omkijken naar. Vaak tegen een vast maandbedrag. Ook in pakketvorm, dus vaak met korting. Vraag vrijblijvend een berekening aan.
                 </p>
               </div>
               <div className="lg:col-span-5 flex items-start">
@@ -434,11 +434,11 @@ export default function VerzekeringenPage() {
                       </a>
                     </li>
                     <li>
-                      <a href="mailto:info@haruna.nl" className="flex items-center gap-3 text-white/95 hover:text-white transition-colors">
+                      <a href="mailto:contact@haruna.nl" className="flex items-center gap-3 text-white/95 hover:text-white transition-colors">
                         <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-white/15 text-nbg-green">
                           <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
                         </span>
-                        <span className="font-medium">info@haruna.nl</span>
+                        <span className="font-medium">contact@haruna.nl</span>
                       </a>
                     </li>
                   </ul>

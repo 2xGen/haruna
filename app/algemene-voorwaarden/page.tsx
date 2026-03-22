@@ -41,8 +41,8 @@ export default function AlgemeneVoorwaardenPage() {
               </p>
               <p className="m-0">
                 E-mail:{" "}
-                <a href="mailto:info@haruna.nl" className="text-nbg-green font-medium hover:underline">
-                  info@haruna.nl
+                <a href="mailto:contact@haruna.nl" className="text-nbg-green font-medium hover:underline">
+                  contact@haruna.nl
                 </a>
               </p>
             </div>
@@ -82,8 +82,8 @@ export default function AlgemeneVoorwaardenPage() {
             <h2 className="text-nbg-blue text-xl font-bold mt-10 mb-3">Klachten</h2>
             <p>
               Heeft u een klacht over onze dienstverlening, neem dan eerst contact met ons op via{" "}
-              <a href="mailto:info@haruna.nl" className="text-nbg-green font-medium hover:underline">
-                info@haruna.nl
+              <a href="mailto:contact@haruna.nl" className="text-nbg-green font-medium hover:underline">
+                contact@haruna.nl
               </a>
               . Wij zoeken samen met u naar een oplossing. Daarnaast kunt u zich wenden tot de geschillencommissie of de AFM, voor zover dat voor uw situatie van toepassing is; zie ook ons dienstverleningsdocument waar van toepassing.
             </p>

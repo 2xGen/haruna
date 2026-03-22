@@ -13,7 +13,7 @@ export default function JsonLd() {
           "Hypotheek- en pensioenadvies. Persoonlijk advies voor financiering, verzekeringen en pensioen – online via videobellen, makkelijk en snel.",
         url: "https://haruna.nl",
         telephone: "+31786849331",
-        email: "info@haruna.nl",
+        email: "contact@haruna.nl",
         areaServed: {
           "@type": "Country",
           name: "Nederland",

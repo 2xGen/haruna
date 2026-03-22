@@ -59,7 +59,7 @@ export default function PensioenPage() {
               <div className="p-6 sm:p-7 rounded-2xl bg-white border border-nbg-light-gray/60 shadow-[0_4px_20px_rgba(0,0,0,0.08)]">
                 <h3 className="text-nbg-blue font-bold text-lg m-0 mb-2">Vrijblijvend pensioenadvies</h3>
                 <p className="text-nbg-blue/80 text-[15px] m-0 mb-4">
-                  Vragen over uw pensioen? Plan een gesprek – we kijken samen of uw voorziening nog past bij uw wensen en plannen.
+                  Vragen over uw pensioen? Plan een gesprek – wij kijken samen of uw voorziening nog past bij uw wensen en plannen.
                 </p>
                 <ul className="space-y-1.5 mb-5 text-nbg-blue/85 text-sm">
                   <li className="flex items-center gap-2">
@@ -72,7 +72,7 @@ export default function PensioenPage() {
                   </li>
                   <li className="flex items-center gap-2">
                     <span className="w-1.5 h-1.5 rounded-full bg-nbg-green shrink-0" aria-hidden />
-                    Ondernemers (DGA) – eigen beheer of verzekerd
+                    Ondernemers (DGA) – WTP-pensioenregeling volgens de nieuwe Wet Toekomst Pensioenen
                   </li>
                   <li className="flex items-center gap-2">
                     <span className="w-1.5 h-1.5 rounded-full bg-nbg-green shrink-0" aria-hidden />
@@ -161,7 +161,7 @@ export default function PensioenPage() {
                   <h2 className="text-nbg-blue text-2xl lg:text-3xl font-bold m-0">Voor werkgevers en werknemers</h2>
                 </div>
                 <p className="text-nbg-blue/85 text-[17px] leading-relaxed mb-6">
-                  Wij adviseren werkgevers en werknemers over pensioen. Van het opzetten of verlengen van een collectieve pensioenregeling tot communicatie naar uw medewerkers en het beheer van de administratie. We controleren de pensioenuitvoerder en adviseren over waardeoverdrachten en actuariële berekeningen.
+                  Wij adviseren werkgevers en werknemers over pensioen. Van het opzetten of verlengen van een collectieve pensioenregeling tot communicatie naar uw medewerkers en het beheer van de administratie. We controleren de pensioenuitvoerder en informeren over waardeoverdrachten en actuariële berekeningen.
                 </p>
                 <ul className="space-y-2 text-nbg-blue/85 text-[17px]">
                   <li className="flex items-start gap-2">
@@ -178,7 +178,7 @@ export default function PensioenPage() {
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="w-1.5 h-1.5 rounded-full bg-nbg-green shrink-0 mt-2" aria-hidden />
-                    Advies waardeoverdrachten en second opinion
+                    Informatie over waardeoverdrachten en second opinion
                   </li>
                 </ul>
               </div>
@@ -209,20 +209,20 @@ export default function PensioenPage() {
                   <h2 className="text-nbg-blue text-2xl lg:text-3xl font-bold m-0">Voor ondernemers (DGA)</h2>
                 </div>
                 <p className="text-nbg-blue/85 text-[17px] leading-relaxed mb-6">
-                  Bent u directeur-grootaandeelhouder? Dan zijn er specifieke mogelijkheden voor uw pensioen. Wij helpen met eigen beheer of verzekerde pensioenregelingen, fiscaal-juridische vraagstukken en het opstellen van juridische documenten. Ook voor het extern verzekeren van eigen beheer, herverzekeren van nabestaandenpensioen of het verzekeren van arbeidsongeschiktheid.
+                  Bent u directeur-grootaandeelhouder? Dan zijn er specifieke mogelijkheden voor uw pensioen. Wij adviseren over de WTP-pensioenregeling, verzekerde pensioenregelingen, fiscaal-juridische vraagstukken en het opstellen van juridische documenten.
                 </p>
                 <ul className="space-y-2 text-nbg-blue/85 text-[17px]">
                   <li className="flex items-start gap-2">
                     <span className="w-1.5 h-1.5 rounded-full bg-nbg-green shrink-0 mt-2" aria-hidden />
-                    Eigen beheer pensioenberekeningen en verzekerde regelingen
+                    WTP-pensioenberekeningen en verzekerde regelingen
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="w-1.5 h-1.5 rounded-full bg-nbg-green shrink-0 mt-2" aria-hidden />
-                    Fiscaal-juridisch advies en opstellen documenten
+                    Fiscaal-juridisch advies en opstellen van documenten
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="w-1.5 h-1.5 rounded-full bg-nbg-green shrink-0 mt-2" aria-hidden />
-                    Extern verzekeren eigen beheer, herverzekeren nabestaandenpensioen
+                    Herverzekeren van nabestaandenpensioen
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="w-1.5 h-1.5 rounded-full bg-nbg-green shrink-0 mt-2" aria-hidden />
@@ -257,7 +257,7 @@ export default function PensioenPage() {
                   <h2 className="text-nbg-blue text-2xl lg:text-3xl font-bold m-0">Rond uw pensionering</h2>
                 </div>
                 <p className="text-nbg-blue/85 text-[17px] leading-relaxed mb-6">
-                  Komt uw pensioen binnenkort ingang of wilt u uw situatie laten doorrekenen? Wij helpen met inkomensplanning, het in kaart brengen van uw huidige regeling en een second opinion. Ook bij een gouden handdruk, ontslagvergoeding of begeleiding bij ontslag denken we graag met u mee.
+                  Komt uw pensioen binnenkort in gang of wilt u uw situatie laten doorrekenen? Wij adviseren u graag over inkomensplanning, het in kaart brengen van uw huidige regeling en een second opinion. Ook bij ontslagvergoeding of begeleiding bij ontslag denken we met u mee.
                 </p>
                 <ul className="space-y-2 text-nbg-blue/85 text-[17px]">
                   <li className="flex items-start gap-2">
@@ -270,7 +270,7 @@ export default function PensioenPage() {
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="w-1.5 h-1.5 rounded-full bg-nbg-green shrink-0 mt-2" aria-hidden />
-                    Gouden handdruk, ontslagvergoeding en begeleiding
+                    Ontslagvergoeding en begeleiding bij ontslag
                   </li>
                 </ul>
               </div>
@@ -457,11 +457,11 @@ export default function PensioenPage() {
                       </a>
                     </li>
                     <li>
-                      <a href="mailto:info@haruna.nl" className="flex items-center gap-3 text-white/95 hover:text-white transition-colors">
+                      <a href="mailto:contact@haruna.nl" className="flex items-center gap-3 text-white/95 hover:text-white transition-colors">
                         <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-white/15 text-nbg-green">
                           <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
                         </span>
-                        <span className="font-medium">info@haruna.nl</span>
+                        <span className="font-medium">contact@haruna.nl</span>
                       </a>
                     </li>
                   </ul>

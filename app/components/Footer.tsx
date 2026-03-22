@@ -78,8 +78,8 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <a href="mailto:info@haruna.nl" className="text-white/90 hover:text-white transition-colors">
-                  info@haruna.nl
+                <a href="mailto:contact@haruna.nl" className="text-white/90 hover:text-white transition-colors">
+                  contact@haruna.nl
                 </a>
               </li>
             </ul>
@@ -111,7 +111,7 @@ export default function Footer() {
             </span>
             Documenten
           </h4>
-          <ul className="flex flex-wrap gap-x-8 gap-y-2 list-none p-0 m-0">
+          <ul className="flex flex-wrap justify-center gap-x-8 gap-y-2 list-none p-0 m-0">
             {footerDocumenten.map((link) => (
               <li key={link.label}>
                 {link.href.endsWith(".pdf") ? (

@@ -45,8 +45,8 @@ export default function PrivacyPage() {
               </p>
               <p className="m-0">
                 E-mail:{" "}
-                <a href="mailto:info@haruna.nl" className="text-nbg-green font-medium hover:underline">
-                  info@haruna.nl
+                <a href="mailto:contact@haruna.nl" className="text-nbg-green font-medium hover:underline">
+                  contact@haruna.nl
                 </a>
               </p>
             </div>
@@ -91,8 +91,8 @@ export default function PrivacyPage() {
                 autoriteitpersoonsgegevens.nl
               </a>
               ). Voor uitoefening van uw rechten of vragen over dit beleid kunt u contact met ons opnemen via{" "}
-              <a href="mailto:info@haruna.nl" className="text-nbg-green font-medium hover:underline">
-                info@haruna.nl
+              <a href="mailto:contact@haruna.nl" className="text-nbg-green font-medium hover:underline">
+                contact@haruna.nl
               </a>
               .
             </p>
