@@ -28,8 +28,9 @@ function formatDate(value: string) {
 export default async function HarunaAdminPage({
   searchParams,
 }: {
-  searchParams?: { error?: string };
+  searchParams?: Promise<{ error?: string }>;
 }) {
+  const sp = (await searchParams) ?? {};
   const isAuthed = await isValidAdminSessionCookie();
   const supabase = isAuthed ? getSupabaseServer() : null;
 
@@ -88,7 +89,7 @@ export default async function HarunaAdminPage({
               <h2 className="text-nbg-blue text-xl font-bold m-0 mb-2">
                 Inloggen
               </h2>
-              {searchParams?.error ? (
+              {sp.error ? (
                 <p className="text-[15px] text-red-600 m-0 mb-4">
                   Onjuiste wachtwoord.
                 </p>
