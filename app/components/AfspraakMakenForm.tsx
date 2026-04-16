@@ -1,6 +1,6 @@
 "use client";
 
-import { useActionState } from "react";
+import { FormEvent, useActionState, useState } from "react";
 
 import { submitAfspraakForm } from "../contact/actions";
 
@@ -11,6 +11,8 @@ export default function AfspraakMakenForm() {
     submitAfspraakForm,
     initialState
   );
+  const [localSpamError, setLocalSpamError] = useState<string | null>(null);
+  const [showSpamCheck, setShowSpamCheck] = useState(false);
 
   if (state.success) {
     return (
@@ -31,15 +33,61 @@ export default function AfspraakMakenForm() {
   const inputClass =
     "w-full rounded-lg border border-nbg-light-gray px-4 py-3 text-nbg-blue placeholder:text-nbg-blue/50 focus:border-nbg-green focus:ring-2 focus:ring-nbg-green/20 outline-none transition-colors";
   const labelClass = "block text-nbg-blue font-medium text-sm mb-1.5";
+  const formError = localSpamError ?? state.error;
+
+  function isReadyForSpamCheck(formData: FormData): boolean {
+    const naam = ((formData.get("naam") as string) || "").trim();
+    const email = ((formData.get("email") as string) || "").trim();
+    const telefoon = ((formData.get("telefoon") as string) || "").trim();
+    return Boolean(naam && email && telefoon);
+  }
+
+  function handleFormInput(event: FormEvent<HTMLFormElement>) {
+    const formData = new FormData(event.currentTarget);
+    const ready = isReadyForSpamCheck(formData);
+    setShowSpamCheck(ready);
+    if (!ready) {
+      setLocalSpamError(null);
+    }
+  }
+
+  function handleSubmit(event: FormEvent<HTMLFormElement>) {
+    const formData = new FormData(event.currentTarget);
+    const ready = isReadyForSpamCheck(formData);
+    if (!ready) {
+      return;
+    }
+    setShowSpamCheck(true);
+    if (((formData.get("spam_check") as string) || "").trim() !== "7") {
+      event.preventDefault();
+      setLocalSpamError("Fout antwoord op de anti-bot vraag. Probeer het opnieuw.");
+      return;
+    }
+    setLocalSpamError(null);
+  }
 
   return (
-    <form action={formAction} className="space-y-5">
-      {state.error ? (
+    <form action={formAction} className="space-y-5" onSubmit={handleSubmit} onInput={handleFormInput}>
+      <div
+        aria-hidden="true"
+        style={{
+          position: "absolute",
+          left: "-9999px",
+          width: "1px",
+          height: "1px",
+          overflow: "hidden",
+          pointerEvents: "none",
+        }}
+      >
+        <label htmlFor="website">Website</label>
+        <input id="website" name="website" type="text" tabIndex={-1} autoComplete="off" />
+      </div>
+      {formError ? (
         <p
           className="rounded-lg border border-red-200 bg-red-50 px-4 py-3 text-[15px] text-red-800 m-0"
           role="alert"
         >
-          {state.error}
+          {formError}
         </p>
       ) : null}
       <div>
@@ -70,22 +118,25 @@ export default function AfspraakMakenForm() {
       </div>
       <div>
         <label htmlFor="telefoon" className={labelClass}>
-          Telefoon (optioneel)
+          Telefoon <span className="text-nbg-green">*</span>
         </label>
         <input
           id="telefoon"
           name="telefoon"
           type="tel"
+          required
           className={inputClass}
           placeholder="06 12345678"
         />
       </div>
       <div>
         <label htmlFor="onderwerp" className={labelClass}>
-          Onderwerp
+          Onderwerp <span className="text-nbg-green">*</span>
         </label>
-        <select id="onderwerp" name="onderwerp" className={inputClass}>
-          <option value="">Selecteer onderwerp</option>
+        <select id="onderwerp" name="onderwerp" className={inputClass} required defaultValue="">
+          <option value="" disabled>
+            Selecteer onderwerp
+          </option>
           <option value="hypotheek">Hypotheek</option>
           <option value="verzekeringen">Verzekeringen</option>
           <option value="pensioen">Pensioen</option>
@@ -105,12 +156,30 @@ export default function AfspraakMakenForm() {
           placeholder="Vertel kort waar uw vraag over gaat…"
         />
       </div>
+      {showSpamCheck ? (
+        <div>
+          <label htmlFor="spam_check" className={labelClass}>
+            Anti-bot controlevraag: wat is 3 + 4? <span className="text-nbg-green">*</span>
+          </label>
+          <p className="m-0 mb-1.5 text-xs text-nbg-blue/70">Alleen om spam te voorkomen.</p>
+          <input
+            id="spam_check"
+            name="spam_check"
+            type="text"
+            inputMode="numeric"
+            required
+            className={inputClass}
+            placeholder="Vul het antwoord in"
+            onChange={() => setLocalSpamError(null)}
+          />
+        </div>
+      ) : null}
       <button
         type="submit"
         disabled={isPending}
         className="inline-flex items-center justify-center gap-2 rounded-xl bg-nbg-green text-white font-semibold text-[17px] px-8 py-4 shadow-[0_4px_14px_rgba(118,163,72,0.35)] hover:bg-nbg-green/90 hover:shadow-[0_6px_20px_rgba(118,163,72,0.4)] hover:-translate-y-0.5 disabled:opacity-60 disabled:hover:translate-y-0 disabled:hover:shadow-[0_4px_14px_rgba(118,163,72,0.35)] transition-all duration-200"
       >
-        {isPending ? "Bezig met versturen…" : "Afspraak aanvragen"}
+        {isPending ? "Bezig met versturen…" : "Adviesgesprek aanvragen"}
         <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
         </svg>

@@ -3,18 +3,39 @@
 import { getSupabaseServer } from "@/lib/supabase/server";
 import { sendAdminNotificationEmail } from "@/lib/resend/notify";
 
+function isSpamSubmission(formData: FormData): boolean {
+  const website = (formData.get("website") as string)?.trim() || "";
+  const newsletterHp = (formData.get("nb_hp") as string)?.trim() || "";
+  return website.length > 0 || newsletterHp.length > 0;
+}
+
+function isValidMathCheck(formData: FormData): boolean {
+  const raw = (formData.get("spam_check") as string) || "";
+  const answer = raw.trim().replace(/\s+/g, "");
+  return answer === "7";
+}
+
 export async function submitAfspraakForm(
   _prev: { success: boolean; error?: string },
   formData: FormData
 ): Promise<{ success: boolean; error?: string }> {
+  if (isSpamSubmission(formData)) {
+    // Pretend success so bots do not learn the filter behavior.
+    return { success: true };
+  }
+
+  if (!isValidMathCheck(formData)) {
+    return { success: false, error: "Controle mislukt. Beantwoord de som 3 + 4." };
+  }
+
   const naam = (formData.get("naam") as string)?.trim() || "";
   const email = (formData.get("email") as string)?.trim() || "";
-  const telefoon = (formData.get("telefoon") as string)?.trim() || null;
-  const onderwerp = (formData.get("onderwerp") as string)?.trim() || null;
+  const telefoon = (formData.get("telefoon") as string)?.trim() || "";
+  const onderwerp = (formData.get("onderwerp") as string)?.trim() || "";
   const bericht = (formData.get("bericht") as string)?.trim() || null;
 
-  if (!naam || !email) {
-    return { success: false, error: "Vul uw naam en e-mailadres in." };
+  if (!naam || !email || !telefoon || !onderwerp) {
+    return { success: false, error: "Vul uw naam, e-mailadres, telefoonnummer en onderwerp in." };
   }
 
   try {
@@ -22,8 +43,8 @@ export async function submitAfspraakForm(
     const { error } = await supabase.from("haruna_afspraken").insert({
       naam,
       email,
-      telefoon: telefoon || null,
-      onderwerp: onderwerp || null,
+      telefoon,
+      onderwerp,
       bericht: bericht || null,
     });
 
@@ -82,6 +103,15 @@ export async function submitNewsletterForm(
   _prev: { success: boolean; message?: string },
   formData: FormData
 ): Promise<{ success: boolean; message?: string }> {
+  if (isSpamSubmission(formData)) {
+    // Pretend success so bots do not learn the filter behavior.
+    return { success: true, message: "Bedankt! U bent ingeschreven voor de nieuwsbrief." };
+  }
+
+  if (!isValidMathCheck(formData)) {
+    return { success: false, message: "Controle mislukt. Beantwoord de som 3 + 4." };
+  }
+
   const email = (formData.get("email") as string)?.trim() || "";
   const source = (formData.get("source") as string) || "footer";
 

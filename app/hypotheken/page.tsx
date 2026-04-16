@@ -5,7 +5,6 @@ import HeroHypotheekCalculator from "../components/HeroHypotheekCalculator";
 import RenteBerekenen from "../components/RenteBerekenen";
 import BankLogosCarousel from "../components/BankLogosCarousel";
 import AfspraakMakenForm from "../components/AfspraakMakenForm";
-import HypotheekChecklistForm from "../components/HypotheekChecklistForm";
 import FaqSection from "../components/FaqSection";
 
 export const metadata = {
@@ -15,6 +14,14 @@ export const metadata = {
 };
 
 const HYPOTHEEK_GUIDES = [
+  {
+    title: "Aflossingsvrije hypotheek — nieuwe regels 2026",
+    description:
+      "Rabobank, ABN AMRO en ASN: maximaal 30% aflossingsvrijs per mei/juni 2026. Wanneer geldt het voor u?",
+    href: "/nieuws/aflossingsvrije-hypotheek-nieuwe-regels-2026",
+    image:
+      "https://soaacpusdhyxwucjhhpy.supabase.co/storage/v1/object/public/haruna/Aflossingsvrije%20hypotheek.jpg",
+  },
   {
     title: "Samenwonen: wat moet u regelen?",
     description: "Woont u al samen of gaat dit binnenkort? Lees wat u moet regelen rond hypotheek en vermogen.",
@@ -76,9 +83,9 @@ export default function HypothekenPage() {
                 </p>
               </div>
               <div className="p-6 sm:p-7 rounded-2xl bg-white border border-nbg-light-gray/60 shadow-[0_4px_20px_rgba(0,0,0,0.08)]">
-                <h3 className="text-nbg-blue font-bold text-lg m-0 mb-2">Ontvang een gratis hypotheek checklist</h3>
+                <h3 className="text-nbg-blue font-bold text-lg m-0 mb-2">Hypotheek checklist 2026</h3>
                 <p className="text-nbg-blue/80 text-[15px] m-0 mb-4">
-                  Vul uw e-mail in en ontvang direct een handige checklist. Alles wat u nodig heeft bij uw hypotheekaanvraag.
+                  Bekijk direct de handige checklist met alles wat u nodig heeft bij uw hypotheekaanvraag.
                 </p>
                 <ul className="space-y-1.5 mb-5 text-nbg-blue/85 text-sm">
                   <li className="flex items-center gap-2">
@@ -94,12 +101,16 @@ export default function HypothekenPage() {
                     Veelgemaakte fouten om te vermijden
                   </li>
                 </ul>
-                <HypotheekChecklistForm />
-                <p className="text-nbg-blue/60 text-xs m-0 mt-3">Gratis, direct in uw mailbox. Geen spam.</p>
-                <p className="text-nbg-blue/60 text-xs m-0 mt-2">
-                  Door uw e-mail in te vullen gaat u akkoord met onze{" "}
-                  <Link href="/privacy" className="text-nbg-green hover:underline">privacyverklaring</Link>.
-                </p>
+                <Link
+                  href="/hypotheek-checklist"
+                  className="w-full inline-flex items-center justify-center gap-2 rounded-lg bg-nbg-green text-white font-semibold text-sm py-3 hover:bg-nbg-green/90 transition-colors"
+                >
+                  Naar de checklist
+                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </Link>
+                <p className="text-nbg-blue/60 text-xs m-0 mt-3">Gratis en direct beschikbaar.</p>
               </div>
             </div>
           </div>
@@ -188,9 +199,9 @@ export default function HypothekenPage() {
                 <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 320 512"><path d="M305 239c9.4 9.4 9.4 24.6 0 33.9L113 465c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l175-175L79 81c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L305 239z" /></svg>
               </Link>
             </div>
-            <ul className="grid grid-cols-1 md:grid-cols-3 gap-6 list-none p-0 m-0 items-stretch">
+            <ul className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-6 list-none p-0 m-0 items-stretch">
               {HYPOTHEEK_GUIDES.map((guide) => (
-                <li key={guide.title} className="flex">
+                <li key={guide.href} className="flex">
                   <article className="bg-white rounded-2xl overflow-hidden shadow-[0_4px_20px_rgba(0,0,0,0.06)] border border-nbg-light-gray/50 hover:shadow-[0_6px_24px_rgba(0,0,0,0.08)] transition-shadow flex flex-col w-full">
                     <div className="aspect-[2/1] shrink-0 overflow-hidden bg-nbg-lighter-green/80">
                       {guide.image ? (
