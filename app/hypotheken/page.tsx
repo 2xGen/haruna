@@ -10,7 +10,7 @@ import FaqSection from "../components/FaqSection";
 export const metadata = {
   title: "Hypotheken | Haruna Hypotheek- en pensioenadvies",
   description:
-    "Hypotheekadvies op maat. Bereken uw maximale hypotheek, vergelijk rentestanden en plan een vrijblijvend gesprek. Online via videobellen.",
+    "Hypotheekadvies op maat. Bereken uw maximale hypotheek, vergelijk rentestanden en check uw hypotheekmogelijkheden. Online via videobellen.",
 };
 
 const HYPOTHEEK_GUIDES = [
@@ -59,7 +59,7 @@ export default function HypothekenPage() {
                   Hypotheken – persoonlijk advies op maat
                 </h1>
                 <p className="mt-5 text-nbg-blue/80 text-[17px] lg:text-lg leading-relaxed max-w-xl">
-                  Bereken uw maximale hypotheek, vergelijk rentestanden en plan een vrijblijvend videogesprek. Onafhankelijk adviseur, vergunninghouder AFM – online via videobellen – persoonlijk, makkelijk en snel.
+                  Bereken uw maximale hypotheek, vergelijk rentestanden en check uw hypotheekmogelijkheden. Onafhankelijk adviseur, vergunninghouder AFM – online via videobellen – persoonlijk, makkelijk en snel.
                 </p>
                 <div className="mt-8 flex flex-wrap gap-4">
                   <Link
@@ -73,7 +73,7 @@ export default function HypothekenPage() {
                     href="/contact"
                     className="inline-flex items-center gap-2 rounded-lg border-2 border-nbg-primary text-nbg-primary font-semibold text-[15px] px-6 py-3.5 hover:bg-nbg-primary hover:text-white transition-colors"
                   >
-                    Afspraak maken
+                    Check mijn hypotheekmogelijkheden
                   </Link>
                 </div>
                 <p className="mt-8 text-nbg-blue/70 text-sm">
@@ -139,7 +139,7 @@ export default function HypothekenPage() {
             <div className="text-center mb-10">
               <h2 className="text-nbg-blue text-2xl lg:text-3xl font-bold m-0">Bereken uw hypotheek</h2>
               <p className="mt-3 text-nbg-blue/80 text-[17px] max-w-2xl mx-auto m-0">
-                Gebruik onze hulpmiddelen voor een snelle indicatie. Voor een exacte berekening op maat, plan een vrijblijvend gesprek.
+                Gebruik onze hulpmiddelen voor een snelle indicatie. Wilt u weten wat klopt voor uw situatie? Laat uw berekening checken.
               </p>
             </div>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-10 items-stretch">
@@ -252,15 +252,15 @@ export default function HypothekenPage() {
               </div>
               <div className="flex-1">
                 <h2 className="text-nbg-blue text-2xl lg:text-3xl font-bold mb-4">
-                  Heeft u een vraag over uw hypotheek of wilt u een afspraak maken?<br />
-                  Neem contact op – wij zijn bereikbaar.
+                  Wilt u weten wat dit betekent voor uw hypotheek?<br />
+                  Plan een kort gesprek en krijg snel duidelijkheid.
                 </h2>
                 <div className="flex flex-wrap gap-3 mb-3">
                   <Link
                     href="/contact"
                     className="inline-flex items-center gap-2 rounded-lg border-2 border-nbg-primary text-nbg-primary font-semibold text-[15px] px-6 py-3.5 hover:bg-nbg-primary hover:text-white transition-colors"
                   >
-                    Afspraak maken
+                    Plan een gesprek over uw hypotheek
                   </Link>
                 </div>
                 <p className="text-nbg-blue/80 text-[17px] m-0 mb-1">
@@ -291,7 +291,7 @@ export default function HypothekenPage() {
             <div className="flex flex-wrap justify-center items-center gap-6 lg:gap-10 text-nbg-blue/90">
               <span className="inline-flex items-center gap-2 text-[15px] font-medium">
                 <svg className="w-5 h-5 text-nbg-green shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" /></svg>
-                Plan een vrijblijvend gesprek
+                Intakegesprek van 20 minuten
               </span>
               <span className="inline-flex items-center gap-2 text-[15px] font-medium">
                 <svg className="w-5 h-5 text-nbg-green shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" /></svg>
@@ -315,9 +315,9 @@ export default function HypothekenPage() {
                     <h2 className="text-nbg-blue text-xl font-bold m-0">Vraag een afspraak aan</h2>
                   </div>
                   <p className="text-nbg-blue/80 text-[17px] mb-6">
-                    Heeft u vragen over uw hypotheek of wilt u een vrijblijvend gesprek? Vul het formulier in – wij nemen zo snel mogelijk contact op.
+                    Heeft u vragen over uw hypotheek? Plan een kort gesprek via het formulier. Wij nemen zo snel mogelijk contact met u op.
                   </p>
-                  <AfspraakMakenForm />
+                  <AfspraakMakenForm presetOnderwerp="hypotheek" />
                 </div>
               </div>
               <aside className="lg:col-span-5 space-y-6">

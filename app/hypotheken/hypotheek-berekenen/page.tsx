@@ -6,7 +6,7 @@ import HypotheekBerekenenForm from "../../components/HypotheekBerekenenForm";
 export const metadata = {
   title: "Hypotheek berekenen | Maximale hypotheek & maandlasten | Haruna",
   description:
-    "Bereken uw maximale hypotheek en maandlasten. Vul uw gegevens in voor een indicatie. Plan daarna een vrijblijvend videogesprek voor persoonlijk advies.",
+    "Bereken uw maximale hypotheek en maandlasten. Vul uw gegevens in voor een indicatie. Laat daarna uw situatie kort door ons checken.",
 };
 
 export default function HypotheekBerekenenPage() {
@@ -23,7 +23,7 @@ export default function HypotheekBerekenenPage() {
           Hypotheek berekenen
         </h1>
         <p className="text-nbg-blue/80 text-lg mb-8">
-          Bereken uw maximale hypotheek en maandlasten. Dit is een indicatie – voor een exacte berekening op maat, plan een vrijblijvend gesprek.
+          Bereken uw maximale hypotheek en maandlasten. Dit is een indicatie – wilt u weten wat echt past bij uw situatie, laat deze dan kort door ons checken.
         </p>
         <HypotheekBerekenenForm />
       </main>

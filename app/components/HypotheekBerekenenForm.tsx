@@ -173,7 +173,7 @@ export default function HypotheekBerekenenForm() {
               href="/contact"
               className="mt-6 block w-full text-center rounded-xl bg-nbg-green text-white font-semibold text-[15px] py-3.5 hover:bg-nbg-green/90 transition-colors"
             >
-              Plan vrijblijvend videogesprek
+              Laat uw situatie checken
             </Link>
           </div>
         </div>

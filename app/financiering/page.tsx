@@ -48,7 +48,7 @@ export default function FinancieringPage() {
                     href="/contact"
                     className="inline-flex items-center gap-2 rounded-lg bg-nbg-green text-white font-semibold text-[15px] px-6 py-3.5 hover:bg-nbg-green/90 transition-colors shadow-[0_4px_14px_rgba(118,163,72,0.3)]"
                   >
-                    Afspraak maken
+                    Zet de eerste stap
                     <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" /></svg>
                   </Link>
                 </div>
@@ -62,9 +62,9 @@ export default function FinancieringPage() {
                 </p>
               </div>
               <div className="p-6 sm:p-7 rounded-2xl bg-white border border-nbg-light-gray/60 shadow-[0_4px_20px_rgba(0,0,0,0.08)]">
-                <h3 className="text-nbg-blue font-bold text-lg m-0 mb-2">Vrijblijvend advies over financiering</h3>
+                <h3 className="text-nbg-blue font-bold text-lg m-0 mb-2">Financieringscheck</h3>
                 <p className="text-nbg-blue/80 text-[15px] m-0 mb-4">
-                  Heeft u een financieringsvraag? Plan een gesprek – wij adviseren u graag en kijken samen wat bij uw situatie past.
+                  Heeft u een financieringsvraag? In een korte situatiecheck brengen we snel in kaart welke route bij uw situatie past.
                 </p>
                 <ul className="space-y-1.5 mb-5 text-nbg-blue/85 text-sm">
                   <li className="flex items-center gap-2">
@@ -87,7 +87,7 @@ export default function FinancieringPage() {
                   href="/contact"
                   className="inline-flex items-center justify-center gap-2 rounded-lg bg-nbg-green text-white font-semibold text-[15px] px-5 py-3 w-full hover:bg-nbg-green/90 transition-colors"
                 >
-                  Afspraak maken
+                  Bespreek mijn financieringsopties
                 </Link>
               </div>
             </div>
@@ -146,13 +146,13 @@ export default function FinancieringPage() {
                 <div className="bg-nbg-lighter-green/60 rounded-2xl p-6 border border-nbg-light-gray/50 w-full">
                   <p className="text-nbg-blue font-semibold text-[15px] m-0 mb-2">Advies op maat</p>
                   <p className="text-nbg-blue/80 text-[15px] m-0 mb-4">
-                    Plan een vrijblijvend gesprek – dan bekijken we samen wat bij uw situatie past.
+                    Wilt u weten welke financiering verantwoord is voor uw plannen? We lopen het in een korte situatiecheck stap voor stap met u door.
                   </p>
                   <Link
                     href="/contact"
                     className="inline-flex items-center gap-2 rounded-lg border-2 border-nbg-primary text-nbg-primary font-semibold text-[15px] px-5 py-3 hover:bg-nbg-primary hover:text-white transition-colors"
                   >
-                    Afspraak maken
+                    Krijg inzicht in mijn situatie
                   </Link>
                 </div>
               </div>
@@ -208,13 +208,13 @@ export default function FinancieringPage() {
                 <div className="bg-white/80 rounded-2xl p-6 border border-nbg-light-gray/50 w-full shadow-[0_4px_20px_rgba(0,0,0,0.06)]">
                   <p className="text-nbg-blue font-semibold text-[15px] m-0 mb-2">Advies op maat</p>
                   <p className="text-nbg-blue/80 text-[15px] m-0 mb-4">
-                    Plan een vrijblijvend gesprek – dan bekijken we samen wat uw onderneming nodig heeft.
+                    Wilt u weten welke zakelijke financiering haalbaar is? In een korte situatiecheck krijgt u snel duidelijkheid.
                   </p>
                   <Link
                     href="/contact"
                     className="inline-flex items-center justify-center gap-2 rounded-lg border-2 border-nbg-primary text-nbg-primary font-semibold text-[15px] px-5 py-3 w-full hover:bg-nbg-primary hover:text-white transition-colors"
                   >
-                    Afspraak maken
+                    Start een vrijblijvend gesprek
                   </Link>
                 </div>
               </div>
@@ -286,15 +286,15 @@ export default function FinancieringPage() {
               </div>
               <div className="flex-1">
                 <h2 className="text-nbg-blue text-2xl lg:text-3xl font-bold mb-4">
-                  Vragen over financiering of een afspraak maken?<br />
-                  Neem contact op – wij helpen u graag.
+                  Wilt u weten welke financiering past bij uw situatie?<br />
+                  Plan een gesprek over uw financiering en ontvang gerichte vervolgstappen.
                 </h2>
                 <div className="flex flex-wrap gap-3 mb-3">
                   <Link
                     href="/contact"
                     className="inline-flex items-center gap-2 rounded-lg border-2 border-nbg-primary text-nbg-primary font-semibold text-[15px] px-6 py-3.5 hover:bg-nbg-primary hover:text-white transition-colors"
                   >
-                    Afspraak maken
+                    Plan een gesprek over financiering
                   </Link>
                 </div>
                 <p className="text-nbg-blue/80 text-[17px] m-0 mb-1">
@@ -325,7 +325,7 @@ export default function FinancieringPage() {
             <div className="flex flex-wrap justify-center items-center gap-6 lg:gap-10 text-nbg-blue/90">
               <span className="inline-flex items-center gap-2 text-[15px] font-medium">
                 <svg className="w-5 h-5 text-nbg-green shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" /></svg>
-                Plan een vrijblijvend gesprek
+                Intakegesprek van 20 minuten
               </span>
               <span className="inline-flex items-center gap-2 text-[15px] font-medium">
                 <svg className="w-5 h-5 text-nbg-green shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" /></svg>
@@ -349,9 +349,9 @@ export default function FinancieringPage() {
                     <h2 className="text-nbg-blue text-xl font-bold m-0">Vraag een afspraak aan</h2>
                   </div>
                   <p className="text-nbg-blue/80 text-[17px] mb-6">
-                    Heeft u vragen over financiering of wilt u een vrijblijvend gesprek? Vul het formulier in – wij nemen zo snel mogelijk contact op.
+                    Heeft u vragen over financiering? Plan een gesprek via het formulier. Wij nemen zo snel mogelijk contact met u op.
                   </p>
-                  <AfspraakMakenForm />
+                  <AfspraakMakenForm presetOnderwerp="financiering" />
                 </div>
               </div>
               <aside className="lg:col-span-5 space-y-6">

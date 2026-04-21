@@ -69,7 +69,7 @@ export default function NieuwsPage() {
                 Blijf op de hoogte
               </h2>
               <p className="text-white/90 text-[17px] m-0 mb-6">
-                Schrijf u in voor onze nieuwsbrief en ontvang nieuwe artikelen en tips over hypotheek, verzekeringen en pensioen in uw mailbox.
+                Ontvang maandelijks een praktisch hypotheek- of pensioeninzicht in uw mailbox.
               </p>
               <NewsletterForm source="nieuws" variant="nieuws" id="nieuws-newsletter-email" />
               <p className="text-white/60 text-sm mt-3 m-0">
@@ -99,15 +99,15 @@ export default function NieuwsPage() {
               </div>
               <div className="flex-1">
                 <h2 className="text-nbg-blue text-2xl lg:text-3xl font-bold mb-4">
-                  Heeft u een vraag of wilt u een afspraak maken?<br />
-                  Neem contact op – wij zijn bereikbaar.
+                  Wilt u weten wat dit betekent voor uw situatie?<br />
+                  Plan een kort gesprek en ontvang gericht advies over de vervolgstap.
                 </h2>
                 <div className="flex flex-wrap gap-3 mb-3">
                   <Link
                     href="/contact"
                     className="inline-flex items-center gap-2 rounded-lg border-2 border-nbg-primary text-nbg-primary font-semibold text-[15px] px-6 py-3.5 hover:bg-nbg-primary hover:text-white transition-colors"
                   >
-                    Afspraak maken
+                    Plan een kort gesprek
                   </Link>
                 </div>
                 <p className="text-nbg-blue/80 text-[17px] m-0 mb-1">

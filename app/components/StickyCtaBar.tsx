@@ -26,13 +26,13 @@ export default function StickyCtaBar() {
     >
       <div className="max-w-[1140px] mx-auto flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-6 max-lg:gap-4">
         <span className="text-white/90 text-sm sm:text-base font-medium">
-          Vrijblijvend advies?
+          Krijg snel inzicht in wat past bij uw situatie.
         </span>
         <Link
           href="/contact"
           className="inline-flex items-center gap-2 rounded-lg bg-nbg-green text-white font-semibold text-[15px] px-5 py-2.5 hover:bg-nbg-green/90 transition-colors max-lg:min-h-[48px] max-lg:items-center max-lg:justify-center max-sm:w-full max-sm:justify-center"
         >
-          Afspraak maken
+          Plan een kort gesprek
         </Link>
       </div>
     </div>

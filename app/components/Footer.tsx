@@ -5,7 +5,7 @@ import CookiePreferenceLink from "./CookiePreferenceLink";
 
 const snelNaar = [
   { label: "Contact", href: "/contact" },
-  { label: "Afspraak maken", href: "/contact" },
+  { label: "Plan een kort gesprek", href: "/contact" },
   { label: "Hypotheken", href: "/hypotheken" },
   { label: "Financiering", href: "/financiering" },
   { label: "Pensioen", href: "/pensioen" },
@@ -50,7 +50,7 @@ export default function Footer() {
           <div>
             <h4 className="text-lg font-semibold mb-4">Op de hoogte blijven?</h4>
             <p className="text-white/90 text-[17px] mb-4">
-              Schrijf u in voor onze nieuwsbrief.
+              Ontvang maandelijks een praktisch hypotheek- of pensioeninzicht.
             </p>
             <NewsletterForm source="footer" variant="footer" id="footer-newsletter-email" />
           </div>
@@ -93,7 +93,7 @@ export default function Footer() {
               href="/contact"
               className="inline-flex items-center gap-2 rounded-lg bg-nbg-green text-white font-semibold text-[15px] px-5 py-2.5 hover:bg-nbg-green/90 transition-colors"
             >
-              Afspraak maken
+              Plan een kort gesprek
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
               </svg>

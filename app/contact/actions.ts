@@ -33,9 +33,14 @@ export async function submitAfspraakForm(
   const telefoon = (formData.get("telefoon") as string)?.trim() || "";
   const onderwerp = (formData.get("onderwerp") as string)?.trim() || "";
   const bericht = (formData.get("bericht") as string)?.trim() || null;
+  const consent = ((formData.get("consent") as string) || "").trim();
 
   if (!naam || !email || !telefoon || !onderwerp) {
     return { success: false, error: "Vul uw naam, e-mailadres, telefoonnummer en onderwerp in." };
+  }
+
+  if (consent !== "on") {
+    return { success: false, error: "Ga akkoord met het privacybeleid en de algemene voorwaarden om verder te gaan." };
   }
 
   try {

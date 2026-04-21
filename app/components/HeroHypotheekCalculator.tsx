@@ -61,7 +61,7 @@ export default function HeroHypotheekCalculator({ embedded }: HeroHypotheekCalcu
             </svg>
           </button>
           <div className="invisible opacity-0 group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100 absolute left-0 top-full mt-1 z-10 w-64 p-3 rounded-lg bg-nbg-blue text-white text-xs leading-snug shadow-lg transition-all duration-150">
-            Dit is slechts een indicatie. Geen bindend advies. Voor persoonlijk advies maken we graag een vrijblijvend gesprek.
+            Dit is slechts een indicatie. Geen bindend advies. Wilt u weten wat bij uw situatie past? Laat uw situatie kort checken.
           </div>
         </div>
       </div>
@@ -151,7 +151,7 @@ export default function HeroHypotheekCalculator({ embedded }: HeroHypotheekCalcu
           href="/hypotheken/hypotheek-berekenen"
           className="mt-4 block w-full text-center rounded-xl bg-nbg-green text-white font-semibold text-[15px] py-3.5 hover:bg-nbg-green/90 transition-colors active:scale-[0.99]"
         >
-          Bereken nauwkeurig & plan gesprek
+          Bereken nauwkeurig voor uw situatie
         </Link>
       </div>
     </div>

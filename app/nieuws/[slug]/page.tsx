@@ -2065,15 +2065,15 @@ export default async function NieuwsSlugPage({
                 <div>
                   <h2 className="text-white text-xl lg:text-2xl font-bold mb-2">Aflossingsvrij en uw plannen</h2>
                   <p className="text-white/90 text-[17px] m-0">
-                    Wilt u weten of verhuizen, verhogen of oversluiten onder de nieuwe bankregels valt — en wat dat voor
-                    uw maandlasten betekent? Bij Haruna rekenen we het voor uw situatie uit.
+                    Weet u of de nieuwe regels voor uw hypotheek gelden? In 15 minuten checken we wat dit betekent voor
+                    uw situatie en mogelijke vervolgstappen.
                   </p>
                 </div>
                 <Link
                   href="/contact"
                   className="inline-flex items-center justify-center gap-2 rounded-lg bg-nbg-green text-white font-semibold text-[15px] px-6 py-3.5 hover:bg-nbg-green/90 transition-colors shadow-[0_4px_14px_rgba(118,163,72,0.4)] shrink-0"
                 >
-                  Plan een adviesgesprek
+                  Plan 15-minuten check
                   <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>
                 </Link>
               </div>
@@ -2107,7 +2107,7 @@ export default async function NieuwsSlugPage({
                 href="/contact"
                 className="w-full inline-flex items-center justify-center gap-2 rounded-lg border-2 border-nbg-primary text-nbg-primary font-semibold text-[15px] px-5 py-2.5 hover:bg-nbg-primary hover:text-white transition-colors"
               >
-                Plan een adviesgesprek
+                Plan 15-minuten check
               </Link>
             </div>
 

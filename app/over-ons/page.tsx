@@ -57,7 +57,7 @@ export default function OverOnsPage() {
                     href="/contact"
                     className="inline-flex items-center justify-center gap-2 rounded-lg bg-nbg-green text-white font-semibold text-[15px] px-5 py-3 w-full hover:bg-nbg-green/90 transition-colors"
                   >
-                    Afspraak maken
+                    Plan een kort gesprek
                     <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>
                   </Link>
                 </div>
@@ -153,7 +153,7 @@ export default function OverOnsPage() {
                     href="/contact"
                     className="inline-flex items-center gap-2 mt-5 text-nbg-green font-semibold text-[15px] hover:underline"
                   >
-                    Afspraak maken
+                    Zet de eerste stap
                     <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>
                   </Link>
                 </div>
@@ -230,7 +230,7 @@ export default function OverOnsPage() {
                     href="/contact"
                     className="inline-flex items-center gap-2 rounded-lg border-2 border-nbg-primary text-nbg-primary font-semibold text-[15px] px-6 py-3.5 hover:bg-nbg-primary hover:text-white transition-colors"
                   >
-                    Afspraak maken
+                    Laat mijn situatie checken
                   </Link>
                 </div>
               </div>
