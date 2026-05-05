@@ -410,10 +410,14 @@ export default function VerzekeringenPage() {
               <div className="lg:col-span-7">
                 <div className="bg-nbg-lighter-green/60 rounded-2xl p-6 sm:p-8 lg:p-10 border border-nbg-light-gray/50">
                   <div className="border-l-4 border-nbg-green pl-5 mb-6">
-                    <h2 className="text-nbg-blue text-xl font-bold m-0">Vraag een afspraak aan</h2>
+                    <h2 className="text-nbg-blue text-xl font-bold m-0">Contact of afspraak</h2>
                   </div>
                   <p className="text-nbg-blue/80 text-[17px] mb-6">
-                    Heeft u vragen over verzekeringen? Plan een gesprek over verzekeringen via het formulier. Wij nemen zo snel mogelijk contact met u op.
+                    Voor hypotheek en wonen:{" "}
+                    <Link href="/situatieschets" className="text-nbg-primary font-semibold hover:underline">
+                      gratis situatiecheck
+                    </Link>
+                    . Heeft u vragen over verzekeringen? Plan een gesprek via het formulier — wij nemen zo snel mogelijk contact met u op.
                   </p>
                   <AfspraakMakenForm presetOnderwerp="verzekeringen" />
                 </div>
