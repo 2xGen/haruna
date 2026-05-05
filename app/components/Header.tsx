@@ -42,12 +42,12 @@ export default function Header() {
                   {item.label}
                 </Link>
               ))}
-              <div className="ml-6">
+              <div className="ml-4 flex items-center shrink-0">
                 <Link
-                  href="/contact"
-                  className="inline-flex items-center gap-2 rounded-lg border-2 border-nbg-primary text-nbg-primary font-semibold text-[15px] px-5 py-3 hover:bg-nbg-primary hover:text-white transition-colors no-underline"
+                  href="/situatieschets"
+                  className="inline-flex items-center gap-2 rounded-lg border-2 border-nbg-primary text-nbg-primary font-semibold text-[15px] px-4 py-3 hover:bg-nbg-primary hover:text-white transition-colors no-underline"
                 >
-                  Plan een kort gesprek
+                  Gratis situatiecheck
                 </Link>
               </div>
             </nav>
@@ -82,9 +82,13 @@ export default function Header() {
                     </Link>
                   </li>
                 ))}
-                <li className="pt-4">
-                  <Link href="/contact" onClick={() => setMenuOpen(false)} className="block text-center py-3 rounded-lg border-2 border-nbg-primary text-nbg-primary font-semibold text-[15px] hover:bg-nbg-primary hover:text-white transition-colors">
-                    Plan een kort gesprek
+                <li className="pt-4 border-t border-nbg-light-gray mt-2">
+                  <Link
+                    href="/situatieschets"
+                    onClick={() => setMenuOpen(false)}
+                    className="block text-center py-3 rounded-lg border-2 border-nbg-primary text-nbg-primary font-semibold text-[15px] hover:bg-nbg-primary hover:text-white transition-colors"
+                  >
+                    Gratis situatiecheck
                   </Link>
                 </li>
               </ul>

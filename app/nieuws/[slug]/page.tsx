@@ -1013,7 +1013,7 @@ export default async function NieuwsSlugPage({
             </section>
 
             <section className="mt-8 rounded-2xl bg-white border border-nbg-light-gray/50 p-6 sm:p-8 shadow-[0_4px_20px_rgba(0,0,0,0.06)]">
-              <h2 className="text-nbg-blue text-xl lg:text-2xl font-bold mb-4">Afspraak maken</h2>
+              <h2 className="text-nbg-blue text-xl lg:text-2xl font-bold mb-4">Gratis situatiecheck</h2>
               <p className="text-nbg-blue/85 text-[17px] leading-relaxed mb-4">
                 Gaat u samenwonen en wilt u weten wat dit betekent voor uw hypotheek, maandlasten en financiële situatie? Bij Haruna kijken we graag met u mee.
               </p>
@@ -1032,10 +1032,10 @@ export default async function NieuwsSlugPage({
                   </p>
                 </div>
                 <Link
-                  href="/contact"
+                  href="/situatieschets"
                   className="inline-flex items-center justify-center gap-2 rounded-lg bg-nbg-green text-white font-semibold text-[15px] px-6 py-3.5 hover:bg-nbg-green/90 transition-colors shadow-[0_4px_14px_rgba(118,163,72,0.4)] shrink-0"
                 >
-                  Plan een adviesgesprek
+                  Gratis situatiecheck
                   <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>
                 </Link>
               </div>
@@ -1067,10 +1067,10 @@ export default async function NieuwsSlugPage({
                 Gaat u samenwonen en wilt u weten wat dit betekent voor uw hypotheek en financiële situatie? Bij Haruna kijken we graag met u mee. Voor juridische documenten zoals een testament of samenlevingscontract verwijzen wij u door naar een notaris.
               </p>
               <Link
-                href="/contact"
+                href="/situatieschets"
                 className="w-full inline-flex items-center justify-center gap-2 rounded-lg border-2 border-nbg-primary text-nbg-primary font-semibold text-[15px] px-5 py-2.5 hover:bg-nbg-primary hover:text-white transition-colors"
               >
-                Plan een adviesgesprek
+                Gratis situatiecheck
               </Link>
             </div>
 
@@ -1168,10 +1168,10 @@ export default async function NieuwsSlugPage({
                 Goed nieuws: daardoor zijn er ook gerichte mogelijkheden. Zo kunt u soms méér lenen via NHG voor senioren, overwaarde benutten of met een strategische planning eerder actie ondernemen.
               </p>
               <Link
-                href="/contact"
+                href="/situatieschets"
                 className="mt-2 inline-flex items-center gap-1.5 rounded-lg border border-nbg-primary text-nbg-primary font-medium text-[14px] px-4 py-2 hover:bg-nbg-primary hover:text-white transition-colors"
               >
-                Plan een adviesgesprek
+                Gratis situatiecheck
               </Link>
             </div>
 
@@ -1297,7 +1297,7 @@ export default async function NieuwsSlugPage({
             </section>
 
             <section className="mt-8 rounded-2xl bg-nbg-lighter-green/40 border border-nbg-light-gray/50 p-6 sm:p-8 shadow-[0_2px_12px_rgba(0,0,0,0.04)]">
-              <h2 className="text-nbg-blue text-xl lg:text-2xl font-bold mb-4">Afspraak maken</h2>
+              <h2 className="text-nbg-blue text-xl lg:text-2xl font-bold mb-4">Gratis situatiecheck</h2>
               <p className="text-nbg-blue/85 text-[17px] leading-relaxed mb-4">
                 Bent u 56 jaar of ouder en denkt u na over een nieuwe woning, verhuizing of aanpassing van uw hypotheek? Bij Haruna brengen we uw mogelijkheden in kaart — inclusief de impact van de pensioentoets op uw specifieke situatie.
               </p>
@@ -1309,16 +1309,16 @@ export default async function NieuwsSlugPage({
             <section className="mt-12 rounded-2xl bg-nbg-blue text-white p-6 sm:p-8 lg:p-10 shadow-[0_8px_30px_rgba(27,49,86,0.2)]">
               <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-6">
                 <div>
-                  <h2 className="text-white text-xl lg:text-2xl font-bold mb-2">Afspraak maken</h2>
+                  <h2 className="text-white text-xl lg:text-2xl font-bold mb-2">Gratis situatiecheck</h2>
                   <p className="text-white/90 text-[17px] m-0">
                     Bent u 56 jaar of ouder en denkt u na over een nieuwe woning, verhuizing of aanpassing van uw hypotheek? Bij Haruna brengen we uw mogelijkheden in kaart — inclusief de impact van de pensioentoets op uw specifieke situatie.
                   </p>
                 </div>
                 <Link
-                  href="/contact"
+                  href="/situatieschets"
                   className="inline-flex items-center justify-center gap-2 rounded-lg bg-nbg-green text-white font-semibold text-[15px] px-6 py-3.5 hover:bg-nbg-green/90 transition-colors shadow-[0_4px_14px_rgba(118,163,72,0.4)] shrink-0"
                 >
-                  Plan een adviesgesprek
+                  Gratis situatiecheck
                   <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>
                 </Link>
               </div>
@@ -1348,10 +1348,10 @@ export default async function NieuwsSlugPage({
                 Bent u 56 jaar of ouder en denkt u na over een nieuwe woning, verhuizing of aanpassing van uw hypotheek? Bij Haruna brengen we uw mogelijkheden in kaart — inclusief de impact van de pensioentoets op uw specifieke situatie.
               </p>
               <Link
-                href="/contact"
+                href="/situatieschets"
                 className="w-full inline-flex items-center justify-center gap-2 rounded-lg border-2 border-nbg-primary text-nbg-primary font-semibold text-[15px] px-5 py-2.5 hover:bg-nbg-primary hover:text-white transition-colors"
               >
-                Plan een adviesgesprek
+                Gratis situatiecheck
               </Link>
             </div>
 
@@ -1662,16 +1662,16 @@ export default async function NieuwsSlugPage({
             <section className="mt-12 rounded-2xl bg-nbg-blue text-white p-6 sm:p-8 lg:p-10 shadow-[0_8px_30px_rgba(27,49,86,0.2)]">
               <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-6">
                 <div>
-                  <h2 className="text-white text-xl lg:text-2xl font-bold mb-2">Afspraak maken</h2>
+                  <h2 className="text-white text-xl lg:text-2xl font-bold mb-2">Gratis situatiecheck</h2>
                   <p className="text-white/90 text-[17px] m-0">
                     Twijfelt u tussen een annuïteitenhypotheek en een lineaire hypotheek? Bij Haruna berekenen we graag wat de maandlasten in uw specifieke situatie zijn en welke vorm aansluit bij uw inkomen en toekomstplannen.
                   </p>
                 </div>
                 <Link
-                  href="/contact"
+                  href="/situatieschets"
                   className="inline-flex items-center justify-center gap-2 rounded-lg bg-nbg-green text-white font-semibold text-[15px] px-6 py-3.5 hover:bg-nbg-green/90 transition-colors shadow-[0_4px_14px_rgba(118,163,72,0.4)] shrink-0"
                 >
-                  Plan een adviesgesprek
+                  Gratis situatiecheck
                   <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>
                 </Link>
               </div>
@@ -1701,10 +1701,10 @@ export default async function NieuwsSlugPage({
                 Twijfelt u tussen een annuïteitenhypotheek en een lineaire hypotheek? Bij Haruna berekenen we graag wat de maandlasten in uw specifieke situatie zijn en welke vorm aansluit bij uw inkomen en toekomstplannen.
               </p>
               <Link
-                href="/contact"
+                href="/situatieschets"
                 className="w-full inline-flex items-center justify-center gap-2 rounded-lg border-2 border-nbg-primary text-nbg-primary font-semibold text-[15px] px-5 py-2.5 hover:bg-nbg-primary hover:text-white transition-colors"
               >
-                Plan een adviesgesprek
+                Gratis situatiecheck
               </Link>
             </div>
 
@@ -2070,7 +2070,7 @@ export default async function NieuwsSlugPage({
                   </p>
                 </div>
                 <Link
-                  href="/contact"
+                  href="/situatieschets"
                   className="inline-flex items-center justify-center gap-2 rounded-lg bg-nbg-green text-white font-semibold text-[15px] px-6 py-3.5 hover:bg-nbg-green/90 transition-colors shadow-[0_4px_14px_rgba(118,163,72,0.4)] shrink-0"
                 >
                   Plan 15-minuten check
@@ -2104,7 +2104,7 @@ export default async function NieuwsSlugPage({
                 voor u uitpakken? Bij Haruna kijken we graag met u mee.
               </p>
               <Link
-                href="/contact"
+                href="/situatieschets"
                 className="w-full inline-flex items-center justify-center gap-2 rounded-lg border-2 border-nbg-primary text-nbg-primary font-semibold text-[15px] px-5 py-2.5 hover:bg-nbg-primary hover:text-white transition-colors"
               >
                 Plan 15-minuten check
@@ -2202,10 +2202,10 @@ export default async function NieuwsSlugPage({
                 De informatie in dit artikel is gebaseerd op de regelgeving en marktpraktijk zoals die geldt in 2026. Voor uw persoonlijke situatie kunnen andere voorwaarden gelden. Bij Haruna adviseren wij u graag onafhankelijk en deskundig over uw verzekeringen en financiële situatie, zodat u de beste keuzes kunt maken voor uzelf en uw gezin.
               </p>
               <Link
-                href="/contact"
+                href="/situatieschets"
                 className="mt-2 inline-flex items-center gap-1.5 rounded-lg border border-nbg-primary text-nbg-primary font-medium text-[14px] px-4 py-2 hover:bg-nbg-primary hover:text-white transition-colors"
               >
-                Plan een adviesgesprek
+                Gratis situatiecheck
               </Link>
             </div>
 
@@ -2413,10 +2413,10 @@ export default async function NieuwsSlugPage({
                   </p>
                 </div>
                 <Link
-                  href="/contact"
+                  href="/situatieschets"
                   className="inline-flex items-center justify-center gap-2 rounded-lg bg-nbg-green text-white font-semibold text-[15px] px-6 py-3.5 hover:bg-nbg-green/90 transition-colors shadow-[0_4px_14px_rgba(118,163,72,0.4)] shrink-0"
                 >
-                  Plan een adviesgesprek
+                  Gratis situatiecheck
                   <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>
                 </Link>
               </div>
@@ -2446,10 +2446,10 @@ export default async function NieuwsSlugPage({
                 Wilt u weten welke zakelijke verzekeringen bij uw onderneming passen? Bij Haruna kijken we graag met u mee en brengen we de opties in beeld.
               </p>
               <Link
-                href="/contact"
+                href="/situatieschets"
                 className="w-full inline-flex items-center justify-center gap-2 rounded-lg border-2 border-nbg-primary text-nbg-primary font-semibold text-[15px] px-5 py-2.5 hover:bg-nbg-primary hover:text-white transition-colors"
               >
-                Plan een adviesgesprek
+                Gratis situatiecheck
               </Link>
             </div>
 
@@ -2547,10 +2547,10 @@ export default async function NieuwsSlugPage({
                 De informatie in dit artikel is gebaseerd op de regelgeving en marktpraktijk zoals die geldt in 2026. Voor uw persoonlijke situatie kunnen andere voorwaarden gelden. Bij Haruna adviseren wij u graag onafhankelijk en deskundig over uw situatie, zodat u de beste keuzes kunt maken.
               </p>
               <Link
-                href="/contact"
+                href="/situatieschets"
                 className="mt-2 inline-flex items-center gap-1.5 rounded-lg border border-nbg-primary text-nbg-primary font-medium text-[14px] px-4 py-2 hover:bg-nbg-primary hover:text-white transition-colors"
               >
-                Plan een adviesgesprek
+                Gratis situatiecheck
               </Link>
             </div>
 
@@ -2701,10 +2701,10 @@ export default async function NieuwsSlugPage({
                   </p>
                 </div>
                 <Link
-                  href="/contact"
+                  href="/situatieschets"
                   className="inline-flex items-center justify-center gap-2 rounded-lg bg-nbg-green text-white font-semibold text-[15px] px-6 py-3.5 hover:bg-nbg-green/90 transition-colors shadow-[0_4px_14px_rgba(118,163,72,0.4)] shrink-0"
                 >
-                  Plan een adviesgesprek
+                  Gratis situatiecheck
                   <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>
                 </Link>
               </div>
@@ -2734,10 +2734,10 @@ export default async function NieuwsSlugPage({
                 Wilt u weten welke verzekeringen bij uw hypotheek passen of een bestaande polis periodiek laten doorlichten? Bij Haruna kijken we graag met u mee.
               </p>
               <Link
-                href="/contact"
+                href="/situatieschets"
                 className="w-full inline-flex items-center justify-center gap-2 rounded-lg border-2 border-nbg-primary text-nbg-primary font-semibold text-[15px] px-5 py-2.5 hover:bg-nbg-primary hover:text-white transition-colors"
               >
-                Plan een adviesgesprek
+                Gratis situatiecheck
               </Link>
             </div>
 
@@ -2846,10 +2846,10 @@ export default async function NieuwsSlugPage({
                 aanbieder; controleer altijd uw polis. Bij Haruna adviseren wij u graag over uw situatie.
               </p>
               <Link
-                href="/contact"
+                href="/situatieschets"
                 className="mt-2 inline-flex items-center gap-1.5 rounded-lg border border-nbg-primary text-nbg-primary font-medium text-[14px] px-4 py-2 hover:bg-nbg-primary hover:text-white transition-colors"
               >
-                Afspraak maken
+                Gratis situatiecheck
               </Link>
             </div>
 
@@ -3134,10 +3134,10 @@ export default async function NieuwsSlugPage({
                   </p>
                 </div>
                 <Link
-                  href="/contact"
+                  href="/situatieschets"
                   className="inline-flex items-center justify-center gap-2 rounded-lg bg-nbg-green text-white font-semibold text-[15px] px-6 py-3.5 hover:bg-nbg-green/90 transition-colors shadow-[0_4px_14px_rgba(118,163,72,0.4)] shrink-0"
                 >
-                  Afspraak maken
+                  Gratis situatiecheck
                   <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>
                 </Link>
               </div>
@@ -3168,10 +3168,10 @@ export default async function NieuwsSlugPage({
                 kijken we graag met u mee.
               </p>
               <Link
-                href="/contact"
+                href="/situatieschets"
                 className="w-full inline-flex items-center justify-center gap-2 rounded-lg border-2 border-nbg-primary text-nbg-primary font-semibold text-[15px] px-5 py-2.5 hover:bg-nbg-primary hover:text-white transition-colors"
               >
-                Plan een adviesgesprek
+                Gratis situatiecheck
               </Link>
             </div>
 
@@ -3373,7 +3373,7 @@ export default async function NieuwsSlugPage({
             <section className="mt-12 rounded-2xl bg-nbg-blue text-white p-6 sm:p-8 lg:p-10 shadow-[0_8px_30px_rgba(27,49,86,0.2)]">
               <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-6">
                 <div>
-                  <h2 className="text-white text-xl lg:text-2xl font-bold mb-2">Afspraak maken</h2>
+                  <h2 className="text-white text-xl lg:text-2xl font-bold mb-2">Gratis situatiecheck</h2>
                   <p className="text-white/90 text-[17px] m-0">
                     Overweegt u uw pensioen uit te stellen en wilt u weten wat dit betekent voor uw inkomsten, fiscale situatie en toekomstige levensstandaard? Bij Haruna kijken we graag met u mee.
                   </p>
@@ -3391,10 +3391,10 @@ export default async function NieuwsSlugPage({
                   </div>
                 </div>
                 <Link
-                  href="/contact"
+                  href="/situatieschets"
                   className="inline-flex items-center justify-center gap-2 rounded-lg bg-nbg-green text-white font-semibold text-[15px] px-6 py-3.5 hover:bg-nbg-green/90 transition-colors shadow-[0_4px_14px_rgba(118,163,72,0.4)] shrink-0"
                 >
-                  Afspraak maken
+                  Gratis situatiecheck
                   <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>
                 </Link>
               </div>
@@ -3424,10 +3424,10 @@ export default async function NieuwsSlugPage({
                 Overweegt u een persoonlijke lening of doorlopend krediet en wilt u weten wat dit voor u betekent? Bij Haruna kijken we graag met u mee.
               </p>
               <Link
-                href="/contact"
+                href="/situatieschets"
                 className="w-full inline-flex items-center justify-center gap-2 rounded-lg border-2 border-nbg-primary text-nbg-primary font-semibold text-[15px] px-5 py-2.5 hover:bg-nbg-primary hover:text-white transition-colors"
               >
-                Plan een adviesgesprek
+                Gratis situatiecheck
               </Link>
             </div>
 
@@ -3662,10 +3662,10 @@ export default async function NieuwsSlugPage({
                   </p>
                 </div>
                 <Link
-                  href="/contact"
+                  href="/situatieschets"
                   className="inline-flex items-center justify-center gap-2 rounded-lg bg-nbg-green text-white font-semibold text-[15px] px-6 py-3.5 hover:bg-nbg-green/90 transition-colors shadow-[0_4px_14px_rgba(118,163,72,0.4)] shrink-0"
                 >
-                  Afspraak maken
+                  Gratis situatiecheck
                   <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>
                 </Link>
               </div>
@@ -3696,10 +3696,10 @@ export default async function NieuwsSlugPage({
                 kijken we samen wat past.
               </p>
               <Link
-                href="/contact"
+                href="/situatieschets"
                 className="w-full inline-flex items-center justify-center gap-2 rounded-lg border-2 border-nbg-primary text-nbg-primary font-semibold text-[15px] px-5 py-2.5 hover:bg-nbg-primary hover:text-white transition-colors"
               >
-                Plan een adviesgesprek
+                Gratis situatiecheck
               </Link>
             </div>
 
@@ -3912,10 +3912,10 @@ export default async function NieuwsSlugPage({
                   </p>
                 </div>
                 <Link
-                  href="/contact"
+                  href="/situatieschets"
                   className="inline-flex items-center justify-center gap-2 rounded-lg bg-nbg-green text-white font-semibold text-[15px] px-6 py-3.5 hover:bg-nbg-green/90 transition-colors shadow-[0_4px_14px_rgba(118,163,72,0.4)] shrink-0"
                 >
-                  Afspraak maken
+                  Gratis situatiecheck
                   <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>
                 </Link>
               </div>
@@ -3946,10 +3946,10 @@ export default async function NieuwsSlugPage({
                 kijken we samen wat past.
               </p>
               <Link
-                href="/contact"
+                href="/situatieschets"
                 className="w-full inline-flex items-center justify-center gap-2 rounded-lg border-2 border-nbg-primary text-nbg-primary font-semibold text-[15px] px-5 py-2.5 hover:bg-nbg-primary hover:text-white transition-colors"
               >
-                Plan een adviesgesprek
+                Gratis situatiecheck
               </Link>
             </div>
 
@@ -4050,10 +4050,10 @@ export default async function NieuwsSlugPage({
                 De informatie in dit artikel is gebaseerd op de regelgeving en marktpraktijk zoals die geldt in maart 2026. Voor uw persoonlijke of zakelijke situatie kunnen andere voorwaarden gelden. Bij Haruna adviseren wij u graag onafhankelijk en deskundig over zakelijke financiering, zodat u een weloverwogen keuze kunt maken voordat u een financiële verplichting aangaat.
               </p>
               <Link
-                href="/contact"
+                href="/situatieschets"
                 className="mt-2 inline-flex items-center gap-1.5 rounded-lg border border-nbg-primary text-nbg-primary font-medium text-[14px] px-4 py-2 hover:bg-nbg-primary hover:text-white transition-colors"
               >
-                Afspraak maken
+                Gratis situatiecheck
               </Link>
             </div>
 
@@ -4090,7 +4090,7 @@ export default async function NieuwsSlugPage({
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="w-1.5 h-1.5 rounded-full bg-nbg-green shrink-0 mt-1.5" aria-hidden />
-                  Afspraak maken met Haruna
+                  Gratis situatiecheck bij Haruna
                 </li>
               </ul>
             </div>
@@ -4229,16 +4229,16 @@ export default async function NieuwsSlugPage({
             <section className="mt-12 rounded-2xl bg-nbg-blue text-white p-6 sm:p-8 lg:p-10 shadow-[0_8px_30px_rgba(27,49,86,0.2)]">
               <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-6">
                 <div>
-                  <h2 className="text-white text-xl lg:text-2xl font-bold mb-2">Afspraak maken</h2>
+                  <h2 className="text-white text-xl lg:text-2xl font-bold mb-2">Gratis situatiecheck</h2>
                   <p className="text-white/90 text-[17px] m-0">
                     Heeft u een financieringsvraag voor uw onderneming en wilt u weten welke mogelijkheden bij uw situatie passen? Bij Haruna bespreken we graag uw plannen en brengen we de opties in beeld.
                   </p>
                 </div>
                 <Link
-                  href="/contact"
+                  href="/situatieschets"
                   className="inline-flex items-center justify-center gap-2 rounded-lg bg-nbg-green text-white font-semibold text-[15px] px-6 py-3.5 hover:bg-nbg-green/90 transition-colors shadow-[0_4px_14px_rgba(118,163,72,0.4)] shrink-0"
                 >
-                  Plan een adviesgesprek
+                  Gratis situatiecheck
                   <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>
                 </Link>
               </div>
@@ -4268,10 +4268,10 @@ export default async function NieuwsSlugPage({
                 Heeft u een financieringsvraag voor uw onderneming en wilt u weten welke mogelijkheden bij uw situatie passen? Bij Haruna bespreken we graag uw plannen en brengen we de opties in beeld.
               </p>
               <Link
-                href="/contact"
+                href="/situatieschets"
                 className="w-full inline-flex items-center justify-center gap-2 rounded-lg border-2 border-nbg-primary text-nbg-primary font-semibold text-[15px] px-5 py-2.5 hover:bg-nbg-primary hover:text-white transition-colors"
               >
-                Plan een adviesgesprek
+                Gratis situatiecheck
               </Link>
             </div>
 
@@ -4372,10 +4372,10 @@ export default async function NieuwsSlugPage({
                 De informatie in dit artikel is gebaseerd op de regelgeving en marktpraktijk zoals die geldt in 2026. Voor uw persoonlijke situatie kunnen andere voorwaarden gelden. Bij Haruna adviseren wij u graag onafhankelijk en deskundig over particuliere financiering, zodat u een weloverwogen keuze kunt maken voordat u een financiële verplichting aangaat.
               </p>
               <Link
-                href="/contact"
+                href="/situatieschets"
                 className="mt-2 inline-flex items-center gap-1.5 rounded-lg border border-nbg-primary text-nbg-primary font-medium text-[14px] px-4 py-2 hover:bg-nbg-primary hover:text-white transition-colors"
               >
-                Plan een adviesgesprek
+                Gratis situatiecheck
               </Link>
             </div>
 
@@ -4539,16 +4539,16 @@ export default async function NieuwsSlugPage({
             <section className="mt-12 rounded-2xl bg-nbg-blue text-white p-6 sm:p-8 lg:p-10 shadow-[0_8px_30px_rgba(27,49,86,0.2)]">
               <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-6">
                 <div>
-                  <h2 className="text-white text-xl lg:text-2xl font-bold mb-2">Afspraak maken</h2>
+                  <h2 className="text-white text-xl lg:text-2xl font-bold mb-2">Gratis situatiecheck</h2>
                   <p className="text-white/90 text-[17px] m-0">
                     Overweegt u een persoonlijke lening of doorlopend krediet? Bij Haruna helpen we u de opties, totale kosten (APR) en betaalbaarheid in uw situatie in kaart te brengen — voordat u een financiële verplichting aangaat.
                   </p>
                 </div>
                 <Link
-                  href="/contact"
+                  href="/situatieschets"
                   className="inline-flex items-center justify-center gap-2 rounded-lg bg-nbg-green text-white font-semibold text-[15px] px-6 py-3.5 hover:bg-nbg-green/90 transition-colors shadow-[0_4px_14px_rgba(118,163,72,0.4)] shrink-0"
                 >
-                  Plan een adviesgesprek
+                  Gratis situatiecheck
                   <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>
                 </Link>
               </div>
@@ -4579,10 +4579,10 @@ export default async function NieuwsSlugPage({
                 kijken we samen wat past.
               </p>
               <Link
-                href="/contact"
+                href="/situatieschets"
                 className="w-full inline-flex items-center justify-center gap-2 rounded-lg border-2 border-nbg-primary text-nbg-primary font-semibold text-[15px] px-5 py-2.5 hover:bg-nbg-primary hover:text-white transition-colors"
               >
-                Plan een adviesgesprek
+                Gratis situatiecheck
               </Link>
             </div>
 
@@ -4680,10 +4680,10 @@ export default async function NieuwsSlugPage({
                 De informatie in dit artikel is gebaseerd op de regelgeving en marktpraktijk zoals die geldt in 2026. Voor uw persoonlijke situatie kunnen andere voorwaarden gelden. In 2026 zijn vooral de fiscale gevolgen rondom bijtelling van elektrische auto&apos;s relevant. Daarom is het verstandig om uw financierings- of leasekeuze af te stemmen op uw situatie en de fiscale uitkomst.
               </p>
               <Link
-                href="/contact"
+                href="/situatieschets"
                 className="mt-2 inline-flex items-center gap-1.5 rounded-lg border border-nbg-primary text-nbg-primary font-medium text-[14px] px-4 py-2 hover:bg-nbg-primary hover:text-white transition-colors"
               >
-                Afspraak maken
+                Gratis situatiecheck
               </Link>
             </div>
 
@@ -4945,16 +4945,16 @@ export default async function NieuwsSlugPage({
             <section className="mt-12 rounded-2xl bg-nbg-blue text-white p-6 sm:p-8 lg:p-10 shadow-[0_8px_30px_rgba(27,49,86,0.2)]">
               <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-6">
                 <div>
-                  <h2 className="text-white text-xl lg:text-2xl font-bold mb-2">Afspraak maken</h2>
+                  <h2 className="text-white text-xl lg:text-2xl font-bold mb-2">Gratis situatiecheck</h2>
                   <p className="text-white/90 text-[17px] m-0">
                     Bij Haruna brengen we uw opties voor kopen, financieren of leasen in beeld en vertalen dit naar de fiscale gevolgen voor uw situatie, waaronder bijtelling en (onder voorwaarden) zakelijke aftrek.
                   </p>
                 </div>
                 <Link
-                  href="/contact"
+                  href="/situatieschets"
                   className="inline-flex items-center justify-center gap-2 rounded-lg bg-nbg-green text-white font-semibold text-[15px] px-6 py-3.5 hover:bg-nbg-green/90 transition-colors shadow-[0_4px_14px_rgba(118,163,72,0.4)] shrink-0"
                 >
-                  Plan een adviesgesprek
+                  Gratis situatiecheck
                   <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>
                 </Link>
               </div>
@@ -4985,10 +4985,10 @@ export default async function NieuwsSlugPage({
                 kijken we samen wat past.
               </p>
               <Link
-                href="/contact"
+                href="/situatieschets"
                 className="w-full inline-flex items-center justify-center gap-2 rounded-lg border-2 border-nbg-primary text-nbg-primary font-semibold text-[15px] px-5 py-2.5 hover:bg-nbg-primary hover:text-white transition-colors"
               >
-                Plan een adviesgesprek
+                Gratis situatiecheck
               </Link>
             </div>
 

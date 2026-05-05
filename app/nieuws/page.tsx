@@ -100,14 +100,20 @@ export default function NieuwsPage() {
               <div className="flex-1">
                 <h2 className="text-nbg-blue text-2xl lg:text-3xl font-bold mb-4">
                   Wilt u weten wat dit betekent voor uw situatie?<br />
-                  Plan een kort gesprek en ontvang gericht advies over de vervolgstap.
+                  Start met de gratis situatiecheck — of neem contact op voor gericht advies over de vervolgstap.
                 </h2>
-                <div className="flex flex-wrap gap-3 mb-3">
+                <div className="flex flex-wrap gap-3 mb-3 items-center">
                   <Link
                     href="/contact"
-                    className="inline-flex items-center gap-2 rounded-lg border-2 border-nbg-primary text-nbg-primary font-semibold text-[15px] px-6 py-3.5 hover:bg-nbg-primary hover:text-white transition-colors"
+                    className="inline-flex items-center gap-2 text-nbg-primary font-semibold text-[15px] px-2 py-3 hover:underline"
                   >
-                    Plan een kort gesprek
+                    Contact
+                  </Link>
+                  <Link
+                    href="/situatieschets"
+                    className="inline-flex items-center gap-2 rounded-lg bg-nbg-green text-white font-semibold text-[15px] px-6 py-3.5 hover:bg-nbg-green/90 transition-colors shadow-[0_4px_14px_rgba(118,163,72,0.3)]"
+                  >
+                    Gratis situatiecheck
                   </Link>
                 </div>
                 <p className="text-nbg-blue/80 text-[17px] m-0 mb-1">

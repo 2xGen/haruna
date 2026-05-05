@@ -1,7 +1,8 @@
 "use client";
 
-import { FormEvent, useActionState, useMemo, useState } from "react";
+import { FormEvent, useActionState, useEffect, useMemo, useState } from "react";
 
+import type { AfspraakTopicValue } from "@/lib/afspraak-topics";
 import { submitAfspraakForm } from "../contact/actions";
 
 const initialState = { success: false as boolean, error: undefined as string | undefined };
@@ -11,7 +12,7 @@ const TOPIC_OPTIONS = [
   { value: "verzekeringen", label: "Verzekeringen", hint: "Particulier en zakelijk", icon: "shield" },
   { value: "financiering", label: "Financiering", hint: "Zakelijk of particulier", icon: "briefcase" },
   { value: "overig", label: "Overig", hint: "Andere vraag of onderwerp", icon: "chat" },
-] as const;
+] as const satisfies readonly { value: AfspraakTopicValue; label: string; hint: string; icon: string }[];
 type TopicValue = (typeof TOPIC_OPTIONS)[number]["value"];
 
 function TopicIcon({ icon }: { icon: (typeof TOPIC_OPTIONS)[number]["icon"] }) {
@@ -48,6 +49,14 @@ export default function AfspraakMakenForm({ presetOnderwerp }: Props) {
   const [bericht, setBericht] = useState("");
   const [localSpamError, setLocalSpamError] = useState<string | null>(null);
   const [localFormError, setLocalFormError] = useState<string | null>(null);
+
+  useEffect(() => {
+    if (!hasPresetOnderwerp) return;
+    const id = window.requestAnimationFrame(() => {
+      document.getElementById("formulier")?.scrollIntoView({ behavior: "smooth", block: "start" });
+    });
+    return () => window.cancelAnimationFrame(id);
+  }, [hasPresetOnderwerp]);
 
   const showSpamCheck = useMemo(
     () => Boolean(naam.trim() && email.trim() && telefoon.trim()),

@@ -70,8 +70,14 @@ export default function HypothekenPage() {
                     <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>
                   </Link>
                   <Link
-                    href="/contact"
+                    href="/situatieschets"
                     className="inline-flex items-center gap-2 rounded-lg border-2 border-nbg-primary text-nbg-primary font-semibold text-[15px] px-6 py-3.5 hover:bg-nbg-primary hover:text-white transition-colors"
+                  >
+                    Gratis situatieschets (PDF)
+                  </Link>
+                  <Link
+                    href="/contact"
+                    className="inline-flex items-center gap-2 rounded-lg border-2 border-nbg-light-gray text-nbg-blue font-semibold text-[15px] px-6 py-3.5 hover:border-nbg-primary hover:text-nbg-primary transition-colors"
                   >
                     Check mijn hypotheekmogelijkheden
                   </Link>
@@ -253,14 +259,20 @@ export default function HypothekenPage() {
               <div className="flex-1">
                 <h2 className="text-nbg-blue text-2xl lg:text-3xl font-bold mb-4">
                   Wilt u weten wat dit betekent voor uw hypotheek?<br />
-                  Plan een kort gesprek en krijg snel duidelijkheid.
+                  Doe eerst de gratis situatiecheck — of neem contact op voor persoonlijk advies.
                 </h2>
-                <div className="flex flex-wrap gap-3 mb-3">
+                <div className="flex flex-wrap gap-3 mb-3 items-center">
                   <Link
                     href="/contact"
-                    className="inline-flex items-center gap-2 rounded-lg border-2 border-nbg-primary text-nbg-primary font-semibold text-[15px] px-6 py-3.5 hover:bg-nbg-primary hover:text-white transition-colors"
+                    className="inline-flex items-center gap-2 text-nbg-primary font-semibold text-[15px] px-2 py-3 hover:underline"
                   >
-                    Plan een gesprek over uw hypotheek
+                    Contact
+                  </Link>
+                  <Link
+                    href="/situatieschets"
+                    className="inline-flex items-center gap-2 rounded-lg bg-nbg-green text-white font-semibold text-[15px] px-6 py-3.5 hover:bg-nbg-green/90 transition-colors shadow-[0_4px_14px_rgba(118,163,72,0.3)]"
+                  >
+                    Gratis situatiecheck
                   </Link>
                 </div>
                 <p className="text-nbg-blue/80 text-[17px] m-0 mb-1">
@@ -312,10 +324,14 @@ export default function HypothekenPage() {
               <div className="lg:col-span-7">
                 <div className="bg-nbg-lighter-green/60 rounded-2xl p-6 sm:p-8 lg:p-10 border border-nbg-light-gray/50">
                   <div className="border-l-4 border-nbg-green pl-5 mb-6">
-                    <h2 className="text-nbg-blue text-xl font-bold m-0">Vraag een afspraak aan</h2>
+                    <h2 className="text-nbg-blue text-xl font-bold m-0">Contact of afspraak</h2>
                   </div>
                   <p className="text-nbg-blue/80 text-[17px] mb-6">
-                    Heeft u vragen over uw hypotheek? Plan een kort gesprek via het formulier. Wij nemen zo snel mogelijk contact met u op.
+                    Liever eerst zelf een PDF met uw situatie? Start de{" "}
+                    <Link href="/situatieschets" className="text-nbg-primary font-semibold hover:underline">
+                      gratis situatiecheck
+                    </Link>
+                    . Heeft u direct vragen over uw hypotheek? Vul het formulier in — wij nemen zo snel mogelijk contact met u op.
                   </p>
                   <AfspraakMakenForm presetOnderwerp="hypotheek" />
                 </div>

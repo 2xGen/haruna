@@ -22,17 +22,17 @@ export default function StickyCtaBar() {
     <div
       className="fixed bottom-0 left-0 right-0 z-40 bg-nbg-blue text-white py-3 px-4 shadow-[0_-4px_20px_rgba(0,0,0,0.15)] max-lg:py-4 max-lg:pb-[max(0.75rem,env(safe-area-inset-bottom))] md:py-3"
       role="banner"
-      aria-label="Neem contact op"
+      aria-label="Gratis situatiecheck"
     >
-      <div className="max-w-[1140px] mx-auto flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-6 max-lg:gap-4">
-        <span className="text-white/90 text-sm sm:text-base font-medium">
-          Krijg snel inzicht in wat past bij uw situatie.
+      <div className="max-w-[1140px] mx-auto flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 max-lg:gap-4 flex-wrap">
+        <span className="text-white/90 text-sm sm:text-base font-medium text-center sm:text-left">
+          Start met de gratis situatiecheck — PDF met uw gegevens en indicaties.
         </span>
         <Link
-          href="/contact"
-          className="inline-flex items-center gap-2 rounded-lg bg-nbg-green text-white font-semibold text-[15px] px-5 py-2.5 hover:bg-nbg-green/90 transition-colors max-lg:min-h-[48px] max-lg:items-center max-lg:justify-center max-sm:w-full max-sm:justify-center"
+          href="/situatieschets"
+          className="inline-flex items-center justify-center gap-2 rounded-lg border-2 border-nbg-green text-white font-semibold text-[15px] px-5 py-2.5 hover:bg-nbg-green hover:border-nbg-green transition-colors max-lg:min-h-[48px] text-center w-full sm:w-auto max-sm:max-w-md"
         >
-          Plan een kort gesprek
+          Gratis situatiecheck
         </Link>
       </div>
     </div>

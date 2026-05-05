@@ -55,9 +55,15 @@ export default function OverOnsPage() {
                   </p>
                   <Link
                     href="/contact"
+                    className="block text-center text-nbg-primary font-semibold text-[14px] hover:underline mb-3"
+                  >
+                    Contact / afspraak
+                  </Link>
+                  <Link
+                    href="/situatieschets"
                     className="inline-flex items-center justify-center gap-2 rounded-lg bg-nbg-green text-white font-semibold text-[15px] px-5 py-3 w-full hover:bg-nbg-green/90 transition-colors"
                   >
-                    Plan een kort gesprek
+                    Gratis situatiecheck
                     <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>
                   </Link>
                 </div>

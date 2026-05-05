@@ -4,8 +4,8 @@ import NewsletterForm from "./NewsletterForm";
 import CookiePreferenceLink from "./CookiePreferenceLink";
 
 const snelNaar = [
+  { label: "Gratis situatiecheck", href: "/situatieschets" },
   { label: "Contact", href: "/contact" },
-  { label: "Plan een kort gesprek", href: "/contact" },
   { label: "Hypotheken", href: "/hypotheken" },
   { label: "Financiering", href: "/financiering" },
   { label: "Pensioen", href: "/pensioen" },
@@ -90,14 +90,19 @@ export default function Footer() {
               Videogesprek op afspraak. Ook &apos;s avonds bereikbaar voor vragen.
             </p>
             <Link
-              href="/contact"
+              href="/situatieschets"
               className="inline-flex items-center gap-2 rounded-lg bg-nbg-green text-white font-semibold text-[15px] px-5 py-2.5 hover:bg-nbg-green/90 transition-colors"
             >
-              Plan een kort gesprek
+              Gratis situatiecheck
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
               </svg>
             </Link>
+            <p className="mt-3 m-0">
+              <Link href="/contact" className="text-white/85 text-[15px] hover:text-nbg-primary transition-colors underline-offset-2 hover:underline">
+                Liever direct contact? Neem contact op
+              </Link>
+            </p>
           </div>
         </div>
       </div>

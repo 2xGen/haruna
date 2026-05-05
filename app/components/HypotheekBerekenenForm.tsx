@@ -170,10 +170,10 @@ export default function HypotheekBerekenenForm() {
               Deze berekening is een indicatie. Aan deze berekening kunnen geen rechten worden ontleend. De werkelijke maximale hypotheek en maandlasten kunnen afwijken door NHG, studieschuld en andere factoren.
             </p>
             <Link
-              href="/contact"
+              href="/situatieschets"
               className="mt-6 block w-full text-center rounded-xl bg-nbg-green text-white font-semibold text-[15px] py-3.5 hover:bg-nbg-green/90 transition-colors"
             >
-              Laat uw situatie checken
+              Gratis situatiecheck — PDF met uw situatie
             </Link>
           </div>
         </div>

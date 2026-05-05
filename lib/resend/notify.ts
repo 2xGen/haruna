@@ -13,6 +13,15 @@ export type AdminMailPayload =
       kind: "newsletter";
       email: string;
       source: "footer" | "nieuws";
+    }
+  | {
+      kind: "situatieschets_adviseur";
+      voornaam: string;
+      achternaam: string;
+      email: string;
+      telefoon: string;
+      opmerkingen?: string | null;
+      samenvattingTekst: string;
     };
 
 function getEnv(name: string): string {
@@ -29,7 +38,9 @@ export async function sendAdminNotificationEmail(payload: AdminMailPayload) {
   const subject =
     payload.kind === "afspraak"
       ? "Nieuwe aanvraag via Haruna (Afspraak maken)"
-      : "Nieuwe nieuwsbrief-inschrijving Haruna";
+      : payload.kind === "situatieschets_adviseur"
+        ? "Nieuwe aanvraag via Haruna (Situatieschets — adviseur meekijken)"
+        : "Nieuwe nieuwsbrief-inschrijving Haruna";
 
   const text =
     payload.kind === "afspraak"
@@ -42,12 +53,25 @@ export async function sendAdminNotificationEmail(payload: AdminMailPayload) {
           `Onderwerp: ${payload.onderwerp ?? "-"}`,
           `Bericht: ${payload.bericht ?? "-"}`,
         ].join("\n")
-      : [
-          "Je hebt een nieuwe nieuwsbrief-inschrijving ontvangen.",
-          "",
-          `E-mail: ${payload.email}`,
-          `Bron: ${payload.source}`,
-        ].join("\n");
+      : payload.kind === "situatieschets_adviseur"
+        ? [
+            "Iemand wil de situatieschets laten meekijken door een adviseur.",
+            "",
+            `Voornaam: ${payload.voornaam}`,
+            `Achternaam: ${payload.achternaam}`,
+            `E-mail: ${payload.email}`,
+            `Telefoon: ${payload.telefoon}`,
+            `Opmerkingen: ${payload.opmerkingen ?? "-"}`,
+            "",
+            "--- Samenvatting ingevulde situatieschets ---",
+            payload.samenvattingTekst,
+          ].join("\n")
+        : [
+            "Je hebt een nieuwe nieuwsbrief-inschrijving ontvangen.",
+            "",
+            `E-mail: ${payload.email}`,
+            `Bron: ${payload.source}`,
+          ].join("\n");
 
   const html = `<p>${text.replace(/\n/g, "<br />")}</p>`;
 

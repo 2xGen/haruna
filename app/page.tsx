@@ -37,17 +37,19 @@ export default function HomePage() {
                     Hypotheek Berekenen
                   </Link>
                   <Link
-                    href="/contact"
+                    href="/situatieschets"
                     className="inline-flex items-center gap-2 rounded-lg border-2 border-nbg-primary text-nbg-primary font-semibold text-[15px] px-5 py-3 hover:bg-nbg-primary hover:text-white transition-colors"
                   >
                     Zet de eerste stap
                   </Link>
                 </div>
                 <p className="mt-3 text-nbg-blue/70 text-sm">
-                  Eerste intake duurt 20 minuten. U weet daarna welke vervolgstap past.
+                  Dat is de gratis situatiecheck: ongeveer 20 minuten, een PDF met indicaties en duidelijke vervolgstappen.
                 </p>
                 <p className="mt-8 text-nbg-blue/70 text-base">
                   Snel naar:{" "}
+                  <Link href="/situatieschets" className="text-nbg-green font-medium hover:underline">Gratis situatiecheck</Link>
+                  {" · "}
                   <Link href="/hypotheken/hypotheek-berekenen" className="text-nbg-green font-medium hover:underline">Hypotheek berekenen</Link>
                   {" · "}
                   <Link href="/contact#schade" className="text-nbg-green font-medium hover:underline">Schade melden</Link>
@@ -122,11 +124,11 @@ export default function HomePage() {
               <div className="bg-white rounded-2xl p-8 lg:p-10 shadow-[0_4px_20px_rgba(0,0,0,0.08)] border border-white/10 flex flex-col h-full">
                 <div className="border-l-4 border-nbg-green pl-5 mb-5">
                   <h2 className="text-nbg-blue text-xl lg:text-2xl font-bold m-0">
-                    Plan uw hypotheekgesprek
+                    Gratis situatiecheck
                   </h2>
                 </div>
                 <p className="text-nbg-blue/85 text-[17px] leading-relaxed mb-4 flex-1">
-                  Bespreek in een kort gesprek wat voor uw situatie haalbaar is. U krijgt direct helderheid over uw mogelijkheden en de beste vervolgstap. Liever eerst zelf een indicatie maken? Dat kan ook.
+                  Vul stap voor stap uw situatie in en ontvang een PDF met indicaties en haalbare vervolgstappen. Liever eerst zelf een indicatie maken? Dat kan ook met de calculator hieronder.
                 </p>
                 <div className="flex flex-wrap gap-2 mb-2">
                   <span className="inline-flex items-center rounded-full bg-nbg-lighter-green/80 text-nbg-blue text-[13px] font-medium px-3 py-1.5">
@@ -146,11 +148,11 @@ export default function HomePage() {
                     <svg className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>
                   </Link>
                   <Link
-                    href="/contact"
+                    href="/situatieschets"
                     className="inline-flex items-center justify-center gap-2.5 py-4 px-7 bg-nbg-green text-white rounded-xl font-semibold text-[17px] shadow-[0_4px_14px_rgba(118,163,72,0.35)] hover:bg-nbg-green/90 hover:shadow-[0_6px_20px_rgba(118,163,72,0.4)] hover:-translate-y-0.5 transition-all duration-200"
                   >
-                    <svg className="w-5 h-5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" /></svg>
-                    Plan hypotheekgesprek
+                    <svg className="w-5 h-5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg>
+                    Gratis situatiecheck
                   </Link>
                 </div>
               </div>
@@ -291,14 +293,20 @@ export default function HomePage() {
               <div className="flex-1">
                 <h2 className="text-nbg-blue text-2xl lg:text-3xl font-bold mb-4">
                   Wilt u inzicht in uw situatie?<br />
-                  Start een vrijblijvend gesprek, dan kijken we gericht met u mee.
+                  Start met de gratis situatiecheck, of neem direct contact op voor een kort gesprek.
                 </h2>
-                <div className="flex flex-wrap gap-3 mb-3">
+                <div className="flex flex-wrap gap-3 mb-3 items-center">
                   <Link
                     href="/contact"
-                    className="inline-flex items-center gap-2 rounded-lg border-2 border-nbg-primary text-nbg-primary font-semibold text-[15px] px-6 py-3.5 hover:bg-nbg-primary hover:text-white transition-colors"
+                    className="inline-flex items-center gap-2 text-nbg-primary font-semibold text-[15px] px-2 py-3 hover:underline"
                   >
-                    Plan een kort gesprek
+                    Contact
+                  </Link>
+                  <Link
+                    href="/situatieschets"
+                    className="inline-flex items-center gap-2 rounded-lg bg-nbg-green text-white font-semibold text-[15px] px-6 py-3.5 hover:bg-nbg-green/90 transition-colors shadow-[0_4px_14px_rgba(118,163,72,0.3)]"
+                  >
+                    Gratis situatiecheck
                   </Link>
                 </div>
                 <p className="text-nbg-blue/80 text-[17px] m-0 mb-1">

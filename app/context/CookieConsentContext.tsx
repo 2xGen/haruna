@@ -1,7 +1,7 @@
 "use client";
 
 import React, { createContext, useCallback, useContext, useEffect, useState } from "react";
-import { COOKIE_CONSENT_KEY, COOKIE_CONSENT_MAX_AGE_DAYS, parseConsent, type CookieConsent } from "@/app/lib/cookie-consent";
+import { COOKIE_CONSENT_KEY, COOKIE_CONSENT_MAX_AGE_DAYS, parseConsent, type CookieConsent } from "../lib/cookie-consent";
 
 type CookieConsentContextValue = {
   consent: CookieConsent | null;

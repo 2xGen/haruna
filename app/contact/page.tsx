@@ -1,6 +1,7 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import AfspraakMakenForm from "../components/AfspraakMakenForm";
+import { parseAfspraakTopicParam } from "@/lib/afspraak-topics";
 
 export const metadata = {
   title: "Plan een kort gesprek | Haruna Hypotheek- en pensioenadvies",
@@ -8,7 +9,14 @@ export const metadata = {
     "Plan een gratis en vrijblijvend kennismakingsgesprek over hypotheek, pensioen of verzekeringen. Kort gesprek via videobellen, ook 's avonds mogelijk.",
 };
 
-export default function ContactPage() {
+export default async function ContactPage({
+  searchParams,
+}: {
+  searchParams?: Promise<{ onderwerp?: string }>;
+}) {
+  const sp = (await searchParams) ?? {};
+  const presetOnderwerp = parseAfspraakTopicParam(sp.onderwerp);
+
   return (
     <>
       <Header />
@@ -65,7 +73,7 @@ export default function ContactPage() {
                   Veilig & vertrouwd. Uw gegevens worden vertrouwelijk behandeld en niet gedeeld met derden.
                 </p>
               </div>
-              <AfspraakMakenForm />
+              <AfspraakMakenForm presetOnderwerp={presetOnderwerp} />
             </div>
             <div className="mt-6">
               <div className="bg-nbg-blue text-white rounded-2xl p-6 lg:p-8">

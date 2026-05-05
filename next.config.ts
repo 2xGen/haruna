@@ -34,6 +34,7 @@ const nextConfig: NextConfig = {
       { source: "/nieuws/nieuws/", destination: "/nieuws", permanent: true },
       { source: "/nieuws/nieuws", destination: "/nieuws", permanent: true },
       // Contact
+      { source: "/afspraak", destination: "/contact", permanent: false },
       { source: "/neem-contact-met-ons-op.html", destination: "/contact", permanent: true },
       { source: "/online-advies-voor-relaties.html", destination: "/contact", permanent: true },
     ];
